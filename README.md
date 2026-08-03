@@ -80,3 +80,9 @@ static/
  
 - `docusaurus.config.js` — configurações gerais do site (título, URL, navbar, footer, tema)
 - `sidebars.js` — estrutura de navegação da documentação
+
+### Suporte
+
+Dúvidas técnicas ou problemas com o repositório podem ser reportados para:
+
+📧 **gabrielle.couto@einstein.com**
