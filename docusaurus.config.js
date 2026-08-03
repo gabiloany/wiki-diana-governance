@@ -10,7 +10,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Catálogo de Dados DIAna',
+  title: 'DIAna | Dados & Governança',
   tagline: 'Portal de Documentação Técnica',
   favicon: 'img/home/favicon.ico',
 
