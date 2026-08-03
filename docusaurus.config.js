@@ -20,16 +20,15 @@ const config = {
   },
 
   // Set the production url of your site here
-  url: 'https://brubraga.github.io',
+  url: 'https://gabiloany.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/Docusaurus.D/',
+  baseUrl: '/wiki-diana-governance/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'BruBraga', // Usually your GitHub org/user name.
-  projectName: 'Docusaurus.D', // Usually your repo name.
-  deploymentBranch:"gh-pages",
+  organizationName: 'gabiloany', // Usually your GitHub org/user name.
+  projectName: 'wiki-diana-overnance', // Usually your repo name.
 
   onBrokenLinks: 'throw',
 
