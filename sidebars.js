@@ -17,15 +17,6 @@
 const sidebars = {
   tutorialSidebar: [
     'intro',
-
-    // {
-    //   type: 'category',
-    //   label: 'OpenMetadata',
-    //   items: [
-    //     'openmetadata/index',
-    //   ],
-    // },
-
     {
       type: 'category',
       label: 'Catálogo de Dados',
@@ -34,21 +25,21 @@ const sidebars = {
           type: 'category',
           label: 'Pré-Natal',
           items: [
-            'pec/prenatal/antecedentes/index',
-            'pec/prenatal/subjetivo/index',
-            'pec/prenatal/objetivo/index',
-            'pec/prenatal/avaliacao/index',
-            'pec/prenatal/plano/index',
-            'pec/prenatal/finalizacao/index',
+            'catalogo-dados/prenatal/antecedentes/index',
+            'catalogo-dados/prenatal/subjetivo/index',
+            'catalogo-dados/prenatal/objetivo/index',
+            'catalogo-dados/prenatal/avaliacao/index',
+            'catalogo-dados/prenatal/plano/index',
+            'catalogo-dados/prenatal/finalizacao/index',
           ],
         },
         {
           type: 'category',
           label: 'Câncer de Colo de Útero',
           items: [
-            'pec/cancer-colo-utero/cadastro',
-            'pec/cancer-colo-utero/objetivo',
-            'pec/cancer-colo-utero/plano',
+            'catalogo-dados/cancer-colo-utero/cadastro',
+            'catalogo-dados/cancer-colo-utero/objetivo',
+            'catalogo-dados/cancer-colo-utero/plano',
           ],
         },
       ],

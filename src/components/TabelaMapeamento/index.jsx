@@ -3,11 +3,22 @@ import styles from './styles.module.css';
 
 /**
  * Renderiza uma tabela de mapeamento técnico PEC ↔ Banco de Dados.
+ *
+ * @param {number} numero - Número sequencial do quadro (ex: 2 -> "Quadro 2")
+ * @param {string} titulo - Descrição exibida ao lado do número (ex: "Antecedentes sobre Parto e Nascimento")
+ * @param {Array}  linhas - Linhas de dados da tabela
+ * @param {string} fonte  - Fonte dos dados, exibida abaixo da tabela (ex: "DIAna SAPS")
  */
-export default function TabelaMapeamento({ titulo, linhas }) {
+export default function TabelaMapeamento({ numero, titulo, linhas, fonte }) {
   return (
     <div className={styles.tabelaContainer}>
-      {titulo && <p className={styles.tituloTabela}>{titulo}</p>}
+      {(numero || titulo) && (
+        <p className={styles.tituloTabela}>
+          {numero && <strong>Quadro {numero}</strong>}
+          {numero && titulo && ' - '}
+          {titulo}
+        </p>
+      )}
 
       <table className={styles.tabela}>
 
@@ -24,11 +35,11 @@ export default function TabelaMapeamento({ titulo, linhas }) {
         <thead>
 
           <tr className={styles.headerGroup}>
-            <th colSpan="3" className={styles.pec}>
+            <th colSpan="3">
               PEC
             </th>
 
-            <th colSpan="4" className={styles.bd}>
+            <th colSpan="4">
               Banco de Dados
             </th>
           </tr>
@@ -101,6 +112,10 @@ export default function TabelaMapeamento({ titulo, linhas }) {
         </tbody>
 
       </table>
+
+      {fonte && (
+        <p className={styles.fonte}>Fonte: {fonte}</p>
+      )}
 
     </div>
   );

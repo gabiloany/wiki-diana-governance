@@ -1,0 +1,66 @@
+---
+title: Objetivo
+---
+
+import Figura from '@site/src/components/Figura';
+import TabelaMapeamento from '@site/src/components/TabelaMapeamento';
+import { medicaoData, consumoAlimentarData, resultadoExamesData } from './data/objetivo.data';
+
+# 4. Objetivo
+
+Para apoiar a compreensão das funcionalidades do módulo de **Objetivo**, disponibilizamos um vídeo introdutório e de rápida visualização. Esse material apresenta, diretamente a partir das telas do sistema, as principais características e passos do módulo, oferecendo ao usuário uma visão prática e imediata de seu funcionamento.
+
+### 4.1 Mapeamento Técnico dos Campos do Sistema
+
+As tabelas a seguir apresentam o mapeamento dos campos da área de Objetivo, indicando sua origem no banco de dados do PEC. Para cada tabela, são disponibilizadas imagens extraídas diretamente da interface do sistema, com o objetivo de facilitar a identificação visual dos campos na plataforma.
+
+### 4.2 Medição
+
+<Figura
+  src="/img/prenatal/Tela_Objetivo.jpg"
+  alt="Tela Objetivo"
+  numero={5}
+  descricao="Tela de Objetivo no PEC"
+  fonte="Prontuário Eletrônico - Versão 5.5.6"
+/>
+
+<TabelaMapeamento
+  numero={5}
+  titulo="Medição"
+  linhas={medicaoData}
+  fonte="DIAna SAPS"
+/>
+
+### 4.3 Consumo Alimentar
+
+<Figura
+  src="/img/prenatal/tela_8_objetivo_consumo_alimentar.png"
+  alt="Tela Objetivo - Consumo Alimentar"
+  numero={6}
+  descricao="Tela de Objetivo - Consumo Alimentar no PEC"
+  fonte="Prontuário Eletrônico - Versão 5.5.6"
+/>
+
+<TabelaMapeamento
+  numero={6}
+  titulo="Consumo Alimentar"
+  linhas={consumoAlimentarData}
+  fonte="DIAna SAPS"
+/>
+
+### 4.4 Resultado de Exames
+
+<Figura
+  src="/img/prenatal/tela_9_objetivo_resultado_exames.png"
+  alt="Tela Objetivo - Resultado de Exames"
+  numero={7}
+  descricao="Tela de Objetivo - Resultado de Exames no PEC"
+  fonte="Prontuário Eletrônico - Versão 5.5.6"
+/>
+
+<TabelaMapeamento
+  numero={7}
+  titulo="Resultado de Exames"
+  linhas={resultadoExamesData}
+  fonte="DIAna SAPS"
+/>

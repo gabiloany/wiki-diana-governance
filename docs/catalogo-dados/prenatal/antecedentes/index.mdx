@@ -8,37 +8,62 @@ import partoNascimentoData from './data/partoNascimento.data';
 import listaProblemasData from './data/listaProblemas.data';
 import antecedentesFamiliarData from './data/antecedentesFamiliar.data';
 
-# Antecedentes
+# 2. Antecedentes
 
 Para apoiar a compreensão das funcionalidades do módulo de **Antecedentes**, disponibilizamos um vídeo introdutório e de rápida visualização. Esse material apresenta, diretamente a partir das telas do sistema, as principais características e passos do módulo, oferecendo ao usuário uma visão prática e imediata de seu funcionamento.
 
-### Mapeamento Técnico dos Campos do Sistema
+### 2.1 Mapeamento Técnico dos Campos do Sistema
 
 As tabelas a seguir apresentam o mapeamento dos campos da área de Antecedentes, indicando sua origem no banco de dados do PEC. Para cada tabela, são disponibilizadas imagens extraídas diretamente da interface do sistema, com o objetivo de facilitar a identificação visual dos campos na plataforma.
 
-### Antecedentes sobre Parto e Nascimento
+### 2.2 Antecedentes sobre Parto e Nascimento
 
 <Figura
   src="/img/prenatal/antecedentes-cidadao-sessao-1.png"
   alt="Antecedentes sobre Parto e Nascimento"
+  numero={1}
+  descricao="Tela de Antecedentes sobre Parto e Nascimento no PEC"
+  fonte="Prontuário Eletrônico - Versão 5.5.6"
 />
 
-<TabelaMapeamento linhas={partoNascimentoData} />
+<TabelaMapeamento
+  numero={1}
+  titulo="Antecedentes sobre Parto e Nascimento"
+  linhas={partoNascimentoData}
+  fonte="DIAna SAPS"
+/>
 
-### Antecedentes resolvidos da Lista Problemas e Condições
+### 2.3 Antecedentes resolvidos da Lista Problemas e Condições
 
 <Figura
   src="/img/prenatal/antecedentes-cidadao-sessao-3.png"
   alt="Antecedentes resolvidos da Lista Problemas e Condições"
+  numero={2}
+  descricao="Tela de Antecedentes resolvidos da Lista de Problemas e Condições no PEC"
+  fonte="Prontuário Eletrônico - Versão 5.5.6"
 />
 
-<TabelaMapeamento linhas={listaProblemasData} />
+<TabelaMapeamento
+  numero={2}
+  titulo="Antecedentes resolvidos da Lista Problemas e Condições"
+  linhas={listaProblemasData}
+  fonte="DIAna SAPS"
+/>
 
-### Antecedentes Familiar
+### 2.4 Antecedentes Familiar
 
 <Figura
   src="/img/prenatal/antecedentes-familiar.png"
   alt="Antecedentes Familiar"
+  numero={3}
+  descricao="Tela de Antecedentes Familiar no PEC"
+  fonte="Prontuário Eletrônico - Versão 5.5.6"
 />
 
-<TabelaMapeamento linhas={antecedentesFamiliarData} larguraFixa />
+<TabelaMapeamento
+  numero={3}
+  titulo="Antecedentes Familiar"
+  linhas={antecedentesFamiliarData}
+  larguraFixa
+  fonte="DIAna SAPS"
+/>

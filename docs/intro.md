@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Introdução
+# 1. Introdução
 
 Este catálogo tem como propósito apresentar, de forma estruturada e objetiva, as funcionalidades do **Prontuário Eletrônico do Cidadão (PEC)** relacionadas à linha de cuidado da gestante no período pré-natal com foco na diabetes gestacional.
 
