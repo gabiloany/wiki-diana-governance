@@ -1,6 +1,6 @@
 .tabelaContainer {
-  overflow-x: auto;
-  margin: 1.5rem auto;
+  width: 100%;
+  margin: 1.5rem 0;
 }
 
 .tituloTabela {
@@ -10,9 +10,10 @@
 
 .tabelaAntecedentes {
   width: 100%;
-  max-width: 1200px;
   border-collapse: collapse;
-  font-size: 0.9rem;
+  table-layout: auto;
+  font-size: 0.88rem;
+  line-height: 1.35;
 }
 
 .larguraFixa {
@@ -22,29 +23,85 @@
 .tabelaAntecedentes th,
 .tabelaAntecedentes td {
   border: 1px solid var(--ifm-table-border-color);
-  padding: 0.5rem 0.75rem;
+  padding: 8px 10px;
   text-align: left;
   vertical-align: top;
+
+  /* Faz quebrar textos enormes */
+  white-space: normal;
+  word-break: break-word;
+  overflow-wrap: anywhere;
 }
 
 .headerGroup th.pec {
-  background-color: #2864AE;
-  color: #fff;
+  background: #2864AE;
+  color: white;
   text-align: center;
 }
 
 .headerGroup th.bd {
-  background-color: #071D41;
-  color: #fff;
+  background: #071D41;
+  color: white;
   text-align: center;
 }
 
 .secao td {
-  background-color: var(--ifm-color-emphasis-200);
+  background: var(--ifm-color-emphasis-200);
   font-weight: 600;
 }
 
 .subsecao td {
-  background-color: var(--ifm-color-emphasis-100);
+  background: var(--ifm-color-emphasis-100);
   font-weight: 500;
+}
+
+/* Cabeçalho permanece visível durante a rolagem vertical */
+.tabelaAntecedentes thead th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+/* Campo */
+.tabelaAntecedentes th:nth-child(1),
+.tabelaAntecedentes td:nth-child(1) {
+  width: 22%;
+}
+
+/* Obrigatório PEC */
+.tabelaAntecedentes th:nth-child(2),
+.tabelaAntecedentes td:nth-child(2) {
+  width: 8%;
+  text-align: center;
+}
+
+/* Formato PEC */
+.tabelaAntecedentes th:nth-child(3),
+.tabelaAntecedentes td:nth-child(3) {
+  width: 12%;
+}
+
+/* Tabela BD */
+.tabelaAntecedentes th:nth-child(4),
+.tabelaAntecedentes td:nth-child(4) {
+  width: 16%;
+}
+
+/* Coluna BD */
+.tabelaAntecedentes th:nth-child(5),
+.tabelaAntecedentes td:nth-child(5) {
+  width: 20%;
+}
+
+/* Formato BD */
+.tabelaAntecedentes th:nth-child(6),
+.tabelaAntecedentes td:nth-child(6) {
+  width: 15%;
+}
+
+/* Obrigatório BD */
+.tabelaAntecedentes th:nth-child(7),
+.tabelaAntecedentes td:nth-child(7) {
+  width: 7%;
+  text-align: center;
 }
