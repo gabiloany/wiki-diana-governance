@@ -8,7 +8,7 @@ import styles from './styles.module.css';
  * @param {string} src       - Caminho da imagem
  * @param {string} alt       - Texto alternativo da imagem
  * @param {number} numero    - Número sequencial da figura (ex: 4 -> "Figura 4")
- * @param {string} descricao - Título/descrição exibido ao lado do número (ex: "Tela de Subjetivo no PEC")
+ * @param {string} descricao - Título/descrição exibido ao lado do número (ex: "Tela de Subjetivo no Prontuário Eletrônico")
  * @param {string} fonte     - Fonte da imagem, exibida abaixo da legenda (ex: "Prontuário Eletrônico - Versão 5.5.6")
  * @param {string} legenda   - (opcional, retrocompatibilidade) legenda livre, usada caso numero/descricao não sejam informados
  */

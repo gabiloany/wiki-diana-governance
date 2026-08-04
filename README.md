@@ -46,9 +46,7 @@ GIT_USER=<seu usuário do GitHub> yarn deploy
  
 ```
 docs/                    # Conteúdo das páginas (Markdown/MDX)
-  ├── catalogo-dados/
-  ├── openmetadata/
-  └── pec/
+  └── catalogo-dados/
       ├── cancer-colo-utero/
       └── prenatal/
           ├── antecedentes/
@@ -60,13 +58,9 @@ docs/                    # Conteúdo das páginas (Markdown/MDX)
  
 src/
   ├── components/         # Componentes React customizados
-  │   ├── CampoBanco/      # Exibição de campos do banco de dados
-  │   ├── CampoPEC/        # Exibição de campos do sistema PEC
   │   ├── Figura/          # Componente de imagens/prints do sistema
-  │   ├── Fluxograma/      # Diagramas de fluxo
   │   ├── HomepageFeatures/# Cards institucionais da home
-  │   ├── TabelaMapeamento/# Tabela de mapeamento PEC ↔ Banco de Dados
-  │   └── VideoTutorial/   # Player de vídeo introdutório por seção
+  │   └── TabelaMapeamento/# Tabela de mapeamento Prontuário Eletrônico ↔ Banco de Dados 
   ├── css/                 # Estilos globais (custom.css)
   ├── pages/               # Páginas customizadas (ex: Equipe)
   └── theme/               # Componentes do tema ejetados (ex: Footer)

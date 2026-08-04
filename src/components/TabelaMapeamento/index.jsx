@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './styles.module.css';
 
 /**
- * Renderiza uma tabela de mapeamento técnico PEC ↔ Banco de Dados.
+ * Renderiza uma tabela de mapeamento técnico Prontuário Eletrônico ↔ Banco de Dados.
  *
  * @param {number} numero - Número sequencial do quadro (ex: 2 -> "Quadro 2")
  * @param {string} titulo - Descrição exibida ao lado do número (ex: "Antecedentes sobre Parto e Nascimento")
