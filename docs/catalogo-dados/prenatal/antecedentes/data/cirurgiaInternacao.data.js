@@ -1,0 +1,33 @@
+export default [
+  {
+    tipo: 'dado',
+    campo: 'Cirurgia e/ou internação',
+    obrigatorioPec: 'sim',
+    formatoPec: 'livre',
+    tabela: 'tb_cirurgias_internacoes',
+    coluna: 'ds_cirurgia_internacao',
+    formatoBd: 'character varying(400)',
+    obrigatorioBd: 'não',
+  },
+  { tipo: 'subsecao', texto: 'Realizada em' },
+  {
+    tipo: 'dado',
+    campo: 'Data ou Idade',
+    obrigatorioPec: 'não',
+    formatoPec: 'dd/mm/aaaa ou anos e meses',
+    tabela: 'tb_cirurgias_internacoes',
+    coluna: 'dt_cirurgia_internacao',
+    formatoBd: 'date',
+    obrigatorioBd: 'não',
+  },
+  {
+    tipo: 'dado',
+    campo: 'Observações',
+    obrigatorioPec: 'não',
+    formatoPec: 'livre',
+    tabela: 'tb_cirurgias_internacoes',
+    coluna: 'ds_observacoes',
+    formatoBd: 'character varying(800)',
+    obrigatorioBd: 'não',
+  },
+];

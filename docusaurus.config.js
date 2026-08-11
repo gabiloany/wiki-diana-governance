@@ -46,6 +46,7 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          routeBasePath: '/', 
           sidebarPath: './sidebars.js',
         },
         blog: false, //nesta linha eu desativei a página blog
@@ -73,24 +74,12 @@ const config = {
         alt: 'Início',
         src: 'img/home/logodaps.png',
       },
-      items: [
-        {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Documentação',
-        },
-        {
-          to: '/equipe',
-          position: 'left',
-          label: 'Equipe',
-        },
-      ],
+      items: [],
     },
 
     docs: {
       sidebar: {
-        hideable: true,
+        hideable: false,
       },
     },
 

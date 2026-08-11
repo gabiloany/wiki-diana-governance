@@ -1,0 +1,32 @@
+export default [
+  {
+    tipo: "dado",
+    campo: "Vivem",
+    obrigatorioPec: "não",
+    formatoPec: "numérico",
+    tabela: ["tb_antecedente_item", "tb_antecedente"],
+    coluna: ["ds_valor_item", "ds_filho_vivo"],
+    formatoBd: ["varchar(4000)", "varchar(255)"],
+    obrigatorioBd: "não",
+  },
+  {
+    tipo: "dado",
+    campo: "Mortos na 1ª semana",
+    obrigatorioPec: "não",
+    formatoPec: "numérico",
+    tabela: ["tb_antecedente_item", "tb_antecedente"],
+    coluna: ["ds_valor_item", "ds_obito_antes_primeira_semana"],
+    formatoBd: ["varchar(4000)", "varchar(255)"],
+    obrigatorioBd: "não",
+  },
+  {
+    tipo: "dado",
+    campo: "Mortos depois da 1ª semana",
+    obrigatorioPec: "não",
+    formatoPec: "numérico",
+    tabela: ["tb_antecedente_item", "tb_antecedente"],
+    coluna: ["ds_valor_item", "ds_obito_apos_primeira_semana"],
+    formatoBd: ["varchar(4000)", "varchar(255)"],
+    obrigatorioBd: "não",
+  },
+];

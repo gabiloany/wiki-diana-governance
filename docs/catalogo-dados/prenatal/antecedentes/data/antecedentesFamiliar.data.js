@@ -1,5 +1,4 @@
 export default [
-  { tipo: 'secao', texto: 'Cidadão / Lista de problemas dos familiares' },
   {
     tipo: 'dado',
     campo: 'CIAP 2',

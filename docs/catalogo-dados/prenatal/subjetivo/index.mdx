@@ -3,8 +3,10 @@ title: Subjetivo
 ---
 
 import Figura from '@site/src/components/Figura';
+import ImagemInline from '@site/src/components/ImagemInline';
 import TabelaMapeamento from '@site/src/components/TabelaMapeamento';
 import subjetivoData from './data/subjetivo.data';
+import adicionarObservacaoData from './data/adicionarObservacao.data';
 
 # 3. Subjetivo
 
@@ -14,19 +16,58 @@ A seção **Subjetivo** concentra as informações relatadas pelo cidadão duran
 
 As tabelas a seguir apresentam o mapeamento dos campos da área de Subjetivo, indicando sua origem no banco de dados do Prontuário Eletrônico. Para cada tabela, são disponibilizadas imagens extraídas diretamente da interface do sistema, com o objetivo de facilitar a identificação visual dos campos na plataforma.
 
-### 3.2 Subjetivo
-
 <Figura
-  src="/img/prenatal/tela_6_subjetivo.png"
+  src="/img/prenatal/subjetivo/subjetivo_geral.png"
   alt="Tela Subjetivo"
-  numero={4}
-  descricao="Tela de Subjetivo no Prontuário Eletrônico"
+  numero={1}
+  descricao="Tela de Subjetivo - Visão Geral no Prontuário Eletrônico"
   fonte="Prontuário Eletrônico - Versão 5.5.6"
 />
 
 <TabelaMapeamento
-  numero={4}
+  numero={1}
   titulo="Subjetivo"
   linhas={subjetivoData}
+  fonte="DIAna SAPS"
+/>
+
+### 3.2 Motivo da Consulta (CIAP 2)
+
+Ao buscar o motivo da consulta no campo **Motivo da consulta (CIAP 2)**, o sistema exibe uma lista de sugestões contendo o código CIAP correspondente, além das descrições dos critérios de inclusão e exclusão de cada classificação, auxiliando o profissional na seleção do código mais adequado.
+
+<Figura
+  src="/img/prenatal/subjetivo/motivo_consulta.png"
+  alt="Subjetivo - Busca do Motivo da Consulta (CIAP 2)"
+  numero={2}
+  descricao="Tela de Subjetivo - Busca do Motivo da Consulta (CIAP 2) no Prontuário Eletrônico"
+  fonte="Prontuário Eletrônico - Versão 5.5.6"
+/>
+
+Após selecionado, o motivo da consulta é adicionado a uma lista, disponibilizando os ícones de edição e exclusão para o gerenciamento do registro.
+
+<Figura
+  src="/img/prenatal/subjetivo/motivo_adicionado.png"
+  alt="Subjetivo - Motivo da Consulta Adicionado"
+  numero={3}
+  descricao="Tela de Subjetivo - Motivo da Consulta (CIAP 2) Adicionado no Prontuário Eletrônico"
+  fonte="Prontuário Eletrônico - Versão 5.5.6"
+/>
+
+### 3.2.1 Ícone "Adicionar Observação"
+
+Ao acionar o ícone <ImagemInline src="/img/prenatal/subjetivo/balao_editar.png" alt="Adicionar observação" />, é exibido um formulário para o registro de uma observação complementar vinculada ao motivo da consulta (CIAP 2) selecionado.
+
+<Figura
+  src="/img/prenatal/subjetivo/adicionar_observacao.png"
+  alt="Subjetivo - Adicionar Observação"
+  numero={4}
+  descricao="Tela de Subjetivo - Formulário de Adição de Observação no Prontuário Eletrônico"
+  fonte="Prontuário Eletrônico - Versão 5.5.6"
+/>
+
+<TabelaMapeamento
+  numero={2}
+  titulo="Adicionar Observação"
+  linhas={adicionarObservacaoData}
   fonte="DIAna SAPS"
 />

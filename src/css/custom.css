@@ -141,35 +141,171 @@ h1,h2,h3,h4,h5{
 
 }
 
+/* ==========================================================================
+   LOGO NAO CLICAVEL
+   ========================================================================== */
+.navbar__brand {
+  cursor: default;
+}
 
 /* ==========================================================================
-   VÍDEOS
+   FONTES
    ========================================================================== */
 
-.videoWrapper{
+@font-face {
+  font-family: "rawline";
+  src: url("./fonts/rawline-400.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 
-    position:relative;
+@font-face {
+  font-family: "rawline";
+  src: url("./fonts/rawline-600.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
 
-    width:100%;
+@font-face {
+  font-family: "rawline";
+  src: url("./fonts/rawline-700.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
 
-    max-width:900px;
+/* ==========================================================================
+   TEMA DA WIKI
+   ========================================================================== */
 
-    margin:2rem auto;
+:root {
 
-    aspect-ratio:17/8;
+  /* Paleta DIAna */
 
-    background:#000;
+  --ifm-color-primary: #2864AE;
+  --ifm-color-primary-dark: #245a9d;
+  --ifm-color-primary-darker: #225594;
+  --ifm-color-primary-darkest: #1c467a;
+  --ifm-color-primary-light: #2c6ebf;
+  --ifm-color-primary-lighter: #2e73c8;
+  --ifm-color-primary-lightest: #4384d4;
 
-    overflow:hidden;
+  /* Tipografia */
+
+  --ifm-font-family-base: "rawline", Verdana, sans-serif;
+  --ifm-heading-font-family: "rawline", Verdana, sans-serif;
+  --ifm-heading-font-weight: 300;
+
+  --ifm-code-font-size: 95%;
+
+  --ifm-heading-margin-top: .6rem;
+  --ifm-heading-margin-bottom: .6rem;
+
+  /* Bordas */
+
+  --ifm-table-border-color: #d7dde5;
+
+  /* Fundo */
+
+  --ifm-background-color: #ffffff;
+
+  /* Links */
+
+  --ifm-link-color: #2864AE;
+
+  /* Código */
+
+  --docusaurus-highlighted-code-line-bg: rgba(0,0,0,.08);
 
 }
 
-.videoWrapper video{
 
-    width:100%;
+/* ==========================================================================
+   TIPOGRAFIA
+   ========================================================================== */
 
-    height:100%;
+body{
 
-    object-fit:contain;
+  font-family: var(--ifm-font-family-base);
 
+  color:#222;
+
+  line-height:1.65;
+
+}
+
+h1,h2,h3,h4,h5{
+
+  letter-spacing:.01em;
+
+  font-weight:500;
+
+}
+
+
+/* ==========================================================================
+   TEXTO
+   ========================================================================== */
+
+.justify{
+
+    text-align:justify;
+
+    hyphens:auto;
+
+}
+
+
+/* ==========================================================================
+   IMAGENS
+   ========================================================================== */
+
+.markdown img{
+
+    display:block;
+
+    margin:1.5rem auto;
+
+    max-width:100%;
+
+    height:auto;
+
+}
+
+
+/* ==========================================================================
+   TABELAS PADRÃO DO MARKDOWN
+   ========================================================================== */
+
+.markdown table{
+
+    font-size:.9rem;
+
+}
+
+.markdown table th{
+
+    font-weight:600;
+
+}
+
+/* ==========================================================================
+   LOGO NAO CLICAVEL
+   ========================================================================== */
+.navbar__brand {
+  cursor: default;
+}
+
+/* ==========================================================================
+   IMG INLINE
+   ========================================================================== */
+.markdown img.inline-img {
+  display: inline-block;
+  margin: 0;
+  max-width: none;
+  height: 2em;
+  width: auto;
+  vertical-align: text-bottom;
 }
