@@ -72,7 +72,7 @@ const config = {
       title: '',
       logo: {
         alt: 'Início',
-        src: 'img/home/logodaps.png',
+        src: 'img/home/logo.svg',
       },
       items: [],
     },
