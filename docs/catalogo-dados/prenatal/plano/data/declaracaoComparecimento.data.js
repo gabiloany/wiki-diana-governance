@@ -1,12 +1,4 @@
-export const declaracaoComparecimentoData = [
-  {
-    tipo: "secao",
-    texto: "Declaração de comparecimento"
-  },
-  {
-    tipo: "subsecao",
-    texto: "Declaração de comparecimento"
-  },
+export default [
   {
     tipo: "dado",
     campo: "Período",

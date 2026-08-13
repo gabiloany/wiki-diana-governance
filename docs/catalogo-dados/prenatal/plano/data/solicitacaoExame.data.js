@@ -1,8 +1,4 @@
-export const solicitacaoExameData = [
-  {
-    tipo: "secao",
-    texto: "Solicitação de exames"
-  },
+export default [
   {
     tipo: "dado",
     campo: "+ Adicionar exame comum",

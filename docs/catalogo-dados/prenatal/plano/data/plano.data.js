@@ -1,8 +1,4 @@
-export const planoData = [
-  {
-    tipo: "secao",
-    texto: "Plano"
-  },
+export default [
   {
     tipo: "dado",
     campo: "Cidadão em observação",

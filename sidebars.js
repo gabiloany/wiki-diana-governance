@@ -9,6 +9,27 @@ const sidebars = {
 
     {
       type: 'category',
+      label: 'Boas Práticas de Governança de Dados',
+
+      // Página introdutória de Boas Práticas
+      link: {
+        type: 'doc',
+        id: 'boas-praticas/index',
+      },
+
+      items: [
+        'boas-praticas/agentes-tratamento/index',
+        'boas-praticas/fluxo-gestao/index',
+        'boas-praticas/glossario/index',
+        'boas-praticas/informacao-saude/index',
+        'boas-praticas/interoperabilidade-integracao/index',
+        'boas-praticas/responsabilidades-papeis/index',
+        'boas-praticas/tratamento-dados/index',
+      ],
+    },
+
+    {
+      type: 'category',
       label: 'Catálogo de Dados',
 
       // Página introdutória do catálogo
@@ -54,6 +75,23 @@ const sidebars = {
             'catalogo-dados/cancer-colo-utero/plano',
           ],
         },
+      ],
+    },
+
+    {
+      type: 'category',
+      label: 'Vacinação',
+
+      // Página introdutória da Vacinação
+      link: {
+        type: 'doc',
+        id: 'vacinacao/index',
+      },
+
+      items: [
+        'vacinacao/cardeneta/index',
+        'vacinacao/covid/index',
+        'vacinacao/imunobiologico/index',
       ],
     },
   ],

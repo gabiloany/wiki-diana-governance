@@ -1,8 +1,4 @@
-export const prescricaoData = [
-  {
-    tipo: "secao",
-    texto: "Adicionar prescrição"
-  },
+export default [
   {
     tipo: "dado",
     campo: "Preencher manualmente. Medicamento não encontrado na lista",

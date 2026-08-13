@@ -1,8 +1,4 @@
-export const exameComumData = [
-  {
-    tipo: "secao",
-    texto: "Solicitação de exames comum"
-  },
+export default [
   {
     tipo: "dado",
     campo: "Gestante 1º trimestre",

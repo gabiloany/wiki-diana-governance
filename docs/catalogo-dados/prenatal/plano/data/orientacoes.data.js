@@ -1,12 +1,4 @@
-export const orientacoesData = [
-  {
-    tipo: "secao",
-    texto: "Orientações"
-  },
-  {
-    tipo: "subsecao",
-    texto: "Orientações"
-  },
+export default [
   {
     tipo: "dado",
     campo: "Orientações ao cidadão",

@@ -4,7 +4,12 @@ slug: /
 ---
 
 # Introdução
-
-Este catálogo tem como propósito apresentar, de forma estruturada e objetiva, as funcionalidades do **Prontuário Eletrônico** relacionadas à linha de cuidado da gestante no período pré-natal com foco na diabetes gestacional.
-
-A partir do levantamento realizado, foram mapeados os campos utilizados nas diferentes etapas do atendimento à gestante, identificando suas características, estrutura no banco de dados e correspondência nas telas do sistema. Esse mapeamento possibilita uma compreensão mais precisa sobre como as informações são registradas, organizadas e disponibilizadas.
+ 
+Este site reúne a documentação técnica do **Prontuário Eletrônico** do e-SUS APS, organizada em três frentes principais:
+ 
+- **[Boas Práticas de Governança de Dados](/boas-praticas/)** — diretrizes e orientações técnicas para o uso, tratamento e governança das informações registradas no sistema, incluindo glossário, responsabilidades, fluxos de gestão e interoperabilidade.
+- **[Catálogo de Dados](/catalogo-dados/)** — mapeamento técnico dos formulários das linhas de cuidado de **Pré-Natal** e **Câncer de Colo de Útero**, relacionando os campos exibidos na interface do sistema às respectivas tabelas e colunas do banco de dados.
+- **[Vacinação](/vacinacao/)** — mapeamento técnico dos formulários utilizados no registro de doses e no acompanhamento vacinal do cidadão.
+Cada seção apresenta imagens da interface do sistema acompanhadas do respectivo mapeamento técnico dos campos, apoiando atividades de governança de dados, integração de sistemas e desenvolvimento de soluções analíticas.
+ 
+Selecione uma das seções acima ou no menu lateral para acessar a documentação específica.

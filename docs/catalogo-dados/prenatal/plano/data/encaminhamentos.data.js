@@ -1,12 +1,4 @@
-export const encaminhamentosData = [
-  {
-    tipo: "secao",
-    texto: "Encaminhamentos"
-  },
-  {
-    tipo: "subsecao",
-    texto: "Encaminhamentos"
-  },
+export default [
   {
     tipo: "dado",
     campo: "Encaminhamentos",

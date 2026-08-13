@@ -1,12 +1,4 @@
-export const atestadosData = [
-  {
-    tipo: "secao",
-    texto: "Atestados"
-  },
-  {
-    tipo: "subsecao",
-    texto: "Atestados"
-  },
+export default [
   {
     tipo: "dado",
     campo: "Modelo",

@@ -1,8 +1,4 @@
-export const exameAltoCustoData = [
-  {
-    tipo: "secao",
-    texto: "Solicitação de exames de alto custo"
-  },
+export default [
   {
     tipo: "dado",
     campo: "+ Adicionar exame de alto custo",
