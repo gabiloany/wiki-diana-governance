@@ -4,7 +4,10 @@ title: Finalização do Atendimento
 
 import Figura from '@site/src/components/Figura';
 import TabelaMapeamento from '@site/src/components/TabelaMapeamento';
-import { finalizacaoData } from './data/finalizacao.data';
+import finalizacaoData from './data/finalizacao.data';
+import formaParticipacaoCidadaoData from './data/formaParticipacaoCidadao.data';
+import atendimentoCompartilhadoData from './data/atendimentoCompartilhado.data';
+import procedimentosCondutaDesfechoData from './data/procedimentosCondutaDesfecho.data';
 
 # 7. Finalização do Atendimento
 
@@ -14,19 +17,86 @@ A seção **Finalização do Atendimento** reúne os campos utilizados para conc
 
 As tabelas a seguir apresentam o mapeamento dos campos da área de Finalização do Atendimento, indicando sua origem no banco de dados do Prontuário Eletrônico. Para cada tabela, são disponibilizadas imagens extraídas diretamente da interface do sistema, com o objetivo de facilitar a identificação visual dos campos na plataforma.
 
-### 7.2 Finalização do Atendimento
+<Figura
+  src="/img/prenatal/finalizacao/geral.png"
+  alt="Finalização do Atendimento - Visão Geral"
+  numero={20}
+  descricao="Tela de Finalização do Atendimento - Visão Geral no Prontuário Eletrônico"
+  fonte="Prontuário Eletrônico - Versão 5.5.6"
+/>
+
+### 7.2 Tipo de atendimento
+
+O campo **Tipo de atendimento** permite classificar a natureza do atendimento realizado, indicando também se o cidadão participou presencialmente do encontro com o profissional de saúde.
 
 <Figura
-  src="/img/prenatal/tela_25_finalizacao.png"
-  alt="Finalização do Atendimento"
-  numero={20}
-  descricao="Tela de Finalização do Atendimento no Prontuário Eletrônico"
+  src="/img/prenatal/finalizacao/tipo_atendimento.png"
+  alt="Tela Finalização - Tipo de Atendimento"
+  numero={21}
+  descricao="Tela de Finalização do Atendimento - Tipo de Atendimento no Prontuário Eletrônico"
   fonte="Prontuário Eletrônico - Versão 5.5.6"
 />
 
 <TabelaMapeamento
   numero={20}
-  titulo="Finalização do Atendimento"
+  titulo="Tipo de Atendimento"
   linhas={finalizacaoData}
+  fonte="DIAna SAPS"
+/>
+
+### 7.3 Forma de participação do cidadão
+
+Quando o campo **Cidadão participou do atendimento** é marcado, o sistema exibe a opção **Forma de participação**, na qual é possível especificar de que maneira o cidadão participou do atendimento (presencial, remoto, entre outras).
+
+<Figura
+  src="/img/prenatal/finalizacao/participou_atendimento.png"
+  alt="Tela Finalização - Forma de Participação do Cidadão"
+  numero={22}
+  descricao="Tela de Finalização do Atendimento - Forma de Participação do Cidadão no Prontuário Eletrônico"
+  fonte="Prontuário Eletrônico - Versão 5.5.6"
+/>
+
+<TabelaMapeamento
+  numero={21}
+  titulo="Forma de Participação do Cidadão"
+  linhas={formaParticipacaoCidadaoData}
+  fonte="DIAna SAPS"
+/>
+
+### 7.4 Atendimento compartilhado
+
+O bloco **Atendimento compartilhado** permite registrar a participação de um profissional convidado no atendimento, contemplando a identificação do profissional e sua forma de participação.
+
+<Figura
+  src="/img/prenatal/finalizacao/atendimento_compartilhado.png"
+  alt="Tela Finalização - Atendimento Compartilhado"
+  numero={23}
+  descricao="Tela de Finalização do Atendimento - Atendimento Compartilhado no Prontuário Eletrônico"
+  fonte="Prontuário Eletrônico - Versão 5.5.6"
+/>
+
+<TabelaMapeamento
+  numero={22}
+  titulo="Atendimento Compartilhado"
+  linhas={atendimentoCompartilhadoData}
+  fonte="DIAna SAPS"
+/>
+
+### 7.5 Procedimentos, conduta e desfecho
+
+O bloco **Procedimentos, conduta e desfecho** reúne os campos finais do atendimento: procedimentos administrativos (SIGTAP), ficha de notificação de caso suspeito (SINAN), racionalidade em saúde, conduta adotada e desfecho do atendimento.
+
+<Figura
+  src="/img/prenatal/finalizacao/sigtap.png"
+  alt="Tela Finalização - Procedimentos, Conduta e Desfecho"
+  numero={24}
+  descricao="Tela de Finalização do Atendimento - Procedimentos, Conduta e Desfecho no Prontuário Eletrônico"
+  fonte="Prontuário Eletrônico - Versão 5.5.6"
+/>
+
+<TabelaMapeamento
+  numero={23}
+  titulo="Procedimentos, Conduta e Desfecho"
+  linhas={procedimentosCondutaDesfechoData}
   fonte="DIAna SAPS"
 />
