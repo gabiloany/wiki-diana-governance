@@ -1,0 +1,32 @@
+export default [
+  {
+    tipo: 'dado',
+    campo: 'Data de nascimento',
+    obrigatorioPec: 'sim',
+    formatoPec: 'dd/mm/aaaa',
+    tabela: 'tb_cidadao',
+    coluna: 'dt_nascimento',
+    formatoBd: 'date',
+    obrigatorioBd: 'não',
+  },
+  {
+    tipo: 'dado',
+    campo: 'Sexo',
+    obrigatorioPec: 'sim',
+    formatoPec: 'combo box',
+    tabela: 'tb_cidadao',
+    coluna: 'no_sexo',
+    formatoBd: 'varchar(24)',
+    obrigatorioBd: 'não',
+  },
+  {
+    tipo: 'dado',
+    campo: 'Qual identidade de gênero?',
+    obrigatorioPec: 'não',
+    formatoPec: 'combo box',
+    tabela: 'tb_cidadao',
+    coluna: 'tp_identidade_genero',
+    formatoBd: 'varchar(25)',
+    obrigatorioBd: 'não',
+  },
+];

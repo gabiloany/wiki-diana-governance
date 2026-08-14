@@ -70,9 +70,9 @@ const sidebars = {
           },
 
           items: [
-            'catalogo-dados/cancer-colo-utero/cadastro',
-            'catalogo-dados/cancer-colo-utero/objetivo',
-            'catalogo-dados/cancer-colo-utero/plano',
+            'catalogo-dados/cancer-colo-utero/cadastro/index',
+            'catalogo-dados/cancer-colo-utero/objetivo/index',
+            'catalogo-dados/cancer-colo-utero/plano/index',
           ],
         },
       ],
