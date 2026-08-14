@@ -1,6 +1,16 @@
 export default [
   {
     tipo: "dado",
+    campo: "Dengue",
+    obrigatorioPec: "não",
+    formatoPec: "check box",
+    tabela: "tb_exame_requisitado",
+    coluna: "co_proced",
+    formatoBd: "bigint",
+    obrigatorioBd: "não"
+  },
+  {
+    tipo: "dado",
     campo: "Gestante 1º trimestre",
     obrigatorioPec: "não",
     formatoPec: "check box",

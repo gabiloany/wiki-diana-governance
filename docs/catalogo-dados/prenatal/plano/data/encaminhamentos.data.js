@@ -4,24 +4,9 @@ export default [
     campo: "Encaminhamentos",
     obrigatorioPec: "não",
     formatoPec: "check box",
-    tabela: "-",
-    coluna: "-",
-    formatoBd: "-",
-    obrigatorioBd: "-"
-  },
-
-  {
-    tipo: "subsecao",
-    texto: "Serviço especializado"
-  },
-  {
-    tipo: "dado",
-    campo: "Especialidade",
-    obrigatorioPec: "sim",
-    formatoPec: "combo box",
-    tabela: "tb_encaminhamento",
-    coluna: "co_especialidade_sisreg",
+    tabela: "rl_atend_proced",
+    coluna: "co_proced",
     formatoBd: "bigint",
-    obrigatorioBd: "não"
+    obrigatorioBd: "sim"
   }
 ];

@@ -4,10 +4,10 @@ export default [
     campo: "Preencher manualmente. Medicamento não encontrado na lista",
     obrigatorioPec: "não",
     formatoPec: "check box",
-    tabela: "-",
-    coluna: "-",
-    formatoBd: "-",
-    obrigatorioBd: "-"
+    tabela: "tb_receita_medicamento",
+    coluna: "st_registro_manual",
+    formatoBd: "integer",
+    obrigatorioBd: "não"
   },
   {
     tipo: "dado",
@@ -31,13 +31,23 @@ export default [
   },
   {
     tipo: "dado",
+    campo: "Tipo de receita",
+    obrigatorioPec: "sim",
+    formatoPec: "combo box",
+    tabela: "tb_receita_medicamento",
+    coluna: "tp_receita",
+    formatoBd: "integer",
+    obrigatorioBd: "não"
+  },
+  {
+    tipo: "dado",
     campo: "Tipo de dose",
     obrigatorioPec: "sim",
     formatoPec: "radio button",
-    tabela: "-",
-    coluna: "-",
-    formatoBd: "-",
-    obrigatorioBd: "-"
+    tabela: "tb_receita_medicamento",
+    coluna: "st_dose_unica",
+    formatoBd: "integer",
+    obrigatorioBd: "não"
   },
   {
     tipo: "dado",
@@ -108,12 +118,32 @@ export default [
   {
     tipo: "dado",
     campo: "-",
-    obrigatorioPec: "-",
+    obrigatorioPec: "sim",
     formatoPec: "radio button",
     tabela: "tb_receita_medicamento",
     coluna: "tp_un_medida_tempo_tratamento",
     formatoBd: "bigint",
     obrigatorioBd: "não"
+  },
+  {
+    tipo: "dado",
+    campo: "Conclusão",
+    obrigatorioPec: "sim",
+    formatoPec: "preenchimento automático",
+    tabela: "tb_receita_medicamento",
+    coluna: "dt_fim_tratamento",
+    formatoBd: "date",
+    obrigatorioBd: "não"
+  },
+  {
+    tipo: "dado",
+    campo: "Uso contínuo",
+    obrigatorioPec: "não",
+    formatoPec: "check box",
+    tabela: "tb_receita_medicamento",
+    coluna: "st_uso_continuo",
+    formatoBd: "integer",
+    obrigatorioBd: "sim"
   },
   {
     tipo: "dado",

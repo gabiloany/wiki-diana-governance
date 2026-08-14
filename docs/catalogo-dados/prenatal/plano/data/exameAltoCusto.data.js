@@ -16,8 +16,8 @@ export default [
     formatoPec: "combo box",
     tabela: "tb_exame_requisitado",
     coluna: "co_proced",
-    formatoBd: "-",
-    obrigatorioBd: "-"
+    formatoBd: "bigint",
+    obrigatorioBd: "não"
   },
   {
     tipo: "dado",
