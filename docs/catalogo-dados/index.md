@@ -8,8 +8,10 @@ O Catálogo de Dados reúne a documentação técnica dos formulários do Prontu
 
 A documentação está organizada por linhas de cuidado e módulos do sistema, permitindo identificar para cada campo sua localização na interface, tabela de origem, coluna correspondente, formato de armazenamento e demais características relevantes para análise e governança de dados.
 
-Linhas de cuidado disponíveis
-Pré-Natal
-Câncer de Colo de Útero
+### Linhas de cuidado e módulos disponíveis
+
+- [Pré-Natal](/catalogo-dados/prenatal/)
+- [Câncer de Colo de Útero](/catalogo-dados/cancer-colo-utero/)
+- [Vacinação](/catalogo-dados/vacinacao/)
 
 Selecione uma das linhas de cuidado acima (ou no menu lateral) para acessar a documentação específica de cada uma.

@@ -1,0 +1,71 @@
+---
+title: Calendário Vacinal do Adulto
+---
+
+import Figura from '@site/src/components/Figura';
+import TabelaMapeamento from '@site/src/components/TabelaMapeamento';
+import ImagemInline from '@site/src/components/ImagemInline';
+import cadernetaData from './data/caderneta.data';
+
+# 12. Vacinação
+
+A seção **Vacinação** é acessada a partir da tela inicial do atendimento individual ao cidadão, onde ficam disponíveis as informações gerais do prontuário antes da navegação até a aba específica de vacinação.
+
+<Figura
+  src="/img/vacinacao/inicio_atend.jpeg"
+  alt="Tela inicial do atendimento individual"
+  numero={1}
+  descricao="Tela inicial do atendimento individual no Prontuário Eletrônico"
+  fonte="Prontuário Eletrônico - Versão 5.5.6"
+/>
+
+Ao selecionar a aba **Vacinação** no menu superior do atendimento, o sistema exibe as informações de vacinação do cidadão, organizadas em três subseções: Calendário Vacinal do Adulto, Vacinas para COVID-19 e Outras Doses e Imunobiológicos.
+
+<Figura
+  src="/img/vacinacao/header_vacina.png"
+  alt="Aba Vacinação selecionada no atendimento"
+  numero={2}
+  descricao="Menu superior do atendimento individual com a aba Vacinação selecionada"
+  fonte="Prontuário Eletrônico - Versão 5.5.6"
+/>
+
+### 12.1 Calendário Vacinal do Adulto
+
+A subseção **Calendário Vacinal do Adulto** é exibida por padrão ao acessar a aba de Vacinação, apresentando o calendário nacional recomendado para a faixa etária adulta, com as doses já aplicadas e as pendentes para cada imunobiológico.
+
+<Figura
+  src="/img/vacinacao/geral_vacinacao.jpeg"
+  alt="Calendário Vacinal do Adulto - visão padrão"
+  numero={3}
+  descricao="Tela de Vacinação exibindo o Calendário Vacinal do Adulto no Prontuário Eletrônico"
+  fonte="Prontuário Eletrônico - Versão 5.5.6"
+/>
+
+Ao selecionar a opção **Mostrar calendário nacional completo**, o sistema expande a exibição e apresenta todos os imunobiológicos previstos no calendário nacional, incluindo aqueles ainda não iniciados pelo cidadão.
+
+<Figura
+  src="/img/vacinacao/calendario_nacional.jpeg"
+  alt="Calendário Nacional completo expandido"
+  numero={4}
+  descricao="Tela de Vacinação com o Calendário Nacional completo expandido no Prontuário Eletrônico"
+  fonte="Prontuário Eletrônico - Versão 5.5.6"
+/>
+
+### 12.2 Adicionar transcrições de caderneta
+
+Doses aplicadas anteriormente e ainda não lançadas no sistema podem ser registradas por meio da opção <ImagemInline src="/img/vacinacao/transcricao_inline.png" alt="Adicionar transcrições de caderneta" />, que abre um formulário para transcrição dos dados constantes na caderneta de vacinação do cidadão, como imunobiológico, dose, data de aplicação, lote, fabricante e observações.
+
+<Figura
+  src="/img/vacinacao/transcricao_expand.png"
+  alt="Formulário de Adicionar transcrições de caderneta"
+  numero={5}
+  descricao="Tela de Vacinação com o formulário de Adicionar transcrições de caderneta no Prontuário Eletrônico"
+  fonte="Prontuário Eletrônico - Versão 5.5.6"
+/>
+
+<TabelaMapeamento
+  numero={1}
+  titulo="Calendário Vacinal do Adulto"
+  linhas={cadernetaData}
+  fonte="DIAna SAPS"
+/>

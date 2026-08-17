@@ -75,23 +75,23 @@ const sidebars = {
             'catalogo-dados/cancer-colo-utero/plano/index',
           ],
         },
-      ],
-    },
 
-    {
-      type: 'category',
-      label: 'Vacinação',
+        {
+          type: 'category',
+          label: 'Vacinação',
 
-      // Página introdutória da Vacinação
-      link: {
-        type: 'doc',
-        id: 'vacinacao/index',
-      },
+          // Página introdutória da Vacinação
+          link: {
+            type: 'doc',
+            id: 'catalogo-dados/vacinacao/index',
+          },
 
-      items: [
-        'vacinacao/cardeneta/index',
-        'vacinacao/covid/index',
-        'vacinacao/imunobiologico/index',
+          items: [
+            'catalogo-dados/vacinacao/caderneta/index',
+            'catalogo-dados/vacinacao/covid/index',
+            'catalogo-dados/vacinacao/imunobiologico/index',
+          ],
+        },
       ],
     },
   ],

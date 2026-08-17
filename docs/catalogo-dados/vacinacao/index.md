@@ -10,8 +10,8 @@ O objetivo deste catálogo é apoiar atividades de governança de dados, integra
 
 A documentação está organizada conforme os seguintes módulos:
 
-- [Calendário Vacinal do Adulto](/vacinacao/cardeneta/)
-- [Vacinas para COVID - 19](/vacinacao/covid/)
-- [Outras Doses e Imunobiológicos](/vacinacao/imunobiologico/)
+- [Calendário Vacinal do Adulto](/catalogo-dados/vacinacao/caderneta)
+- [Vacinas para COVID-19](/catalogo-dados/vacinacao/covid)
+- [Outras Doses e Imunobiológicos](/catalogo-dados/vacinacao/imunobiologico)
 
 Cada seção apresenta imagens da interface do sistema acompanhadas pelo respectivo mapeamento técnico dos campos e suas correspondências no banco de dados.
