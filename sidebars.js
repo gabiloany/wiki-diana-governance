@@ -18,13 +18,15 @@ const sidebars = {
       },
 
       items: [
-        'boas-praticas/agentes-tratamento/index',
-        'boas-praticas/fluxo-gestao/index',
+        'boas-praticas/intro-diretrizes/index',
         'boas-praticas/glossario/index',
-        'boas-praticas/informacao-saude/index',
-        'boas-praticas/interoperabilidade-integracao/index',
-        'boas-praticas/responsabilidades-papeis/index',
         'boas-praticas/tratamento-dados/index',
+        'boas-praticas/agentes-tratamento/index',
+        'boas-praticas/responsabilidades-papeis/index',
+        'boas-praticas/fluxo-gestao/index',
+        'boas-praticas/interoperabilidade-integracao/index',
+        'boas-praticas/informacao-saude/index',
+        'boas-praticas/arcabouco-digital/index',
       ],
     },
 
