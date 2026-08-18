@@ -1,3 +1,43 @@
 ---
 title: Governança da Interoperabilidade e Integração
 ---
+
+# Governança da Interoperabilidade e Integração em Saúde Digital
+
+A interoperabilidade é elemento essencial para a integração dos serviços de saúde, qualificação da assistência e continuidade do cuidado no âmbito da Atenção Primária à Saúde (APS) e da Rede de Atenção à Saúde (BRASIL, 2020).
+
+Em alinhamento à **Estratégia de Saúde Digital para o Brasil (ESD28)** e à **Infraestrutura Nacional de Dados (IND)**, as diretrizes desta seção buscam viabilizar a circulação segura, padronizada e oportuna das informações em saúde (BRASIL, 2020; BRASIL, 2026).
+
+---
+
+## 1. A Rede Nacional de Dados em Saúde (RNDS)
+
+A RNDS consolida-se como plataforma nacional de inovação, informação e serviços digitais em saúde, funcionando como o elemento estruturante e habilitador da interoperabilidade em âmbito nacional (BRASIL, 2020).
+
+:::info O Papel da RNDS na Rede Municipal
+A RNDS conecta serviços, profissionais, gestores, usuários, sistemas de informação em saúde e redes de atenção, permitindo que a história clínica do cidadão esteja disponível no ponto de atendimento de forma íntegra e oportuna.
+:::
+
+**Diretrizes para Integração à RNDS:**
+* **Adoção de Padrões Nacionais:** Utilizar os modelos de informação, vocabulários controlados e terminologias da saúde definidos pelo Ministério da Saúde (ex: HL7 FHIR, LOINC, CID).
+* **Transição de Cuidados:** Garantir o envio e a recepção tempestiva de dados fundamentais de atendimento, vacinação, exames e sumários de alta.
+* **Segurança na Troca de Dados:** Utilizar mecanismos de autenticação forte e criptografia no tráfego de dados com o barramento nacional.
+
+---
+
+## 2. Fortalecimento do Prontuário Eletrônico e-SUS APS
+
+No âmbito da ESD28, o fortalecimento do Prontuário Eletrônico e-SUS APS constitui elemento central para a consolidação da transformação digital no SUS.
+
+* **Instrumento Estratégico:** O e-SUS APS deixa de ser apenas um instrumento de registro assistencial e passa a desempenhar papel estratégico na geração de informações para a gestão pública e coordenação do cuidado (BRASIL, 2020).
+* **Regras de Barramento:** Integrações entre sistemas próprios ou de terceiros e o e-SUS APS devem respeitar as especificações técnicas oficiais e validar a qualidade dos registros antes do envio.
+
+---
+
+## 3. Arquitetura, Versionamento e Governança Técnica
+
+Para assegurar a estabilidade das integrações e evitar a descontinuidade dos serviços públicos de saúde, a governança municipal deve observar os seguintes padrões arquiteturais (DAMA, 2017):
+
+* **Padronização de APIs:** Interfaces de programação de aplicações (APIs) devem utilizar protocolos seguros de comunicação (HTTPS/TLS) com autenticação baseada em tokens.
+* **Versionamento de Serviços:** Qualquer alteração em interfaces de integração deve manter suporte a versões anteriores por período hábil, evitando interrupções em sistemas dependentes.
+* **Logs e Rastreabilidade de Integração:** Registrar todas as transações de troca de dados entre sistemas para fins de auditoria, verificação de desempenho e gestão de incidentes.

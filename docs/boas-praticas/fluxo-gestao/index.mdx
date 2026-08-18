@@ -1,3 +1,183 @@
 ---
 title: Fluxo de Gestão de Incidentes de Segurança
 ---
+
+import Figura from '@site/src/components/Figura';
+
+# Fluxo de Gestão de Incidentes de Segurança
+
+O Fluxo de Gestão de Incidentes de Segurança da Informação, estabelece as etapas e procedimentos a serem adotados para identificação, tratamento, resposta e comunicação de incidentes, especialmente nos casos que envolvam violação ou vazamento de dados pessoais.
+
+<Figura
+  src="/img/boas-praticas/rnds.png"
+  alt="Fluxo de tratamento de incidentes de segurança da informação"
+  numero={2}
+  descricao="Fluxo de tratamento de incidentes de segurança da informação"
+  fonte="Adaptado de TRIBUNAL REGIONAL DO TRABALHO DA 3ª REGIÃO, 2026"
+/>
+
+<!-- TODO: substituir src acima pelo caminho definitivo da imagem quando disponível -->
+
+## Notas e anotações do fluxo de gestão de incidentes
+
+### Identificação do incidente
+
+A identificação do incidente marca o início do processo de resposta e pode ocorrer por meio de comunicação interna ou externa, incluindo registros efetuados por colaboradores, usuários, fornecedores, sistemas de monitoramento ou outros mecanismos de detecção. Após a identificação da ocorrência, devem ser acionados os responsáveis pela condução do tratamento do incidente, assegurando uma resposta coordenada.
+
+### Envolvimento preliminar
+
+Devem ser acionadas as partes envolvidas na análise e tratamento inicial cujo objetivo desta mobilização é garantir uma resposta coordenada, assegurar a coleta das informações necessárias e viabilizar a adoção de medidas de contenção e mitigação.
+
+**Envolvimento preliminar:**
+
+Núcleo de gestão da segurança e acessos aos dados;
+
+Equipe de tecnologia da informação.
+
+Toda ocorrência identificada deve ser formalmente registrada, assegurando a rastreabilidade das ações executadas ao longo do processo de tratamento. O registro inicial deve reunir as informações disponíveis no momento da notificação. Estas informações servirão de subsídio para as etapas subsequentes de investigação, avaliação de impacto e tomada de decisão.
+
+**Registro inicial do incidente:**
+
+Data e hora;
+
+Sistema e área afetada;
+
+Tipo de incidente;
+
+Evidências preliminares.
+
+Os incidentes deverão ser classificados de acordo com suas características e potenciais impactos sobre a segurança da informação e a privacidade dos dados.
+
+**Tipos de incidente:**
+
+Vazamentos: caracterizado pela exposição ou divulgação não autorizada de dados;
+
+Acessos indevidos: utilização não autorizada de sistemas, informações ou recursos tecnológicos;
+
+Indisponibilidade: aquilo que comprometa o total ou parcial acesso aos sistemas, serviços ou base de dados necessários às atividades da organização.
+
+### Registro e classificação
+
+Após a identificação, o incidente deve ser formalmente registrado em sistema corporativo ou ferramenta de controle, garantindo a rastreabilidade das informações e das ações adotadas durante todo o processo de tratamento. Nesta etapa, são consolidadas as informações iniciais coletas, permitindo a categorização da ocorrência e a definição de sua prioridade de atendimento.
+
+A classificação tem como objetivo avaliar a gravidade do incidente e sua abrangência, fornecendo subsídios para a tomada de decisão e para o direcionamento dos esforços de resposta.
+
+**Classificações:**
+
+Baixa: ocorrência com impacto reduzido, restrita e de fácil resolução;
+
+Alta: ocorrência com potencial de afetar processos ou serviços essenciais, exigindo atenção prioritária;
+
+Crítica: ocorrência com elevado impacto operacional, institucional ou à privacidade dos titulares, demandando resposta imediata e acompanhamento contínuo.
+
+Além da classificação, o incidente deve ser classificado quanto à sua área de alcance, possibilitando dimensionar a extensão dos impactos e as partes envolvidas no tratamento da ocorrência. A abrangência poderá ser definida como:
+
+**Abrangências:**
+
+Local: impacto restrito a um equipamento, usuário ou unidade específica;
+
+Setorial: impacto que afeta uma área, departamento ou conjunto de unidades relacionadas;
+
+Institucional: impacto com potencial de comprometer múltiplas áreas.
+
+### Comunicação interna
+
+Após o registro e a classificação da ocorrência, deve ser realizada a comunicação às áreas internas responsáveis pelo acompanhamento e tratamento do incidente. Essa etapa tem como objetivo assegurar o alinhamento entre os envolvidos, apoiar a tomada de decisão e garantir que as medidas técnicas, jurídicas e administrativas sejam conduzidas de forma coordenada.
+
+**Comunicação Interna:**
+
+Comitê estratégico;
+
+Encarregado pelo tratamento de dados;
+
+Departamento jurídico;
+
+Áreas envolvidas.
+
+### Investigação e preservação de evidências
+
+A etapa de investigação tem como objetivo compreender a natureza do incidente, indicar sua origem, determinar a extensão dos impactos e subsidiar a tomada de decisão quanto às medidas de tratamento, recuperação, eventual comunicação aos órgãos competentes e aos titulares dos dados. Paralelamente, devem ser adotadas ações para a preservação das evidências relacionadas à ocorrência, garantindo a integridade das informações necessárias para auditoria, análises técnicas, apuração de responsabilidades e atendimento a requisitos legais e regulatórios.
+
+A análise deverá contemplar o levantamento e a consolidação de informações que possibilitem dimensionar os impactos da ocorrência, incluindo:
+
+**Análises:**
+
+Levantamento dos dados afetados: identificação dos dados, sistemas, bases de informação ou documentos que possam ter sido acessados, alterados, divulgados ou comprometidos;
+
+Quantidade de titulares impactados: estimativa do número de pessoas afetadas pelo incidente, considerando os dados pessoais potencialmente envolvidos;
+
+Tempo de exposição: período durante o qual os dados permaneceram expostos ou acessíveis de forma indevida, quando essa informação puder ser determinada.
+
+As evidências coletadas, deverão ser devidamente registradas para apoiar as análises subsequentes e assegurar a rastreabilidade de todo o processo de tratamento do incidente.
+
+### Contenção imediata
+
+Após a identificação e a análise preliminar do incidente, devem ser adotadas, com maior brevidade possível, as medidas necessárias para interromper a ocorrência, impedir sua propagação e reduzir os impactos sobre os ativos de informação. A rapidez na implementação dessas ações é fundamental para minimizar riscos operacionais e possíveis consequências legais ou regulatórias. Durante esta etapa, o Núcleo de Gestão da Segurança e Acessos aos Dados, deverá registrar e documentar todas as ações executadas. Essa documentação é essencial para assegurar a rastreabilidade das atividades e subsidiar as etapas subsequentes. Sempre que possível, as ações de contenção deverão ser executadas de forma a preservar as evidências relacionadas ao incidente, evitando alterações que possam comprometer a identificação de suas causas.
+
+### Avaliação de impacto (LGPD)
+
+Após a contenção inicial do incidente, deve ser realizada a avaliação de impacto sob a ótica da proteção de dados pessoais, com o objetivo de verificar a existência de violações de segurança envolvendo dados pessoais e determinar os potenciais riscos ou danos aos titulares afetados. Essa etapa é fundamental para subsidiar a tomada de decisão quanto à necessidade de comunicação do incidente, adoção de medidas adicionais de mitigação e atendimento das obrigações previstas na Lei Geral de Proteção de Dados.
+
+A avaliação deve considerar aspecto como a natureza e a sensibilidade dos dados envolvidos, o volume de registros afetados, a quantidade de titulares impactados, o tempo de exposição das informações, a possibilidade de uso indevido dos dados, bem como os potenciais prejuízos à privacidade, à segurança e aos direitos dos titulares. Como base nessa análise, o incidente deverá ser classificado conforme seu nível de impacto:
+
+**Classificações:**
+
+Baixo: incidente com potencial reduzido de causar danos aos titulares, envolvendo informações de baixa sensibilidade ou baixo risco;
+
+Médio: incidente que apresenta riscos relevantes à privacidade dos titulares, exigindo acompanhamento e a adoção de medidas específicas;
+
+Alto: incidente com elevado potencial de causar danos aos titulares, especialmente quando envolver dados pessoais sensíveis, grande volume de informações, ampla exposição ou comprometimento dos direitos dos titulares.
+
+### Comunicação externa
+
+Nos casos em que a avaliação de impacto indicar a existência de risco ou dano relevante aos titulares dos dados pessoais, deverá ser realizada a comunicação externa do incidente, em conformidade com os requisitos estabelecidos pela Lei Geral de Proteção de Dados. Essa comunicação tem por finalidade assegurar a transparência no tratamento da ocorrência, permitir a adoção de medidas de proteção pelos titulares afetados e demonstrar a atuação da organização na gestão do incidente.
+
+A condução desse processo deverá ocorrer com o acompanhamento do Encarregado pelo tratamento de dados pessoais e das áreas responsáveis pelo tratamento do incidente, observando a extensão dos impactos e os critérios legais.
+
+**Atividades complementares**, como parte do processo de comunicação externa, deverão ser realizadas as seguintes ações:
+
+Preenchimento do formulário de comunicação de incidente de segurança (CIS-ANPD);
+
+Comunicação aos titulares dos dados envolvidos no incidente, quando aplicável.
+
+**Conteúdo da notificação**
+
+A notificação encaminhada à ANPD e, quando necessário, aos titulares afetados deverá conter informações suficientes para caracterizar a ocorrência e demonstrar as medidas adotadas, contemplando minimamente:
+
+Descrição do incidente: incluindo a natureza da ocorrência e as circunstâncias conhecidas;
+
+Dados afetados: especificando os tipos de informações pessoais potencialmente comprometidas;
+
+Medidas adotadas: abrangendo as ações de contenção, mitigação, recuperação e tratamento do incidente;
+
+Recomendações aos titulares: quando aplicável, indicando orientações para redução de riscos decorrentes da ocorrência.
+
+Toda comunicação realizada deverá ser devidamente registrada e incorporada à documentação do incidente, assegurando a rastreabilidade das ações executadas, a prestação de contas e a demonstração de conformidade com os requisitos de proteção de dados pessoais e governança.
+
+### Recuperação
+
+Após a contenção do incidente e a avaliação de seus impactos, deve ser iniciada a etapa de recuperação, com o objetivo de restabelecer a normalidade dos serviços, sistemas e processos afetados, garantindo a continuidade das operações e a segurança da informação. As ações de recuperação devem ser conduzidas de forma planejada e controlada, priorizando a restauração dos serviços críticos e a integridade dos dados envolvidos. O núcleo responsável deverá registrar as ações executadas, os recursos utilizados, os resultados obtidos e eventuais limitações identificadas durante o processo. Essa documentação subsidiará as etapas de encerramento do incidente, elaboração das ações corretivas e a consolidação das lições aprendidas.
+
+A recuperação somente deverá ser considerada concluída após a confirmação de que os serviços afetados foram restabelecidos de forma segura, que os dados preservam sua integridade e que os riscos decorrentes do incidente foram adequadamente mitigados.
+
+### Análise da causa raiz
+
+Após a recuperação dos serviços e a estabilização do ambiente, deverá ser realizada a análise da causa raiz do incidente, com o objetivo de identificar os fatores que contribuíram para a ocorrência e compreender as vulnerabilidades ou fragilidades. A análise deve considerar não apenas os aspectos tecnológicos, mas também fatores relacionados a processos, procedimentos, recursos humanos, controles de acesso, configurações de sistemas e mecanismos de monitoramento.
+
+As conclusões obtidas deverão ser formalmente documentadas e associadas ao registro do incidente, incluindo as evidências que fundamentam a análise, os fatores identificados e os riscos decorrentes. A adequada compreensão da causa raiz permitirá que a organização trate não apenas de reduzir a probabilidade de novas ocorrências e aumentar a resiliência dos processos e ativos de informação.
+
+### Ações corretivas e preventivas
+
+Com base nos resultados da investigação e da análise da causa raiz, deverão ser definidas e implementadas ações corretivas e preventivas para reduzir a probabilidade de recorrência do incidente e fortalecer os controles de segurança e proteção de dados. Entre as medidas adotadas, poderão estar a revisão do documento de boas práticas para adoção de políticas e diretrizes, a adequação dos controles de acesso, a implementação de novos mecanismos de segurança, o fortalecimento das atividades de monitoramento e a capacitação dos usuários quanto às boas práticas.
+
+Quando necessário, o Núcleo de Gestão da Segurança e Acessos aos Dados, deverá revisar as diretrizes institucionais relacionadas à segurança da informação, privacidade e governança de dados. Todas as ações implementadas deverão ser registradas e acompanhadas quanto à sua efetividade.
+
+### Documentação final
+
+Após a conclusão das etapas de tratamento do incidente, deverá ser elaborada a documentação final, consolidando as informações registradas ao longo do processo. O relatório tem como objetivo assegurar a rastreabilidade das ações executadas, subsidiar auditorias e apoiar futuras análises e revisões. A documentação deverá contemplar, no mínimo, a linha do tempo do incidente, incluindo sua identificação, investigação, contenção, recuperação e encerramento, bem como, a descrição dos impactos observados, das medidas implementadas e dos resultados obtidos durante o tratamento da ocorrência. O relatório deverá ser armazenado em local apropriado, garantindo a preservação do histórico e das evidências relacionadas ao incidente.
+
+### Deliberações sobre o incidente e as lições aprendidas
+
+Após a conclusão do tratamento do incidente, deverão ser realizadas as deliberações finais sobre a ocorrência, considerando os impactos identificados, as medidas adotadas e os resultados obtidos ao longo do processo. Essa etapa tem como objetivo avaliar a efetividade das ações executadas e identificar oportunidades de aprimoramento dos controles de segurança, privacidade e governança de dados. As lições aprendidas deverão ser formalmente registradas e compartilhadas com as áreas envolvidas, de modo a promover o fortalecimento das práticas institucionais e prevenir a recorrência de situações semelhantes.
+
+As conclusões obtidas poderão subsidiar a revisão de processos, procedimentos e mecanismos de controle, bem como a atualização do documento de boas práticas em governança de dados. As ações decorrentes das deliberações deverão integrar as atividades de monitoramento e melhoria contínua da organização, contribuindo para o aprimoramento permanente da gestão da segurança da informação e da proteção de dados pessoais.
