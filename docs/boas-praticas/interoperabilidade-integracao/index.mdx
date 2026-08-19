@@ -49,75 +49,6 @@ A RNDS conecta serviços, profissionais, gestores, usuários, sistemas de inform
 No âmbito da ESD28, o fortalecimento do Prontuário Eletrônico e-SUS APS constitui elemento central para a consolidação da transformação digital no SUS.
 
 * **Instrumento Estratégico:** O e-SUS APS deixa de ser apenas um instrumento de registro assistencial e passa a desempenhar papel estratégico na geração de informações para a gestão pública e coordenação do cuidado (BRASIL, 2020).
-* **Regras de Barramento:** Integrações entre sistemas próprios ou de terceiros e o e-SUS APS devem respeitar as especificações técnicas oficiais e validar a qualidade dos registros antes do envio.
-
----
-
-## 5. Arquitetura, Versionamento e Governança Técnica
-
-Para assegurar a estabilidade das integrações e evitar a descontinuidade dos serviços públicos de saúde, a governança municipal deve observar os seguintes padrões arquiteturais (DAMA, 2017):
-
-* **Padronização de APIs:** Interfaces de programação de aplicações (APIs) devem utilizar protocolos seguros de comunicação (HTTPS/TLS) com autenticação baseada em tokens.
-
-:::note Parágrafo único
-As soluções digitais municipais deverão priorizar arquiteturas interoperáveis, escaláveis, desacopladas e orientadas à integração de serviços, fomentando-se, sempre que aplicável, a adoção progressiva de modelos compatíveis com o padrão FHIR.
-:::
-
-* **Versionamento de Serviços:** Qualquer alteração em interfaces de integração deve manter suporte a versões anteriores por período hábil, evitando interrupções em sistemas dependentes.
-* **Catálogo de APIs:** Manter catálogo centralizado, atualizado e estruturado das APIs, integrações e serviços interoperáveis sob responsabilidade da gestão municipal — instrumento oficial de governança, controle, rastreabilidade e gestão.
-* **Gestão de Versionamento:** A gestão de versionamento deverá contemplar, no mínimo:
-  * identificação e controle de versões;
-  * documentação té---
-title: Governança da Interoperabilidade e Integração
----
-
-# Governança da Interoperabilidade e Integração em Saúde Digital
-
-A interoperabilidade é elemento essencial para a integração dos serviços de saúde, qualificação da assistência e continuidade do cuidado no âmbito da Atenção Primária à Saúde (APS) e da Rede de Atenção à Saúde (BRASIL, 2020).
-
-Em alinhamento à **Estratégia de Saúde Digital para o Brasil (ESD28)** e à **Infraestrutura Nacional de Dados (IND)**, as diretrizes desta seção buscam viabilizar a circulação segura, padronizada e oportuna das informações em saúde (BRASIL, 2020; BRASIL, 2026).
-
----
-
-## 1. Diretrizes Gerais de Interoperabilidade
-
-* Observar as orientações da Estratégia de Saúde Digital para o Brasil (ESD28), as diretrizes da RNDS e os padrões nacionais e internacionais aplicáveis à troca, integração e compartilhamento de informações de saúde.
-* Compreender a interoperabilidade como capacidade estratégica e permanente da gestão pública municipal, destinada a assegurar a integração padronizada, sustentável e evolutiva entre sistemas, serviços e estabelecimentos de saúde.
-* Observar os princípios da continuidade do cuidado, integração federativa, segurança da informação, proteção de dados, rastreabilidade, padronização e sustentabilidade tecnológica.
-* Promover a integração progressiva dos sistemas e fluxos municipais à arquitetura nacional de saúde, conforme as diretrizes técnicas, regulatórias e operacionais do Ministério da Saúde e da RNDS.
-
-## 2. Governança Municipal de Interoperabilidade
-
-Instituir mecanismos formais de governança da interoperabilidade em saúde, destinados à coordenação, supervisão, monitoramento e evolução das integrações e fluxos informacionais municipais, contemplando:
-
-* estrutura de coordenação técnica e organizacional;
-* processos formais de gestão de integração e APIs;
-* gestão de mudanças e versionamentos;
-* gestão de padrões e terminologias em saúde;
-* monitoramento contínuo da interoperabilidade e da qualidade dos serviços digitais.
-
----
-
-## 3. A Rede Nacional de Dados em Saúde (RNDS)
-
-A RNDS consolida-se como plataforma nacional de inovação, informação e serviços digitais em saúde, funcionando como o elemento estruturante e habilitador da interoperabilidade em âmbito nacional (BRASIL, 2020).
-
-:::info O Papel da RNDS na Rede Municipal
-A RNDS conecta serviços, profissionais, gestores, usuários, sistemas de informação em saúde e redes de atenção, permitindo que a história clínica do cidadão esteja disponível no ponto de atendimento de forma íntegra e oportuna.
-:::
-
-**Diretrizes para Integração à RNDS:**
-* **Adoção de Padrões Nacionais:** Utilizar os modelos de informação, vocabulários controlados e terminologias da saúde definidos pelo Ministério da Saúde (ex: HL7 FHIR, LOINC, CID).
-* **Transição de Cuidados:** Garantir o envio e a recepção tempestiva de dados fundamentais de atendimento, vacinação, exames e sumários de alta.
-* **Segurança na Troca de Dados:** Utilizar mecanismos de autenticação forte e criptografia no tráfego de dados com o barramento nacional.
-
----
-
-## 4. Fortalecimento do Prontuário Eletrônico e-SUS APS
-
-No âmbito da ESD28, o fortalecimento do Prontuário Eletrônico e-SUS APS constitui elemento central para a consolidação da transformação digital no SUS.
-
-* **Instrumento Estratégico:** O e-SUS APS deixa de ser apenas um instrumento de registro assistencial e passa a desempenhar papel estratégico na geração de informações para a gestão pública e coordenação do cuidado (BRASIL, 2020).
 * **Regras de Barramento** *(complementar)***:** Integrações entre sistemas próprios ou de terceiros e o e-SUS APS devem respeitar as especificações técnicas oficiais e validar a qualidade dos registros antes do envio.
 
 ---
@@ -141,18 +72,6 @@ As soluções digitais municipais deverão priorizar arquiteturas interoperávei
 * **Gestão de Versionamento:** A gestão de versionamento deverá contemplar, no mínimo:
   * identificação e controle de versões;
   * documentação técnica das integrações;
-  * registro histórico de alterações;
-  * avaliação de impactos decorrentes de mudanças estruturais;
-  * processos de homologação e testes;
-  * procedimentos de continuidade e reversão operacional;
-  * comunicação formal das alterações aos atores envolvidos.
-* **Logs e Rastreabilidade de Integração:** Registrar todas as transações de troca de dados entre sistemas para fins de auditoria, verificação de desempenho e gestão de incidentes.
-
-## 6. Maturidade Organizacional em Saúde Digital
-
-* Fortalecer a maturidade organizacional em saúde digital, assegurando sustentabilidade, capacidade técnico-operacional e evolução contínua da governança da interoperabilidade, mediante ações de capacitação e desenvolvimento.
-* Promover o desenvolvimento contínuo de competências técnicas e organizacionais relacionadas à interoperabilidade em saúde e à integração de sistemas de informação.
-* Promover o aprimoramento da gestão tecnológica e da arquitetura de integração, observadas as diretrizes de interoperabilidade, segurança, sustentabilidade e evolução tecnológica.cnica das integrações;
   * registro histórico de alterações;
   * avaliação de impactos decorrentes de mudanças estruturais;
   * processos de homologação e testes;
