@@ -4,9 +4,9 @@ title: Vacinação
 
 # Vacinação
 
-O módulo **Vacinação** contempla o conjunto de informações registradas durante o acompanhamento vacinal do cidadão no Prontuário Eletrônico do e-SUS APS. Esta documentação apresenta o mapeamento técnico dos principais formulários utilizados durante o registro de doses, relacionando os campos exibidos na interface do sistema às respectivas tabelas e colunas do banco de dados.
+O módulo **Vacinação** contempla o conjunto de informações registradas durante o acompanhamento vacinal do cidadão no Prontuário Eletrônico e-SUS APS. Esta documentação apresenta o mapeamento técnico dos principais formulários utilizados durante o registro de doses, relacionando os campos exibidos na interface do sistema às respectivas tabelas e colunas do banco de dados.
 
-O objetivo deste catálogo é apoiar atividades de governança de dados, integração de sistemas, desenvolvimento de soluções analíticas e compreensão da estrutura de armazenamento das informações do Prontuário Eletrônico.
+O objetivo deste catálogo é apoiar atividades de governança de dados, integração de sistemas, desenvolvimento de soluções analíticas e compreensão da estrutura de armazenamento das informações do Prontuário Eletrônico e-SUS APS.
 
 A documentação está organizada conforme os seguintes módulos:
 

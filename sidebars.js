@@ -63,9 +63,9 @@ const sidebars = {
 
         {
           type: 'category',
-          label: 'Câncer de Colo de Útero',
+          label: 'Câncer de Colo do Útero',
 
-          // Página introdutória do Câncer de Colo de Útero
+          // Página introdutória do Câncer de Colo do Útero
           link: {
             type: 'doc',
             id: 'catalogo-dados/cancer-colo-utero/index',

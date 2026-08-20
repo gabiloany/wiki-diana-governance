@@ -60,7 +60,7 @@ src/
   ├── components/         # Componentes React customizados
   │   ├── Figura/          # Componente de imagens/prints do sistema
   │   ├── HomepageFeatures/# Cards institucionais da home
-  │   └── TabelaMapeamento/# Tabela de mapeamento Prontuário Eletrônico ↔ Banco de Dados 
+  │   └── TabelaMapeamento/# Tabela de mapeamento Prontuário Eletrônico e-SUS APS ↔ Banco de Dados 
   ├── css/                 # Estilos globais (custom.css)
   ├── pages/               # Páginas customizadas (ex: Equipe)
   └── theme/               # Componentes do tema ejetados (ex: Footer)

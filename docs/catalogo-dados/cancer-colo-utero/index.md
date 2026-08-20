@@ -1,12 +1,12 @@
 ---
-title: Câncer de Colo de Útero
+title: Câncer de Colo do Útero
 ---
 
-# Câncer de Colo de Útero
+# Câncer de Colo do Útero
 
-A linha de cuidado **Câncer de Colo de Útero** contempla o conjunto de informações registradas durante o atendimento de rastreamento e acompanhamento no Prontuário Eletrônico do e-SUS APS. Esta documentação apresenta o mapeamento técnico dos principais formulários utilizados durante o atendimento, relacionando os campos exibidos na interface do sistema às respectivas tabelas e colunas do banco de dados.
+A linha de cuidado **Câncer de Colo do Útero** contempla o conjunto de informações registradas durante o atendimento de rastreamento e acompanhamento no Prontuário Eletrônico e-SUS APS. Esta documentação apresenta o mapeamento técnico dos principais formulários utilizados durante o atendimento, relacionando os campos exibidos na interface do sistema às respectivas tabelas e colunas do banco de dados.
 
-O objetivo deste catálogo é apoiar atividades de governança de dados, integração de sistemas, desenvolvimento de soluções analíticas e compreensão da estrutura de armazenamento das informações do Prontuário Eletrônico.
+O objetivo deste catálogo é apoiar atividades de governança de dados, integração de sistemas, desenvolvimento de soluções analíticas e compreensão da estrutura de armazenamento das informações do Prontuário Eletrônico e-SUS APS.
 
 A documentação está organizada conforme o fluxo do atendimento realizado no sistema, abrangendo os seguintes módulos:
 
