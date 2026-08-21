@@ -1,41 +1,13 @@
 ---
-title: Referências e Arcabouço Legal
+title: Referências
 ---
 
-# Referências e Arcabouço Legal
+import { referencias } from '@site/docs/boas-praticas/arcabouco-digital/data/referencias.data';
 
-As diretrizes e recomendações apresentadas nesta documentação fundamentam-se em um conjunto de normativos federais, padrões de segurança da informação, marcos regulatórios da saúde digital e frameworks técnicos de governança.
+# Referências
 
----
-
-## 1. Legislação Federal e Proteção de Dados
-
-* **BRASIL.** [Lei Federal nº 13.709, de 14 de agosto de 2018](https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm) — *Lei Geral de Proteção de Dados Pessoais (LGPD)*. Brasília, DF, 2018.
-
----
-
-## 2. Normas de Segurança da Informação e Privacidade
-
-* **ANPD.** Guia Orientativo para Definições dos Agentes de Tratamento de Dados Pessoais e do Encarregado — Autoridade Nacional de Proteção de Dados (ANPD), p. 14.
-* **GSI/PR.** [Instrução Normativa nº 1, de 27 de maio de 2020](https://www.in.gov.br/en/web/dou/-/instrucao-normativa-n-1-de-27-de-maio-de-2020-258915215).
-* **GSI/PR.** Portaria GSI/PR nº 93, de 18 de outubro de 2021 — *Glossário de Segurança da Informação do Gabinete de Segurança Institucional da Presidência da República*.
-* **MGI.** [Modelo de Política de Gestão e Controle de Acesso — Programa de Privacidade e Segurança da Informação (PPSI)](https://www.gov.br/governodigital/pt-br/privacidade-e-seguranca/ppsi/modelo_politica_controle_acesso-1.pdf) — Versão 2.2, Brasília, jun. 2024.
-* **MGI.** [Modelo de Política de Segurança da Informação — Programa de Privacidade e Segurança da Informação (PPSI)](https://www.gov.br/governodigital/pt-br/privacidade-e-seguranca/arquivos-antigos/ppsi/modelo_politica_seguranca_informacao.pdf) — Versão 1.0, Brasília, ago. 2024.
-* **ISO/IEC.** ISO/IEC 27001:2022 — *Information security, cybersecurity and privacy protection — Information security management systems — Requirements*. 3. ed. Geneva: ISO, 2022.
-* **QUANTA PREVIDÊNCIA COOPERATIVA.** [Diretrizes de Segurança da Informação (DSI)](https://instituidor.quantaprevidencia.com.br/marketing/PORTALQUANTA/outros/DR53.pdf).
-* **e-SUS APS.** [Termo de Uso e Política de Privacidade](https://next.pec.esusaps.ufsc.br/termosUso) — Prontuário Eletrônico e-SUS APS.
-* **TRIBUNAL REGIONAL DO TRABALHO DA 3ª REGIÃO (TRT-3).** Gestão de Incidentes de Segurança da Informação. Belo Horizonte: TRT-3. Acesso em: 20 mar. 2026.
-* **ABNT.** NBR ISO/IEC 27001:2022 — *Information security, cybersecurity and privacy protection — Information security management systems — Requirements* — Leadership, Leadership and commitment, Organizational roles, responsibilities and authorities.
-
----
-
-## 3. Políticas e Estratégias Nacionais de Saúde Digital
-
-* **BRASIL. Ministério da Saúde.** [Estratégia de Saúde Digital para o Brasil 2020-2028 (ESD28)](https://bvsms.saude.gov.br/bvs/publicacoes/estrategia_saude_digital_Brasil.pdf). Brasília: Ministério da Saúde, 2020.
-* **BRASIL. Ministério da Saúde.** Portaria GM/MS nº 953, de 11 de maio de 2023 — *Designação da Encarregada pelo Tratamento de Dados Pessoais no âmbito do Ministério da Saúde (Adriana Macedo Marques)*.
-
----
-
-## 4. Referência Institucional do Projeto
-
-* **PROADI-SUS DIAna APS.** Uso e Disseminação de Dados do SUS: Uma Proposta de Interoperabilidade e Territorialização para Atenção Primária à Saúde — Projeto PROADI-SUS, Hospital Israelita Albert Einstein (HIAE). *Autoria exclusiva do material desta documentação.*
+<ol>
+  {referencias.map((r, i) => (
+    <li id={`ref-${r.id}`} key={r.id}>{r.texto}</li>
+  ))}
+</ol>
