@@ -5,6 +5,11 @@ export const referencias = [
       "ABRAHAM, Rene; SCHNEIDER, Johannes; VOM BROCKE, Jan. Data Governance: A Conceptual Framework, Structured Review, and Research Agenda. International Journal of Information Management, v. 49, p. 424–438, 2019.",
   },
   {
+    id: "abraham-2017-todo",
+    texto:
+      "[TODO: confirmar com o Negri — citação \"ABRAHAM et al., 2017\" usada na Introdução (parágrafo sobre a LGPD). A única referência de Abraham catalogada é de 2019 (abraham-2019), e mais adiante no mesmo texto a obra é citada corretamente como 2019. Provável erro de digitação no original (queriam dizer 2019) — mas pode também existir uma publicação distinta de 2017. Confirmar antes de apontar este id para abraham-2019 e remover esta entrada.]",
+  },
+  {
     id: "anpd-guia-2022",
     texto:
       "BRASIL. Autoridade Nacional de Proteção de Dados. Guia orientativo para definições dos agentes de tratamento de dados pessoais e do encarregado. Brasília: ANPD, 2022. Disponível em: https://www.gov.br/anpd/pt-br/centrais-de-conteudo/materiais-educativos-e-publicacoes/guia-orientativo-para-definicoes-dos-agentes-de-tratamento-de-dados-pessoais-e-do-encarregado.",
@@ -114,6 +119,11 @@ export const referencias = [
       "BRASIL. Gabinete de Segurança Institucional da Presidência da República. Instrução Normativa nº 1, de 27 de maio de 2020. Disponível em: https://www.in.gov.br/en/web/dou/-/instrucao-normativa-n-1-de-27-de-maio-de-2020-258915215.",
   },
   {
+    id: "gsi-in01-2008-todo",
+    texto:
+      "[TODO: confirmar com a Negri — citação \"instrução normativa GSI/PR 01/2008\" usada na seção Finalidade. A referência catalogada (gsi-in01-2020) é a Instrução Normativa nº 1, de 27 de maio de 2020 — ano diferente. Confirmar se é erro de digitação no original (queriam dizer 2020) ou se existe norma distinta de 2008. Depois de confirmar, apontar este Ref para gsi-in01-2020 (ou para a referência correta) e remover esta entrada.]",
+  },
+  {
     id: "gsi-portaria93-2021",
     texto:
       "BRASIL. Gabinete de Segurança Institucional da Presidência da República. Portaria GSI/PR nº 93, de 18 de outubro de 2021. Glossário de Segurança da Informação. Brasília: GSI/PR, 2021.",
@@ -137,5 +147,10 @@ export const referencias = [
     id: "quanta-dsi",
     texto:
       "QUANTA PREVIDÊNCIA COOPERATIVA. Diretrizes de Segurança da Informação (DSI). Disponível em: https://instituidor.quantaprevidencia.com.br/marketing/PORTALQUANTA/outros/DR53.pdf.",
+  },
+  {
+    id: "mgi-ppsi-framework-todo",
+    texto:
+      "[TODO: confirmar com o Negri — Framework de Privacidade e Segurança da Informação (PPSI), Ministério da Gestão e da Inovação em Serviços Públicos. Disponível em: https://www.gov.br/governodigital/pt-br/privacidade-e-seguranca/ppsi/guia_framework_psi.pdf]",
   },
 ];

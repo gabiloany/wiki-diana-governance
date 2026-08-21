@@ -83,11 +83,6 @@ const config = {
       },
     },
 
-    footer: {
-      style: 'light',
-    
-    },
-
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,

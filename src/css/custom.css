@@ -309,3 +309,17 @@ h1,h2,h3,h4,h5{
   width: auto;
   vertical-align: text-bottom;
 }
+
+/* ==========================================================================
+    Destaque visual ao navegar até uma referência específica
+   ========================================================================== */
+li:target,
+li.ref-destaque {
+  background-color: #abdefa;
+  border-left: 4px solid #2864AE;
+  padding: 8px 12px;
+  margin-left: -16px;
+  border-radius: 4px;
+  animation: destaque-referencia 2s ease-in-out;
+  scroll-margin-top: 80px;
+}

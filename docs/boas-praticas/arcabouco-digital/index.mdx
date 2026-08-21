@@ -1,13 +1,39 @@
 ---
 title: Referências
+slug: /boas-praticas/arcabouco-digital/referencias
 ---
 
+import React from 'react';
+import { useLocation } from '@docusaurus/router';
 import { referencias } from '@site/docs/boas-praticas/arcabouco-digital/data/referencias.data';
 
 # Referências
 
-<ol>
-  {referencias.map((r, i) => (
-    <li id={`ref-${r.id}`} key={r.id}>{r.texto}</li>
-  ))}
-</ol>
+export function ListaReferencias() {
+  const location = useLocation();
+  const hashId = location.hash ? location.hash.replace('#ref-', '') : null;
+
+  React.useEffect(() => {
+    if (!hashId) return;
+    const el = document.getElementById(`ref-${hashId}`);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  }, [hashId]);
+
+  return (
+    <ol>
+      {referencias.map((r) => (
+        <li
+          id={`ref-${r.id}`}
+          key={r.id}
+          className={r.id === hashId ? 'ref-destaque' : undefined}
+        >
+          {r.texto}
+        </li>
+      ))}
+    </ol>
+  );
+}
+
+<ListaReferencias />
