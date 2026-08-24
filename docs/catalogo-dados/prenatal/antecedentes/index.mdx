@@ -14,217 +14,217 @@ import problemaCondicaoAnterior from './data/problemaCondicaoAnterior.data';
 import cirurgiaInternacao from './data/cirurgiaInternacao.data';
 import antecedentesFamiliar from './data/antecedentesFamiliar.data';
 
-# 2. Antecedentes
+# 2.1 Antecedentes
 
 A seção **Antecedentes** reúne informações relacionadas ao histórico clínico e familiar do cidadão, contemplando registros sobre parto e nascimento, problemas e condições resolvidos, além dos antecedentes familiares cadastrados no Prontuário Eletrônico e-SUS APS. Nesta página são apresentados o mapeamento técnico dos campos exibidos na interface do sistema e sua correspondente estrutura no banco de dados, facilitando a identificação da origem e do armazenamento de cada informação.
 
-### 2.1 Mapeamento Técnico dos Campos do Sistema
+### 2.1.1 Mapeamento Técnico dos Campos do Sistema
 
 Os quadros a seguir apresentam o mapeamento dos campos da área de Antecedentes, indicando seu destino no banco de dados do Prontuário Eletrônico e-SUS APS. Para cada quadro, são disponibilizadas imagens extraídas diretamente da interface do sistema, com o objetivo de facilitar a identificação visual dos campos na plataforma.
 
 <Figura
   src="/img/prenatal/antecedentes/geral_antecedentes.png"
   alt="Antecedentes - Informações Gerais"
-  numero={1}
+  numero="2.1.1"
   descricao="Tela de Antecedentes - Visão Geral no Prontuário Eletrônico e-SUS APS"
   fonte="Prontuário Eletrônico e-SUS APS - Versão 5.5.6"
 />
 
-### 2.2 Cidadão
+### 2.1.2 Cidadão
 
 O bloco **Cidadão** apresenta um campo de texto livre destinado ao registro de observações gerais sobre o histórico do cidadão dentro da área de Antecedentes, sem vínculo com um formulário estruturado específico.
 
 <Figura
   src="/img/prenatal/antecedentes/cidadao.png"
   alt="Antecedentes - Cidadão"
-  numero={2}
+  numero="2.1.2"
   descricao="Tela de Antecedentes - Cidadão no Prontuário Eletrônico e-SUS APS"
   fonte="Prontuário Eletrônico e-SUS APS - Versão 5.5.6"
 />
 
 <TabelaMapeamento
-  numero={1}
+  numero="2.1.1"
   titulo="Cidadão"
   linhas={cidadaoData}
   fonte="DIAna SAPS"
 />
 
-### 2.3 Antecedentes sobre Parto e Nascimento
+### 2.1.3 Antecedentes sobre Parto e Nascimento
 
 O bloco **Antecedentes sobre Parto e Nascimento** é um grupo expansível que reúne o histórico obstétrico e de nascimentos do cidadão, subdividido nos formulários de Informações obstétricas, Nascidos, Recém-nascidos com e Nascidos vivos, detalhados nas subseções a seguir.
 
 <Figura
   src="/img/prenatal/antecedentes/parto_nascimento.png"
   alt="Antecedentes sobre Parto e Nascimento"
-  numero={3}
+  numero="2.1.3"
   descricao="Tela de Antecedentes sobre Parto e Nascimento no Prontuário Eletrônico e-SUS APS"
   fonte="Prontuário Eletrônico e-SUS APS - Versão 5.5.6"
 />
 
-### 2.3.1 Informações obstétricas
+### 2.1.3.1 Informações obstétricas
 
 O formulário de **Informações obstétricas** registra o histórico geral de gestações, contemplando o número de gestas prévias, abortos, distúrbios ocorridos na última gestação, além da quantidade de partos realizados, discriminados entre vaginais, cesáreas e partos domiciliares.
 
 <Figura
   src="/img/prenatal/antecedentes/antecedentes_parto_nascimento.png"
   alt="Antecedentes - Informações obstétricas"
-  numero={4}
+  numero="2.1.4"
   descricao="Tela de Antecedentes - Informações obstétricas no Prontuário Eletrônico e-SUS APS"
   fonte="Prontuário Eletrônico e-SUS APS - Versão 5.5.6"
 />
 
-### 2.3.2 Informações obstétricas detalhadas
+### 2.1.3.2 Informações obstétricas detalhadas
 
 Complementando o formulário anterior, a tela de **Informações obstétricas detalhadas** permite o detalhamento da última gestação, incluindo o número de gestações prévias, partos e o motivo do parto ter ocorrido no segundo ou terceiro trimestre, quando aplicável.
 
 <Figura
   src="/img/prenatal/antecedentes/obstetricas.png"
   alt="Antecedentes - Informações obstétricas detalhadas"
-  numero={5}
+  numero="2.1.5"
   descricao="Tela de Antecedentes - Informações obstétricas detalhadas no Prontuário Eletrônico e-SUS APS"
   fonte="Prontuário Eletrônico e-SUS APS - Versão 5.5.6"
 />
 
 <TabelaMapeamento
-  numero={2}
+  numero="2.1.2"
   titulo="Informações obstétricas"
   linhas={informacoesObstetricasData}
   fonte="DIAna SAPS"
 />
 
-### 2.3.3 Nascidos
+### 2.1.3.3 Nascidos
 
 O formulário **Nascidos** registra o tipo do nascimento e, quando pertinente, o motivo associado ao registro, permitindo o cadastro de múltiplas ocorrências de nascimento para o mesmo paciênte.
 
 <Figura
   src="/img/prenatal/antecedentes/nascidos.png"
   alt="Antecedentes - Nascidos"
-  numero={6}
+  numero="2.1.6"
   descricao="Tela de Antecedentes - Nascidos no Prontuário Eletrônico e-SUS APS"
   fonte="Prontuário Eletrônico e-SUS APS - Versão 5.5.6"
 />
 
 <TabelaMapeamento
-  numero={3}
+  numero="2.1.3"
   titulo="Nascidos"
   linhas={nascidosData}
   fonte="DIAna SAPS"
 />
 
-### 2.3.4 Recém-nascidos com
+### 2.1.3.4 Recém-nascidos com
 
 A seção **Recém-nascidos com** registra ocorrências de peso ao nascer fora da faixa de referência, identificando os casos em que o recém-nascido apresentou peso inferior a 2.500g ou superior a 4.000g.
 
 <Figura
   src="/img/prenatal/antecedentes/recemNascidosCom.png"
   alt="Antecedentes - Recém-nascidos com"
-  numero={7}
+  numero="2.1.7"
   descricao="Tela de Antecedentes - Recém-nascidos com no Prontuário Eletrônico e-SUS APS"
   fonte="Prontuário Eletrônico e-SUS APS - Versão 5.5.6"
 />
 
 <TabelaMapeamento
-  numero={4}
+  numero="2.1.4"
   titulo="Recém-nascidos com"
   linhas={recemNascidosComData}
   fonte="DIAna SAPS"
 />
 
-### 2.3.5 Nascidos vivos
+### 2.1.3.5 Nascidos vivos
 
 O formulário **Nascidos vivos** registra a ordem do nascimento e eventuais óbitos ocorridos na primeira semana de vida ou após esse período, permitindo o acompanhamento de desfechos neonatais do cidadão.
 
 <Figura
   src="/img/prenatal/antecedentes/nascidosVivos.png"
   alt="Antecedentes - Nascidos vivos"
-  numero={8}
+  numero="2.1.8"
   descricao="Tela de Antecedentes - Nascidos vivos no Prontuário Eletrônico e-SUS APS"
   fonte="Prontuário Eletrônico e-SUS APS - Versão 5.5.6"
 />
 
 <TabelaMapeamento
-  numero={5}
+  numero="2.1.5"
   titulo="Nascidos vivos"
   linhas={nascidosVivosData}
   fonte="DIAna SAPS"
 />
 
-### 2.4 Antecedentes resolvidos da Lista de Problemas e Condições
+### 2.1.4 Antecedentes resolvidos da Lista de Problemas e Condições
 
 Esta seção lista os problemas e condições de saúde do cidadão que já foram marcados como resolvidos no Prontuário Eletrônico e-SUS APS, permitindo a busca e a inclusão de novos registros por meio do botão "Adicionar antecedente resolvido".
 
 <Figura
   src="/img/prenatal/antecedentes/antecedentes_lista_problemes_condicoes_geral.png"
   alt="Antecedentes - Lista de Problemas e Condições"
-  numero={9}
+  numero="2.1.9"
   descricao="Tela de Antecedentes - Lista de Problemas e Condições no Prontuário Eletrônico e-SUS APS"
   fonte="Prontuário Eletrônico e-SUS APS - Versão 5.5.6"
 />
 
-### 2.4.1 Adicionar antecedente resolvido
+### 2.1.4.1 Adicionar antecedente resolvido
 
 Ao acionar o botão <ImagemInline src="/img/prenatal/antecedentes/balao_resolvido.png" alt="+ Adicionar antecedente resolvido" />, é exibido um formulário para a inclusão de um problema ou condição já resolvido, contemplando a busca do CID/CIAP, a situação, o período de ocorrência e observações complementares.
 
 <Figura
   src="/img/prenatal/antecedentes/lista_problemas_condicoes.png"
   alt="Antecedentes - Adicionar Antecedente Resolvido"
-  numero={10}
+  numero="2.1.10"
   descricao="Tela de Antecedentes - Formulário de Adição de Antecedente Resolvido no Prontuário Eletrônico e-SUS APS"
   fonte="Prontuário Eletrônico e-SUS APS - Versão 5.5.6"
 />
 
 <TabelaMapeamento
-  numero={6}
+  numero="2.1.6"
   titulo="Problemas e Condições Anteriores"
   linhas={problemaCondicaoAnterior}
   fonte="DIAna SAPS"
 />
 
-### 2.5 Antecedentes hospitalares
+### 2.1.5 Antecedentes hospitalares
 
 A seção **Antecedentes hospitalares** lista as cirurgias e internações previamente registradas para o cidadão, disponibilizando o botão "Adicionar cirurgia e/ou internação" para a inclusão de novos registros.
 
 <Figura
   src="/img/prenatal/antecedentes/antecedentes_hospitalares.png"
   alt="Antecedentes - Antecedentes Hospitalares"
-  numero={11}
+  numero="2.1.11"
   descricao="Tela de Antecedentes - Antecedentes Hospitalares no Prontuário Eletrônico e-SUS APS"
   fonte="Prontuário Eletrônico e-SUS APS - Versão 5.5.6"
 />
 
-### 2.5.1 Adicionar cirurgia e/ou internação
+### 2.1.5.1 Adicionar cirurgia e/ou internação
 
 Ao acionar o botão <ImagemInline src="/img/prenatal/antecedentes/balao_internacao.png" alt="+ Adicionar cirurgia e/ou internação" />, é exibido um formulário para o registro da data, da descrição do procedimento cirúrgico ou da internação e de observações complementares.
 
 <Figura
   src="/img/prenatal/antecedentes/cirurgia_internacao.png"
   alt="Antecedentes - Adicionar Cirurgia e/ou Internação"
-  numero={12}
+  numero="2.1.12"
   descricao="Tela de Antecedentes - Formulário de Cirurgia e/ou Internação no Prontuário Eletrônico e-SUS APS"
   fonte="Prontuário Eletrônico e-SUS APS - Versão 5.5.6"
 />
 
 <TabelaMapeamento
-  numero={7}
+  numero="2.1.7"
   titulo="Cirurgia e/ou Internação"
   linhas={cirurgiaInternacao}
   fonte="DIAna SAPS"
 />
 
-### 2.6 Lista de problemas dos familiares
+### 2.1.6 Lista de problemas dos familiares
 
 A seção **Lista de problemas dos familiares** registra os antecedentes familiares do cidadão, associando cada problema ou condição de saúde ao respectivo grau de parentesco informado.
 
 <Figura
   src="/img/prenatal/antecedentes/familiar_antecedentes.png"
   alt="Antecedentes - Lista de Problemas dos Familiares"
-  numero={13}
+  numero="2.1.13"
   descricao="Tela de Antecedentes - Lista de Problemas dos Familiares no Prontuário Eletrônico e-SUS APS"
   fonte="Prontuário Eletrônico e-SUS APS - Versão 5.5.6"
 />
 
 <TabelaMapeamento
-  numero={8}
+  numero="2.1.8"
   titulo="Antecedentes Familiares"
   linhas={antecedentesFamiliar}
   fonte="DIAna SAPS"

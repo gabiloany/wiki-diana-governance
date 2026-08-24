@@ -1,7 +1,6 @@
 /* ==========================================================================
    FONTES
    ========================================================================== */
-
 @font-face {
   font-family: "rawline";
   src: url("./fonts/rawline-400.ttf") format("truetype");
@@ -29,11 +28,8 @@
 /* ==========================================================================
    TEMA DA WIKI
    ========================================================================== */
-
 :root {
-
   /* Paleta DIAna */
-
   --ifm-color-primary: #2864AE;
   --ifm-color-primary-dark: #245a9d;
   --ifm-color-primary-darker: #225594;
@@ -43,264 +39,67 @@
   --ifm-color-primary-lightest: #4384d4;
 
   /* Tipografia */
-
   --ifm-font-family-base: "rawline", Verdana, sans-serif;
   --ifm-heading-font-family: "rawline", Verdana, sans-serif;
   --ifm-heading-font-weight: 300;
-
   --ifm-code-font-size: 95%;
-
   --ifm-heading-margin-top: .6rem;
   --ifm-heading-margin-bottom: .6rem;
 
   /* Bordas */
-
   --ifm-table-border-color: #d7dde5;
 
   /* Fundo */
-
   --ifm-background-color: #ffffff;
 
   /* Links */
-
   --ifm-link-color: #2864AE;
 
   /* Código */
-
-  --docusaurus-highlighted-code-line-bg: rgba(0,0,0,.08);
-
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, .08);
 }
-
 
 /* ==========================================================================
    TIPOGRAFIA
    ========================================================================== */
-
-body{
-
+body {
   font-family: var(--ifm-font-family-base);
-
-  color:#222;
-
-  line-height:1.65;
-
+  color: #222;
+  line-height: 1.65;
 }
 
-h1,h2,h3,h4,h5{
-
-  letter-spacing:.01em;
-
-  font-weight:500;
-
+h1, h2, h3, h4, h5 {
+  letter-spacing: .01em;
+  font-weight: 500;
 }
-
 
 /* ==========================================================================
    TEXTO
    ========================================================================== */
-
-.justify{
-
-    text-align:justify;
-
-    hyphens:auto;
-
+/* Justifica todo o corpo de texto das páginas de documentação */
+.markdown p,
+.markdown li {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
 }
 
+/* Utilitário manual, para casos fora do fluxo padrão do .markdown */
+.justify {
+  text-align: justify;
+  hyphens: auto;
+}
 
 /* ==========================================================================
    IMAGENS
    ========================================================================== */
-
-.markdown img{
-
-    display:block;
-
-    margin:1.5rem auto;
-
-    max-width:100%;
-
-    height:auto;
-
+.markdown img {
+  display: block;
+  margin: 1.5rem auto;
+  max-width: 100%;
+  height: auto;
 }
 
-
-/* ==========================================================================
-   TABELAS PADRÃO DO MARKDOWN
-   ========================================================================== */
-
-.markdown table{
-
-    font-size:.9rem;
-
-}
-
-.markdown table th{
-
-    font-weight:600;
-
-}
-
-/* ==========================================================================
-   LOGO NAO CLICAVEL
-   ========================================================================== */
-.navbar__brand {
-  cursor: default;
-}
-
-/* ==========================================================================
-   FONTES
-   ========================================================================== */
-
-@font-face {
-  font-family: "rawline";
-  src: url("./fonts/rawline-400.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "rawline";
-  src: url("./fonts/rawline-600.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "rawline";
-  src: url("./fonts/rawline-700.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-/* ==========================================================================
-   TEMA DA WIKI
-   ========================================================================== */
-
-:root {
-
-  /* Paleta DIAna */
-
-  --ifm-color-primary: #2864AE;
-  --ifm-color-primary-dark: #245a9d;
-  --ifm-color-primary-darker: #225594;
-  --ifm-color-primary-darkest: #1c467a;
-  --ifm-color-primary-light: #2c6ebf;
-  --ifm-color-primary-lighter: #2e73c8;
-  --ifm-color-primary-lightest: #4384d4;
-
-  /* Tipografia */
-
-  --ifm-font-family-base: "rawline", Verdana, sans-serif;
-  --ifm-heading-font-family: "rawline", Verdana, sans-serif;
-  --ifm-heading-font-weight: 300;
-
-  --ifm-code-font-size: 95%;
-
-  --ifm-heading-margin-top: .6rem;
-  --ifm-heading-margin-bottom: .6rem;
-
-  /* Bordas */
-
-  --ifm-table-border-color: #d7dde5;
-
-  /* Fundo */
-
-  --ifm-background-color: #ffffff;
-
-  /* Links */
-
-  --ifm-link-color: #2864AE;
-
-  /* Código */
-
-  --docusaurus-highlighted-code-line-bg: rgba(0,0,0,.08);
-
-}
-
-
-/* ==========================================================================
-   TIPOGRAFIA
-   ========================================================================== */
-
-body{
-
-  font-family: var(--ifm-font-family-base);
-
-  color:#222;
-
-  line-height:1.65;
-
-}
-
-h1,h2,h3,h4,h5{
-
-  letter-spacing:.01em;
-
-  font-weight:500;
-
-}
-
-
-/* ==========================================================================
-   TEXTO
-   ========================================================================== */
-
-.justify{
-
-    text-align:justify;
-
-    hyphens:auto;
-
-}
-
-
-/* ==========================================================================
-   IMAGENS
-   ========================================================================== */
-
-.markdown img{
-
-    display:block;
-
-    margin:1.5rem auto;
-
-    max-width:100%;
-
-    height:auto;
-
-}
-
-
-/* ==========================================================================
-   TABELAS PADRÃO DO MARKDOWN
-   ========================================================================== */
-
-.markdown table{
-
-    font-size:.9rem;
-
-}
-
-.markdown table th{
-
-    font-weight:600;
-
-}
-
-/* ==========================================================================
-   LOGO NAO CLICAVEL
-   ========================================================================== */
-.navbar__brand {
-  cursor: default;
-}
-
-/* ==========================================================================
-   IMG INLINE
-   ========================================================================== */
 .markdown img.inline-img {
   display: inline-block;
   margin: 0;
@@ -311,19 +110,19 @@ h1,h2,h3,h4,h5{
 }
 
 /* ==========================================================================
-    Destaque visual ao navegar até uma referência específica
+   TABELAS PADRÃO DO MARKDOWN
    ========================================================================== */
-li:target,
-li.ref-destaque {
-  background-color: #abdefa;
-  border-left: 4px solid #2864AE;
-  padding: 8px 12px;
-  margin-left: -16px;
-  border-radius: 4px;
-  animation: destaque-referencia 2s ease-in-out;
-  scroll-margin-top: 80px;
+.markdown table {
+  font-size: .9rem;
 }
 
+.markdown table th {
+  font-weight: 600;
+}
+
+/* ==========================================================================
+   TABELAS DE BOAS PRÁTICAS — ESTILO PERSONALIZADO
+   ========================================================================== */
 .tabela-boas-praticas {
   width: 100%;
   border-collapse: collapse;
@@ -345,12 +144,36 @@ li.ref-destaque {
 
 /* Segunda coluna: vira lista com marcadores */
 .tabela-boas-praticas td:last-child {
+  font-weight: bold;
+  text-align: center;
   position: relative;
   padding-left: 2rem;
+  background-color: #ffffff;
 }
 
 .tabela-boas-praticas td:last-child::before {
   content: "•";
   position: absolute;
   left: 1rem;
+}
+
+/* ==========================================================================
+   NAVBAR
+   ========================================================================== */
+.navbar__brand {
+  cursor: default;
+}
+
+/* ==========================================================================
+   REFERÊNCIAS — destaque visual ao navegar até uma citação específica
+   ========================================================================== */
+li:target,
+li.ref-destaque {
+  background-color: #abdefa;
+  border-left: 4px solid #2864AE;
+  padding: 8px 12px;
+  margin-left: -16px;
+  border-radius: 4px;
+  animation: destaque-referencia 2s ease-in-out;
+  scroll-margin-top: 80px;
 }

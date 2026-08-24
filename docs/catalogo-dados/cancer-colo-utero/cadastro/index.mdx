@@ -7,18 +7,18 @@ import TabelaMapeamento from '@site/src/components/TabelaMapeamento';
 import ImagemInline from '@site/src/components/ImagemInline';
 import cadastroData from './data/cadastro.data';
 
-# 8. Cadastro
+# 2.7 Cadastro
 
 A seção **Cadastro** reúne os dados pessoais do cidadão que servem de base para o rastreamento de câncer do colo do útero, contemplando informações como data de nascimento, sexo e identidade de gênero. Nesta página é apresentado o caminho de acesso ao cadastro do cidadão no Prontuário Eletrônico e-SUS APS, bem como o mapeamento técnico dos campos utilizados.
 
-### 8.1 Acesso ao cadastro do cidadão
+### 2.7.1 Acesso ao cadastro do cidadão
 
 Para acessar o cadastro do cidadão, é necessário selecionar a opção **Cidadão** no menu lateral do Prontuário Eletrônico e-SUS APS.
 
 <Figura
   src="/img/cancer/cadastro/cidadao.png"
   alt="Menu lateral - Opção Cidadão"
-  numero={1}
+  numero="2.7.1"
   descricao="Menu lateral do Prontuário Eletrônico e-SUS APS com a opção Cidadão selecionada"
   fonte="Prontuário Eletrônico e-SUS APS - Versão 5.5.6"
 />
@@ -28,19 +28,19 @@ Ao selecionar essa opção, o sistema exibe a tela de busca de cadastros, na qua
 <Figura
   src="/img/cancer/cadastro/cadastrar_cidadao.png"
   alt="Tela de busca de cadastros de cidadão"
-  numero={2}
+  numero="2.7.2"
   descricao="Tela de Cadastros na base local e nacional no Prontuário Eletrônico e-SUS APS"
   fonte="Prontuário Eletrônico e-SUS APS - Versão 5.5.6"
 />
 
-### 8.2 Dados pessoais
+### 2.7.2 Dados pessoais
 
 Ao adicionar um novo cidadão, é exibido o formulário de **Cadastro do cidadão**. Para fins do rastreamento de câncer do colo do útero, interessam três campos específicos desse formulário: **Data de nascimento**, **Sexo** e **Qual identidade de gênero?**.
 
 <Figura
   src="/img/cancer/cadastro/dn_sexo.png"
   alt="Formulário de Cadastro do Cidadão - Dados Pessoais"
-  numero={3}
+  numero="2.7.3"
   descricao="Tela de Cadastro do Cidadão - Campos Data de Nascimento e Sexo no Prontuário Eletrônico e-SUS APS"
   fonte="Prontuário Eletrônico e-SUS APS - Versão 5.5.6"
 />
@@ -50,7 +50,7 @@ Ao final do formulário, o sistema pergunta se o cidadão deseja informar sua id
 <Figura
   src="/img/cancer/cadastro/id_genero.png"
   alt="Pergunta sobre identidade de gênero"
-  numero={4}
+  numero="2.7.4"
   descricao="Tela de Cadastro do Cidadão - Pergunta sobre Identidade de Gênero no Prontuário Eletrônico e-SUS APS"
   fonte="Prontuário Eletrônico e-SUS APS - Versão 5.5.6"
 />
@@ -60,7 +60,7 @@ Ao selecionar **Sim**, o sistema exibe a lista de opções disponíveis para ide
 <Figura
   src="/img/cancer/cadastro/id_genero_expand.png"
   alt="Lista de opções de identidade de gênero"
-  numero={5}
+  numero="2.7.5"
   descricao="Tela de Cadastro do Cidadão - Lista de Opções de Identidade de Gênero no Prontuário Eletrônico e-SUS APS"
   fonte="Prontuário Eletrônico e-SUS APS - Versão 5.5.6"
 />
@@ -68,7 +68,7 @@ Ao selecionar **Sim**, o sistema exibe a lista de opções disponíveis para ide
 Esses três campos correspondem, no banco de dados, aos seguintes caminhos:
 
 <TabelaMapeamento
-  numero={1}
+  numero="2.7.1"
   titulo="Dados Pessoais do Cidadão"
   linhas={cadastroData}
   fonte="DIAna SAPS"

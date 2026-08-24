@@ -5,29 +5,49 @@ export const referencias = [
       "ABRAHAM, Rene; SCHNEIDER, Johannes; VOM BROCKE, Jan. Data Governance: A Conceptual Framework, Structured Review, and Research Agenda. International Journal of Information Management, v. 49, p. 424–438, 2019.",
   },
   {
-    id: "_pendente-abraham-2017",
+    id: "abnt-27001-2022",
     texto:
-      "[TODO: confirmar com o Negri — citação \"ABRAHAM et al., 2017\" usada na Introdução (parágrafo sobre a LGPD). Já resolvido temporariamente apontando o <Ref> do texto para abraham-2019, pois é a única referência catalogada de Abraham e o mesmo texto cita a obra corretamente como 2019 mais adiante. Confirmar se existe publicação distinta de 2017; caso não exista, remover esta entrada de todo.]",
+      "ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS. ABNT NBR ISO/IEC 27001:2022: segurança da informação, segurança cibernética e proteção à privacidade — sistemas de gestão da segurança da informação — requisitos. 3. ed. Rio de Janeiro: ABNT, 2022.",
+  },
+  {
+    id: "barbosa-lyra-2021",
+    texto:
+      "BARBOSA, Wellington Luiz; LYRA, Roberto Shayer. Governança de dados: Módulo 4 – Gerenciamento de metadados e da qualidade de dados. Brasília: Escola Nacional de Administração Pública (ENAP), 2021.",
+  },
+  {
+    id: "bertotti-blanchet-2021",
+    texto:
+      "BERTOTTI, Bárbara Mendonça; BLANCHET, Luiz Alberto. Perspectivas e desafios à implementação de Saúde Digital no Sistema Único de Saúde. International Journal of Digital Law, v. 2, n. 3, p. 93–111, 2021.",
+  },
+  {
+    id: "blrdata",
+    texto:
+      "BLR DATA. Bergson Lopes Rêgo. Disponível em: https://www.blrdata.com.br/bergson-lopes-blrdata. Acesso em: 06 out. 2025.",
   },
   {
     id: "anpd-guia-2022",
     texto:
-      "BRASIL. Autoridade Nacional de Proteção de Dados. Guia orientativo para definições dos agentes de tratamento de dados pessoais e do encarregado. Brasília: ANPD, 2022. Disponível em: https://www.gov.br/anpd/pt-br/centrais-de-conteudo/materiais-educativos-e-publicacoes/guia-orientativo-para-definicoes-dos-agentes-de-tratamento-de-dados-pessoais-e-do-encarregado.",
+      "BRASIL. Autoridade Nacional de Proteção de Dados. Guia orientativo para definições dos agentes de tratamento de dados pessoais e do encarregado. Brasília: ANPD, 2022. Disponível em: https://www.gov.br/anpd/pt-br/centrais-de-conteudo/materiais-educativos-e-publicacoes/guia-orientativo-para-definicoes-dos-agentes-de-tratamento-de-dados-pessoais-e-do-encarregado. Acesso em: [COMPLETAR].",
   },
   {
     id: "brasil-cns-659-2022",
     texto:
-      "BRASIL. Conselho Nacional de Saúde. Resolução nº 659, de 15 de junho de 2022. Política Nacional de Informação e Informática em Saúde (PNIIS). Disponível em: https://www.gov.br/conselho-nacional-de-saude/pt-br/atos-normativos/resolucoes/2021/resolucao-no-659.pdf/view.",
+      "BRASIL. Conselho Nacional de Saúde. Resolução nº 659, de 15 de junho de 2022. Política Nacional de Informação e Informática em Saúde (PNIIS). Disponível em: https://www.gov.br/conselho-nacional-de-saude/pt-br/atos-normativos/resolucoes/2021/resolucao-no-659.pdf/view. Acesso em: [COMPLETAR].",
   },
   {
-    id: "brasil-2022",
+    id: "gsi-in01-2020",
     texto:
-      "BRASIL. [TODO: fonte a confirmar — citação genérica (BRASIL, 2022) usada no Capítulo II (1.4 Agentes de Tratamento) e no Capítulo III (1.5 Responsabilidades e Papéis). Confirmar se é a mesma fonte genérica em ambos os capítulos ou se são citações distintas equivocadamente marcadas com o mesmo ano/formato. Localizar publicação oficial correspondente antes de finalizar.]. 2022.",
+      "BRASIL. Gabinete de Segurança Institucional da Presidência da República. Instrução Normativa nº 1, de 27 de maio de 2020. Disponível em: https://www.in.gov.br/en/web/dou/-/instrucao-normativa-n-1-de-27-de-maio-de-2020-258915215. Acesso em: [COMPLETAR].",
+  },
+  {
+    id: "gsi-portaria93-2021",
+    texto:
+      "BRASIL. Gabinete de Segurança Institucional da Presidência da República. Portaria GSI/PR nº 93, de 18 de outubro de 2021. Glossário de Segurança da Informação. Brasília: GSI/PR, 2021.",
   },
   {
     id: "brasil-lgpd-2018",
     texto:
-      "BRASIL. Lei nº 13.709, de 14 de agosto de 2018. Lei Geral de Proteção de Dados Pessoais (LGPD). Disponível em: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm.",
+      "BRASIL. Lei nº 13.709, de 14 de agosto de 2018. Lei Geral de Proteção de Dados Pessoais (LGPD). Disponível em: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm. Acesso em: [COMPLETAR].",
   },
   {
     id: "brasil-2026a",
@@ -45,34 +65,19 @@ export const referencias = [
       "BRASIL. Ministério da Gestão e da Inovação em Serviços Públicos. Infraestrutura Nacional de Dados (IND). Brasília: Governo Federal, 2026c. Disponível em: https://www.gov.br/governodigital/pt-br/infraestrutura-nacional-de-dados. Acesso em: 08 jul. 2026.",
   },
   {
+    id: "mgi-ppsi-controle-acesso-2024",
+    texto:
+      "BRASIL. Ministério da Gestão e da Inovação em Serviços Públicos. Modelo de política de gestão e controle de acesso — Programa de Privacidade e Segurança da Informação (PPSI). Versão 2.2. Brasília: MGI, jun. 2024. Disponível em: https://www.gov.br/governodigital/pt-br/privacidade-e-seguranca/ppsi/modelo_politica_controle_acesso-1.pdf. Acesso em: [COMPLETAR].",
+  },
+  {
+    id: "mgi-ppsi-seguranca-2024",
+    texto:
+      "BRASIL. Ministério da Gestão e da Inovação em Serviços Públicos. Modelo de política de segurança da informação — Programa de Privacidade e Segurança da Informação (PPSI). Versão 1.0. Brasília: MGI, ago. 2024. Disponível em: https://www.gov.br/governodigital/pt-br/privacidade-e-seguranca/arquivos-antigos/ppsi/modelo_politica_seguranca_informacao.pdf. Acesso em: [COMPLETAR].",
+  },
+  {
     id: "brasil-esd28-2020",
     texto:
-      "BRASIL. Ministério da Saúde. Estratégia de Saúde Digital para o Brasil 2020–2028. Brasília: Ministério da Saúde, 2020. Disponível em: https://portal.conasems.org.br/orientacoes-tecnicas/noticias/4870_publicada-a-estrategia-de-saude-digital-para-o-brasil-2020-2028.",
-  },
-  {
-    id: "abnt-27001-2022",
-    texto:
-      "ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS. ABNT NBR ISO/IEC 27001:2022: segurança da informação, segurança cibernética e proteção à privacidade — sistemas de gestão da segurança da informação — requisitos. 3. ed. Rio de Janeiro: ABNT, 2022.",
-  },
-  {
-    id: "iso-27001-2022",
-    texto:
-      "INTERNATIONAL ORGANIZATION FOR STANDARDIZATION; INTERNATIONAL ELECTROTECHNICAL COMMISSION. ISO/IEC 27001:2022: Information security, cybersecurity and privacy protection — Information security management systems — Requirements. 3. ed. Geneva: ISO, 2022.",
-  },
-  {
-    id: "barbosa-lyra-2021",
-    texto:
-      "BARBOSA, Wellington Luiz; LYRA, Roberto Shayer. Governança de dados: Módulo 4 – Gerenciamento de metadados e da qualidade de dados. Brasília: Escola Nacional de Administração Pública (ENAP), 2021.",
-  },
-  {
-    id: "bertotti-blanchet-2021",
-    texto:
-      "BERTOTTI, Bárbara Mendonça; BLANCHET, Luiz Alberto. Perspectivas e desafios à implementação de Saúde Digital no Sistema Único de Saúde. International Journal of Digital Law, v. 2, n. 3, p. 93–111, 2021.",
-  },
-  {
-    id: "blrdata",
-    texto:
-      "BLR DATA. Bergson Lopes Rêgo. Disponível em: https://www.blrdata.com.br/bergson-lopes-blrdata. Acesso em: 06 out. 2025.",
+      "BRASIL. Ministério da Saúde. Estratégia de Saúde Digital para o Brasil 2020–2028. Brasília: Ministério da Saúde, 2020. Disponível em: https://portal.conasems.org.br/orientacoes-tecnicas/noticias/4870_publicada-a-estrategia-de-saude-digital-para-o-brasil-2020-2028. Acesso em: [COMPLETAR].",
   },
   {
     id: "ciancarini-2024",
@@ -95,13 +100,28 @@ export const referencias = [
       "FINOCCHIO JÚNIOR, José. Project Model Canvas: gerenciamento de projetos sem burocracia. Rio de Janeiro: Elsevier, 2013. ISBN 978-85-352-7456-1.",
   },
   {
+    id: "iso-27001-2022",
+    texto:
+      "INTERNATIONAL ORGANIZATION FOR STANDARDIZATION; INTERNATIONAL ELECTROTECHNICAL COMMISSION. ISO/IEC 27001:2022: Information security, cybersecurity and privacy protection — Information security management systems — Requirements. 3. ed. Geneva: ISO, 2022.",
+  },
+  {
     id: "isaca-cobit-2019",
     texto: "ISACA. COBIT 2019: A Framework for Governance and Management of Enterprise IT. ISACA, 2019.",
   },
   {
+    id: "esus-termo-uso",
+    texto:
+      "LABORATÓRIO BRIDGE; UFSC. Prontuário Eletrônico e-SUS APS: termo de uso e política de privacidade. Florianópolis: UFSC. Disponível em: https://next.pec.esusaps.ufsc.br/termosUso. Acesso em: [COMPLETAR].",
+  },
+  {
     id: "onc-pddq",
     texto:
-      "ONC — THE OFFICE OF THE NATIONAL COORDINATOR FOR HEALTH INFORMATION TECHNOLOGY. Patient Demographic Data Quality Framework. Disponível em: https://www.healthit.gov/playbook/pddq-framework/.",
+      "ONC — THE OFFICE OF THE NATIONAL COORDINATOR FOR HEALTH INFORMATION TECHNOLOGY. Patient Demographic Data Quality Framework. Disponível em: https://www.healthit.gov/playbook/pddq-framework/. Acesso em: [COMPLETAR].",
+  },
+  {
+    id: "quanta-dsi",
+    texto:
+      "QUANTA PREVIDÊNCIA COOPERATIVA. Diretrizes de Segurança da Informação (DSI). Disponível em: https://instituidor.quantaprevidencia.com.br/marketing/PORTALQUANTA/outros/DR53.pdf. Acesso em: [COMPLETAR].",
   },
   {
     id: "seiner-2014",
@@ -113,40 +133,27 @@ export const referencias = [
     texto:
       "TRIBUNAL REGIONAL DO TRABALHO DA 3ª REGIÃO (TRT-3). Gestão de Incidentes de Segurança da Informação. Belo Horizonte: TRT-3. Disponível em: https://portal.trt3.jus.br/internet/transparencia/tecnologia-da-informacao/processos-de-trabalho-de-tic/seguranca-da-informacao/gestao_de_incidentes_de_seguranca_da_informacao/principal. Acesso em: 20 mar. 2026.",
   },
+// Pendências internas — NÃO renderizar na página pública de Referências.
+// Mantidas aqui só para rastreabilidade da revisão com o Negri.
   {
-    id: "gsi-in01-2020",
+    id: "_pendente-abraham-2017",
     texto:
-      "BRASIL. Gabinete de Segurança Institucional da Presidência da República. Instrução Normativa nº 1, de 27 de maio de 2020. Disponível em: https://www.in.gov.br/en/web/dou/-/instrucao-normativa-n-1-de-27-de-maio-de-2020-258915215.",
+      "[TODO: confirmar com o Negri — citação \"ABRAHAM et al., 2017\" usada na Introdução (parágrafo sobre a LGPD). Já resolvido temporariamente apontando o <Ref> do texto para abraham-2019. Confirmar se existe publicação distinta de 2017; caso não exista, remover esta entrada de todo.]",
+  },
+  {
+    id: "brasil-2022",
+    texto:
+      "[TODO: fonte a confirmar — citação genérica (BRASIL, 2022) usada no Capítulo II (1.4 Agentes de Tratamento) e no Capítulo III (1.5 Responsabilidades e Papéis). Confirmar se é a mesma fonte em ambos os capítulos ou se são citações distintas. Localizar publicação oficial antes de finalizar.]",
+  },
+  {
+    id: "_pendente-brasil-2026-generico",
+    texto:
+      "[TODO: confirmar com o Negri — citação genérica \"(BRASIL, 2026)\" apontada no capítulo 1.7, mas o parágrafo sobre a Infraestrutura Nacional de Dados (IND) na verdade está no capítulo 1.8, já resolvido lá com brasil-2026c. Provável nota atribuída ao capítulo errado — revisar e corrigir/remover.]",
   },
   {
     id: "_pendente-gsi-in01-2008",
     texto:
-      "[TODO: confirmar com o Negri — citação \"instrução normativa GSI/PR 01/2008\" usada na seção Finalidade. Já resolvido temporariamente apontando o <Ref> do texto para gsi-in01-2020 (única IN nº 1 catalogada). Confirmar se existe norma distinta de 2008; caso não exista, remover esta entrada de todo.]",
-  },
-  {
-    id: "gsi-portaria93-2021",
-    texto:
-      "BRASIL. Gabinete de Segurança Institucional da Presidência da República. Portaria GSI/PR nº 93, de 18 de outubro de 2021. Glossário de Segurança da Informação. Brasília: GSI/PR, 2021.",
-  },
-  {
-    id: "mgi-ppsi-controle-acesso-2024",
-    texto:
-      "BRASIL. Ministério da Gestão e da Inovação em Serviços Públicos. Modelo de política de gestão e controle de acesso — Programa de Privacidade e Segurança da Informação (PPSI). Versão 2.2. Brasília: MGI, jun. 2024. Disponível em: https://www.gov.br/governodigital/pt-br/privacidade-e-seguranca/ppsi/modelo_politica_controle_acesso-1.pdf.",
-  },
-  {
-    id: "mgi-ppsi-seguranca-2024",
-    texto:
-      "BRASIL. Ministério da Gestão e da Inovação em Serviços Públicos. Modelo de política de segurança da informação — Programa de Privacidade e Segurança da Informação (PPSI). Versão 1.0. Brasília: MGI, ago. 2024. Disponível em: https://www.gov.br/governodigital/pt-br/privacidade-e-seguranca/arquivos-antigos/ppsi/modelo_politica_seguranca_informacao.pdf.",
-  },
-  {
-    id: "esus-termo-uso",
-    texto:
-      "LABORATÓRIO BRIDGE; UFSC. Prontuário Eletrônico e-SUS APS: termo de uso e política de privacidade. Florianópolis: UFSC. Disponível em: https://next.pec.esusaps.ufsc.br/termosUso.",
-  },
-  {
-    id: "quanta-dsi",
-    texto:
-      "QUANTA PREVIDÊNCIA COOPERATIVA. Diretrizes de Segurança da Informação (DSI). Disponível em: https://instituidor.quantaprevidencia.com.br/marketing/PORTALQUANTA/outros/DR53.pdf.",
+      "[TODO: confirmar com o Negri — citação \"instrução normativa GSI/PR 01/2008\" usada na seção Finalidade. Já resolvido temporariamente apontando o <Ref> do texto para gsi-in01-2020. Confirmar se existe norma distinta de 2008; caso não exista, remover esta entrada de todo.]",
   },
   {
     id: "mgi-ppsi-framework-todo",
@@ -154,8 +161,8 @@ export const referencias = [
       "[TODO: confirmar com o Negri — Framework de Privacidade e Segurança da Informação (PPSI), Ministério da Gestão e da Inovação em Serviços Públicos. Disponível em: https://www.gov.br/governodigital/pt-br/privacidade-e-seguranca/ppsi/guia_framework_psi.pdf]",
   },
   {
-  id: "ms-portaria953-2023-todo",
-  texto:
-    "[TODO: confirmar com o Negri — Portaria GM/MS nº 953, de 11 de maio de 2023, citada em 1.4 (Agentes de Tratamento) como ato de designação da encarregada Adriana Macedo Marques. Referência ainda não catalogada; localizar publicação oficial (Diário Oficial da União) e preencher ementa completa antes de finalizar.]",
+    id: "ms-portaria953-2023-todo",
+    texto:
+      "[TODO: confirmar com o Negri — Portaria GM/MS nº 953, de 11 de maio de 2023, citada em 1.4 (Agentes de Tratamento) como ato de designação da encarregada. Referência ainda não catalogada; localizar publicação oficial (DOU) e preencher ementa completa antes de finalizar.]",
   },
 ];

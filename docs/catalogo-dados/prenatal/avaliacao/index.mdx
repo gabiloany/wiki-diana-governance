@@ -10,49 +10,49 @@ import problemaAtendimentoData from './data/problemaAtendimento.data';
 import preNatalData from './data/preNatal.data';
 import alergiasData from './data/alergias.data';
 
-# 5. Avaliação
+# 2.4 Avaliação
 
 A seção **Avaliação** reúne os registros clínicos relacionados às condições avaliadas durante o atendimento, abrangendo problemas e condições de saúde, informações específicas de pré-natal e alergias do cidadão. Esta documentação apresenta o mapeamento técnico entre os campos exibidos na interface do Prontuário Eletrônico e-SUS APS e sua representação no banco de dados.
 
-### 5.1 Mapeamento Técnico dos Campos do Sistema
+### 2.4.1 Mapeamento Técnico dos Campos do Sistema
 
 Os quadros a seguir apresentam o mapeamento dos campos da área de Avaliação, indicando seu destino no banco de dados do Prontuário Eletrônico e-SUS APS. Para cada quadro, são disponibilizadas imagens extraídas diretamente da interface do sistema, com o objetivo de facilitar a identificação visual dos campos na plataforma.
 
 <Figura
   src="/img/prenatal/avaliacao/geral_avaliacao.png"
   alt="Visão geral do bloco Avaliação"
-  numero={1}
+  numero="2.4.1"
   descricao="Tela geral do bloco Avaliação no Prontuário Eletrônico e-SUS APS"
   fonte="Prontuário Eletrônico e-SUS APS - Versão 5.5.6"
 />
 
-### 5.2 Impressões Gerais
+### 2.4.2 Impressões Gerais
 
 O bloco **Avaliação** reúne um campo de texto livre destinado ao registro de **impressões gerais** sobre a condição do cidadão, utilizado para observações que não se enquadram nos formulários estruturados de problemas/condições.
 
 <Figura
   src="/img/prenatal/avaliacao/impressoes_avaliacao.png"
   alt="Campo de impressões gerais da Avaliação"
-  numero={2}
+  numero="2.4.2"
   descricao="Campo de texto livre para impressões gerais no Prontuário Eletrônico e-SUS APS"
   fonte="Prontuário Eletrônico e-SUS APS - Versão 5.5.6"
 />
 
 <TabelaMapeamento
-  numero={1}
+  numero="2.4.1"
   titulo="Impressões Adicionais"
   linhas={impressoesData}
   fonte="DIAna SAPS"
 />
 
-### 5.3 Problemas e/ou Condições Avaliados Neste Atendimento
+### 2.4.3 Problemas e/ou Condições Avaliados Neste Atendimento
 
 Além do campo de impressões gerais, o sistema disponibiliza o formulário de **Problemas e/ou condições avaliados neste atendimento**, no qual é possível pesquisar problemas/condições já registrados ou cadastrar um novo a partir dos códigos CIAP 2 e CID 10.
 
 <Figura
   src="/img/prenatal/avaliacao/ciap2.png"
   alt="Pesquisa de código CIAP 2"
-  numero={3}
+  numero="2.4.3"
   descricao="Tela de pesquisa e sugestões de código CIAP 2 no formulário de Problemas e/ou Condições Avaliadas"
   fonte="Prontuário Eletrônico e-SUS APS - Versão 5.5.6"
 />
@@ -62,69 +62,69 @@ Ao selecionar o termo **GRAVIDEZ** da lista de sugestões, o sistema preenche au
 <Figura
   src="/img/prenatal/avaliacao/com_cid10.png"
   alt="CIAP 2 e CID 10 preenchidos"
-  numero={4}
+  numero="2.4.4"
   descricao="Tela de Problemas e/ou Condições Avaliadas com os códigos CIAP 2 e CID 10 preenchidos"
   fonte="Prontuário Eletrônico e-SUS APS - Versão 5.5.6"
 />
 
 <TabelaMapeamento
-  numero={2}
+  numero="2.4.2"
   titulo="Problemas e/ou Condições Avaliados"
   linhas={problemaAtendimentoData}
   fonte="DIAna SAPS"
 />
 
-### 5.4 Pré-natal
+### 2.4.4 Pré-natal
 
 Quando o problema/condição informado corresponde a um código de gravidez e o botão de adicionar é acionado, o sistema habilita o bloco de **Pré-natal, parto e nascimento**, com campos específicos de acompanhamento gestacional, como tipo de gravidez, altura uterina, risco de gravidez, edema, movimentação fetal e batimento cardíaco fetal.
 
 <Figura
   src="/img/prenatal/avaliacao/pre_natal.png"
   alt="Bloco de Pré-natal, parto e nascimento"
-  numero={5}
+  numero="2.4.5"
   descricao="Tela do bloco Pré-natal, parto e nascimento habilitado no Prontuário Eletrônico e-SUS APS"
   fonte="Prontuário Eletrônico e-SUS APS - Versão 5.5.6"
 />
 
 <TabelaMapeamento
-  numero={3}
+  numero="2.4.3"
   titulo="Pré-natal, parto e nascimento"
   linhas={preNatalData}
   fonte="DIAna SAPS"
 />
 
-:::note (NOTA)
+:::note NOTA
 
 Após adicionado, o problema/condição permanece editável: ao acionar o ícone <ImagemInline src="/img/prenatal/avaliacao/balao_adicionar.png" alt="Adicionar observação" />, é possível incluir novas observações; e, ao acionar o ícone <ImagemInline src="/img/prenatal/avaliacao/lapis_editar.png" alt="Editar problema/condição" />, é possível editar os dados do problema/condição.
 
 :::
 
-### 5.5 Alergias e Reações Adversas
+### 2.4.5 Alergias e Reações Adversas
 
 Abaixo do formulário de Problemas e/ou condições, a guia Avaliação disponibiliza o bloco expansível **Alergias e reações adversas**, que permite pesquisar as alergias já registradas para o cidadão e, ao ser expandido, exibe o formulário completo para o cadastro de uma nova ocorrência.
 
 <Figura
   src="/img/prenatal/avaliacao/adversas.png"
   alt="Alergias e reações adversas - bloco recolhido"
-  numero={6}
+  numero="2.4.6"
   descricao="Tela de Avaliação - Alergias e Reações Adversas (bloco recolhido) no Prontuário Eletrônico e-SUS APS"
   fonte="Prontuário Eletrônico e-SUS APS - Versão 5.5.6"
 />
 
-#### 5.5.1 Adicionar Alergia e Reação Adversa
+#### 2.4.5.1 Adicionar Alergia e Reação Adversa
 
 Ao expandir o bloco, é exibido o formulário completo de cadastro, contemplando a categoria e o agente causador, o tipo de reação, a criticidade, o grau de certeza, as manifestações apresentadas, a data ou idade de início e observações complementares.
 
 <Figura
   src="/img/prenatal/avaliacao/adversas_aberto.png"
   alt="Alergias e reações adversas - formulário completo"
-  numero={7}
+  numero="2.4.7"
   descricao="Tela de Avaliação - Formulário de Alergias e Reações Adversas no Prontuário Eletrônico e-SUS APS"
   fonte="Prontuário Eletrônico e-SUS APS - Versão 5.5.6"
 />
 
 <TabelaMapeamento
-  numero={4}
+  numero="2.4.4"
   titulo="Alergias e Reações Adversas"
   linhas={alergiasData}
   fonte="DIAna SAPS"

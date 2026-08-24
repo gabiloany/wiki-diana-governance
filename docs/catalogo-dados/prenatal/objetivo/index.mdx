@@ -13,49 +13,49 @@ import consumoAlimentarData from './data/consumoAlimentar.data';
 import vacinacaoData from './data/vacinacao.data';
 import resultadoExamesData from './data/resultadoExames.data';
 
-# 4. Objetivo
+# 2.3 Objetivo
 
 A seção **Objetivo** contempla os dados observados ou coletados durante o atendimento, incluindo exame físico, anexo de arquivos, medições clínicas, consumo alimentar, vacinação e resultados de exames. Nesta página são apresentados os campos disponíveis na interface do Prontuário Eletrônico e-SUS APS e seu respectivo mapeamento para a estrutura do banco de dados, permitindo identificar onde cada informação é armazenada.
 
-### 4.1 Mapeamento Técnico dos Campos do Sistema
+### 2.3.1 Mapeamento Técnico dos Campos do Sistema
 
 Os quadros a seguir apresentam o mapeamento dos campos da área de Objetivo, indicando seu destino no banco de dados do Prontuário Eletrônico e-SUS APS. Para cada quadro, são disponibilizadas imagens extraídas diretamente da interface do sistema, com o objetivo de facilitar a identificação visual dos campos na plataforma.
 
 <Figura
   src="/img/prenatal/objetivo/geral_objetivo.png"
   alt="Tela Objetivo - Visão Geral"
-  numero={1}
+  numero="2.3.1"
   descricao="Tela de Objetivo - Visão Geral no Prontuário Eletrônico e-SUS APS"
   fonte="Prontuário Eletrônico e-SUS APS - Versão 5.5.6"
 />
 
-### 4.2 Exame físico
+### 2.3.2 Exame físico
 
 O bloco **Exame físico** disponibiliza, por enquanto, um campo de texto livre destinado ao registro de observações realizadas durante o exame físico do cidadão no atendimento.
 
 <Figura
   src="/img/prenatal/objetivo/info_relacionada.png"
   alt="Tela Objetivo - Exame Físico"
-  numero={2}
+  numero="2.3.2"
   descricao="Tela de Objetivo - Campo livre de Exame Físico no Prontuário Eletrônico e-SUS APS"
   fonte="Prontuário Eletrônico e-SUS APS - Versão 5.5.6"
 />
 
 <TabelaMapeamento
-  numero={1}
+  numero="2.3.1"
   titulo="Exame Físico"
   linhas={exameFisicoData}
   fonte="DIAna SAPS"
 />
 
-### 4.3 Anexo de arquivos
+### 2.3.3 Anexo de arquivos
 
 O bloco **Anexo de arquivos** permite anexar documentos ao atendimento, contemplando o próprio arquivo e seus metadados, além dos campos de título, categoria e observações preenchidos pelo profissional.
 
 <Figura
   src="/img/prenatal/objetivo/anexo_arquivos.png"
   alt="Tela Objetivo - Anexo de Arquivos"
-  numero={3}
+  numero="2.3.3"
   descricao="Tela de Objetivo - Anexo de Arquivos no Prontuário Eletrônico e-SUS APS"
   fonte="Prontuário Eletrônico e-SUS APS - Versão 5.5.6"
 />
@@ -65,45 +65,45 @@ Ao acionar o campo <ImagemInline src="/img/prenatal/objetivo/anexo_arquivos_inli
 <Figura
   src="/img/prenatal/objetivo/anexo_arquivos_expand.png"
   alt="Tela Objetivo - Anexo de Arquivos expandido"
-  numero={4}
+  numero="2.3.4"
   descricao="Tela de Objetivo - Anexo de Arquivos expandido no Prontuário Eletrônico e-SUS APS"
   fonte="Prontuário Eletrônico e-SUS APS - Versão 5.5.6"
 />
 
 <TabelaMapeamento
-  numero={2}
+  numero="2.3.2"
   titulo="Anexo de Arquivos"
   linhas={anexoArquivosData}
   fonte="DIAna SAPS"
 />
 
-### 4.4 DUM
+### 2.3.4 DUM
 
 O bloco **DUM** permite o registro da data da última menstruação informada, utilizada como referência para o cálculo da idade gestacional e da data provável do parto.
 
 <Figura
   src="/img/prenatal/objetivo/dum.png"
   alt="Tela Objetivo - DUM"
-  numero={5}
+  numero="2.3.5"
   descricao="Tela de Objetivo - DUM no Prontuário Eletrônico e-SUS APS"
   fonte="Prontuário Eletrônico e-SUS APS - Versão 5.5.6"
 />
 
 <TabelaMapeamento
-  numero={3}
+  numero="2.3.3"
   titulo="DUM"
   linhas={dumData}
   fonte="DIAna SAPS"
 />
 
-### 4.5 Antropometria, sinais vitais e glicemia capilar
+### 2.3.5 Antropometria, sinais vitais e glicemia capilar
 
 O bloco **Antropometria, sinais vitais e glicemia capilar** é um grupo expansível que reúne medidas antropométricas (peso, altura, IMC, perímetro cefálico, circunferência abdominal e perímetro do pé), sinais vitais (pressão arterial, frequência respiratória, frequência cardíaca, temperatura e saturação de O2) e a glicemia capilar aferida durante o atendimento.
 
 <Figura
   src="/img/prenatal/objetivo/antropometria.png"
   alt="Tela Objetivo - Medição"
-  numero={6}
+  numero="2.3.6"
   descricao="Tela de Objetivo - Medição no Prontuário Eletrônico e-SUS APS"
   fonte="Prontuário Eletrônico e-SUS APS - Versão 5.5.6"
 />
@@ -113,26 +113,26 @@ Ao expandir o grupo, são exibidos os campos individuais de cada medida, permiti
 <Figura
   src="/img/prenatal/objetivo/antropometria_expandido.png"
   alt="Tela Objetivo - Medição expandida"
-  numero={7}
+  numero="2.3.7"
   descricao="Tela de Objetivo - Medição expandida no Prontuário Eletrônico e-SUS APS"
   fonte="Prontuário Eletrônico e-SUS APS - Versão 5.5.6"
 />
 
 <TabelaMapeamento
-  numero={4}
+  numero="2.3.4"
   titulo="Medição"
   linhas={medicaoData}
   fonte="DIAna SAPS"
 />
 
-### 4.6 Marcadores de consumo alimentar
+### 2.3.6 Marcadores de consumo alimentar
 
 O bloco **Marcadores de consumo alimentar** é um grupo expansível que reúne o questionário de Marcadores de Consumo Alimentar (MCA) do SISVAN, com perguntas segmentadas por faixa etária (crianças menores de 2 anos, crianças com 2 anos ou mais, adolescentes, adultos e gestantes), abordando o consumo de alimentos in natura e ultraprocessados, além de hábitos como assistir TV durante as refeições e a adição de sal.
 
 <Figura
   src="/img/prenatal/objetivo/alimentar.png"
   alt="Tela Objetivo - Consumo Alimentar"
-  numero={8}
+  numero="2.3.8"
   descricao="Tela de Objetivo - Consumo Alimentar no Prontuário Eletrônico e-SUS APS"
   fonte="Prontuário Eletrônico e-SUS APS - Versão 5.5.6"
 />
@@ -142,45 +142,45 @@ Ao expandir o grupo, são exibidas as perguntas específicas sobre os alimentos 
 <Figura
   src="/img/prenatal/objetivo/alimentar_expandido.png"
   alt="Tela Objetivo - Consumo Alimentar expandido"
-  numero={9}
+  numero="2.3.9"
   descricao="Tela de Objetivo - Consumo Alimentar expandido no Prontuário Eletrônico e-SUS APS"
   fonte="Prontuário Eletrônico e-SUS APS - Versão 5.5.6"
 />
 
 <TabelaMapeamento
-  numero={5}
+  numero="2.3.5"
   titulo="Consumo Alimentar"
   linhas={consumoAlimentarData}
   fonte="DIAna SAPS"
 />
 
-### 4.7 Vacinação em dia?
+### 2.3.7 Vacinação em dia?
 
 O bloco **Vacinação em dia?** contempla um campo de seleção (Sim/Não) para o registro da situação vacinal do cidadão, indicando se as vacinas previstas para o período de acompanhamento estão atualizadas.
 
 <Figura
   src="/img/prenatal/objetivo/vacinacao.png"
   alt="Tela Objetivo - Vacinação"
-  numero={10}
+  numero="2.3.10"
   descricao="Tela de Objetivo - Vacinação no Prontuário Eletrônico e-SUS APS"
   fonte="Prontuário Eletrônico e-SUS APS - Versão 5.5.6"
 />
 
 <TabelaMapeamento
-  numero={6}
+  numero="2.3.6"
   titulo="Vacinação"
   linhas={vacinacaoData}
   fonte="DIAna SAPS"
 />
 
-### 4.8 Resultado de Exames
+### 2.3.8 Resultado de Exames
 
 Ao selecionar <ImagemInline src="/img/prenatal/objetivo/resultados_exames_inline.png" alt="+ Adicionar resultados de exames" />, abre-se uma tela de inserção de dados, na qual é possível registrar os resultados de exames laboratoriais realizados pelo cidadão.
 
 <Figura
   src="/img/prenatal/objetivo/adicionar_exame.png"
   alt="Tela Objetivo - Resultado de Exames"
-  numero={11}
+  numero="2.3.11"
   descricao="Tela de Objetivo - Resultado de Exames no Prontuário Eletrônico e-SUS APS"
   fonte="Prontuário Eletrônico e-SUS APS - Versão 5.5.6"
 />
@@ -190,7 +190,7 @@ Ao selecionar a caixa de texto, o sistema exibe as opções de exames disponíve
 <Figura
   src="/img/prenatal/objetivo/lista_selecao.png"
   alt="Tela Objetivo - Resultado de Exames"
-  numero={12}
+  numero="2.3.12"
   descricao="Tela de Objetivo - Resultado de Exames no Prontuário Eletrônico e-SUS APS"
   fonte="Prontuário Eletrônico e-SUS APS - Versão 5.5.6"
 />
@@ -200,7 +200,7 @@ Ao clicar em uma das opções, os campos adicionais referentes ao exame selecion
 <Figura
   src="/img/prenatal/objetivo/resultados_exames_campos.png"
   alt="Tela Objetivo - Resultado de Exames"
-  numero={13}
+  numero="2.3.13"
   descricao="Tela de Objetivo - Resultado de Exames no Prontuário Eletrônico e-SUS APS"
   fonte="Prontuário Eletrônico e-SUS APS - Versão 5.5.6"
 />
@@ -210,13 +210,13 @@ Ao expandir o menu — no exemplo, referente ao exame de Amniocentese —, é po
 <Figura
   src="/img/prenatal/objetivo/resultados_exames_campos_expand.png"
   alt="Tela Objetivo - Resultado de Exames"
-  numero={14}
+  numero="2.3.14"
   descricao="Tela de Objetivo - Resultado de Exames no Prontuário Eletrônico e-SUS APS"
   fonte="Prontuário Eletrônico e-SUS APS - Versão 5.5.6"
 />
 
 <TabelaMapeamento
-  numero={7}
+  numero="2.3.7"
   titulo="Resultado de Exames"
   linhas={resultadoExamesData}
   fonte="DIAna SAPS"

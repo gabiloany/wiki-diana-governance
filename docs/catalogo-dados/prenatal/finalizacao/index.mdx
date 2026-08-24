@@ -9,93 +9,93 @@ import formaParticipacaoCidadaoData from './data/formaParticipacaoCidadao.data';
 import atendimentoCompartilhadoData from './data/atendimentoCompartilhado.data';
 import procedimentosCondutaDesfechoData from './data/procedimentosCondutaDesfecho.data';
 
-# 7. Finalização do Atendimento
+# 2.6 Finalização do Atendimento
 
 A seção **Finalização do Atendimento** reúne os campos utilizados para concluir e registrar o encerramento do atendimento no Prontuário Eletrônico e-SUS APS. Nesta página é apresentado o mapeamento técnico desses campos, permitindo identificar sua correspondência com a estrutura do banco de dados utilizada pelo sistema.
 
-### 7.1 Mapeamento Técnico dos Campos do Sistema
+### 2.6.1 Mapeamento Técnico dos Campos do Sistema
 
 Os quadros a seguir apresentam o mapeamento dos campos da área de Finalização do Atendimento, indicando seu destino no banco de dados do Prontuário Eletrônico e-SUS APS. Para cada tabela, são disponibilizadas imagens extraídas diretamente da interface do sistema, com o objetivo de facilitar a identificação visual dos campos na plataforma.
 
 <Figura
   src="/img/prenatal/finalizacao/geral.png"
   alt="Finalização do Atendimento - Visão Geral"
-  numero={20}
+  numero="2.6.1"
   descricao="Tela de Finalização do Atendimento - Visão Geral no Prontuário Eletrônico e-SUS APS"
   fonte="Prontuário Eletrônico e-SUS APS - Versão 5.5.6"
 />
 
-### 7.2 Tipo de atendimento
+### 2.6.2 Tipo de atendimento
 
 O campo **Tipo de atendimento** permite classificar a natureza do atendimento realizado, indicando também se o cidadão participou presencialmente do encontro com o profissional de saúde.
 
 <Figura
   src="/img/prenatal/finalizacao/tipo_atendimento.png"
   alt="Tela Finalização - Tipo de Atendimento"
-  numero={21}
+  numero="2.6.2"
   descricao="Tela de Finalização do Atendimento - Tipo de Atendimento no Prontuário Eletrônico e-SUS APS"
   fonte="Prontuário Eletrônico e-SUS APS - Versão 5.5.6"
 />
 
 <TabelaMapeamento
-  numero={20}
+  numero="2.6.1"
   titulo="Tipo de Atendimento"
   linhas={finalizacaoData}
   fonte="DIAna SAPS"
 />
 
-### 7.3 Forma de participação do cidadão
+### 2.6.3 Forma de participação do cidadão
 
 Quando o campo **Cidadão participou do atendimento** é marcado, o sistema exibe a opção **Forma de participação**, na qual é possível especificar de que maneira o cidadão participou do atendimento (presencial, remoto, entre outras).
 
 <Figura
   src="/img/prenatal/finalizacao/participou_atendimento.png"
   alt="Tela Finalização - Forma de Participação do Cidadão"
-  numero={22}
+  numero="2.6.3"
   descricao="Tela de Finalização do Atendimento - Forma de Participação do Cidadão no Prontuário Eletrônico e-SUS APS"
   fonte="Prontuário Eletrônico e-SUS APS - Versão 5.5.6"
 />
 
 <TabelaMapeamento
-  numero={21}
+  numero="2.6.2"
   titulo="Forma de Participação do Cidadão"
   linhas={formaParticipacaoCidadaoData}
   fonte="DIAna SAPS"
 />
 
-### 7.4 Atendimento compartilhado
+### 2.6.4 Atendimento compartilhado
 
 O bloco **Atendimento compartilhado** permite registrar a participação de um profissional convidado no atendimento, contemplando a identificação do profissional e sua forma de participação.
 
 <Figura
   src="/img/prenatal/finalizacao/atendimento_compartilhado.png"
   alt="Tela Finalização - Atendimento Compartilhado"
-  numero={23}
+  numero="2.6.4"
   descricao="Tela de Finalização do Atendimento - Atendimento Compartilhado no Prontuário Eletrônico e-SUS APS"
   fonte="Prontuário Eletrônico e-SUS APS - Versão 5.5.6"
 />
 
 <TabelaMapeamento
-  numero={22}
+  numero="2.6.3"
   titulo="Atendimento Compartilhado"
   linhas={atendimentoCompartilhadoData}
   fonte="DIAna SAPS"
 />
 
-### 7.5 Procedimentos, conduta e desfecho
+### 2.6.5 Procedimentos, conduta e desfecho
 
 O bloco **Procedimentos, conduta e desfecho** reúne os campos finais do atendimento: procedimentos administrativos (SIGTAP), ficha de notificação de caso suspeito (SINAN), racionalidade em saúde, conduta adotada e desfecho do atendimento.
 
 <Figura
   src="/img/prenatal/finalizacao/sigtap.png"
   alt="Tela Finalização - Procedimentos, Conduta e Desfecho"
-  numero={24}
+  numero="2.6.5"
   descricao="Tela de Finalização do Atendimento - Procedimentos, Conduta e Desfecho no Prontuário Eletrônico e-SUS APS"
   fonte="Prontuário Eletrônico e-SUS APS - Versão 5.5.6"
 />
 
 <TabelaMapeamento
-  numero={23}
+  numero="2.6.4"
   titulo="Procedimentos, Conduta e Desfecho"
   linhas={procedimentosCondutaDesfechoData}
   fonte="DIAna SAPS"

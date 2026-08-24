@@ -2,7 +2,7 @@
 title: Catálogo de Dados
 ---
 
-# Catálogo de Dados
+# 2. Catálogo de Dados
 
 O Catálogo de Dados reúne a documentação técnica dos formulários do Prontuário Eletrônico e-SUS APS, apresentando o mapeamento entre os campos exibidos na interface do sistema e sua correspondente estrutura no banco de dados.
 

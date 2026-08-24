@@ -8,37 +8,37 @@ import TabelaMapeamento from '@site/src/components/TabelaMapeamento';
 import subjetivoData from './data/subjetivo.data';
 import adicionarObservacaoData from './data/adicionarObservacao.data';
 
-# 3. Subjetivo
+# 2.2 Subjetivo
 
 A seção **Subjetivo** concentra as informações relatadas pelo cidadão durante o atendimento, registradas pelo profissional de saúde no Prontuário Eletrônico e-SUS APS. Nesta página é apresentado o mapeamento técnico dos campos disponíveis na interface do sistema, relacionando cada elemento visual às respectivas tabelas e colunas do banco de dados.
 
-### 3.1 Mapeamento Técnico dos Campos do Sistema
+### 2.2.1 Mapeamento Técnico dos Campos do Sistema
 
 Os quadros a seguir apresentam o mapeamento dos campos da área de Subjetivo, indicando seu destino no banco de dados do Prontuário Eletrônico e-SUS APS. Para cada quadro, são disponibilizadas imagens extraídas diretamente da interface do sistema, com o objetivo de facilitar a identificação visual dos campos na plataforma.
 
 <Figura
   src="/img/prenatal/subjetivo/subjetivo_geral.png"
   alt="Tela Subjetivo"
-  numero={1}
+  numero="2.2.1"
   descricao="Tela de Subjetivo - Visão Geral no Prontuário Eletrônico e-SUS APS"
   fonte="Prontuário Eletrônico e-SUS APS - Versão 5.5.6"
 />
 
 <TabelaMapeamento
-  numero={1}
+  numero="2.2.1"
   titulo="Subjetivo"
   linhas={subjetivoData}
   fonte="DIAna SAPS"
 />
 
-### 3.2 Motivo da Consulta (CIAP 2)
+### 2.2.2 Motivo da Consulta (CIAP 2)
 
 Ao buscar o motivo da consulta no campo **Motivo da consulta (CIAP 2)**, o sistema exibe uma lista de sugestões contendo o código CIAP correspondente, além das descrições dos critérios de inclusão e exclusão de cada classificação, auxiliando o profissional na seleção do código mais adequado.
 
 <Figura
   src="/img/prenatal/subjetivo/motivo_consulta.png"
   alt="Subjetivo - Busca do Motivo da Consulta (CIAP 2)"
-  numero={2}
+  numero="2.2.2"
   descricao="Tela de Subjetivo - Busca do Motivo da Consulta (CIAP 2) no Prontuário Eletrônico e-SUS APS"
   fonte="Prontuário Eletrônico e-SUS APS - Versão 5.5.6"
 />
@@ -48,25 +48,25 @@ Após selecionado, o motivo da consulta é adicionado a uma lista, disponibiliza
 <Figura
   src="/img/prenatal/subjetivo/motivo_adicionado.png"
   alt="Subjetivo - Motivo da Consulta Adicionado"
-  numero={3}
+  numero="2.2.3"
   descricao="Tela de Subjetivo - Motivo da Consulta (CIAP 2) Adicionado no Prontuário Eletrônico e-SUS APS"
   fonte="Prontuário Eletrônico e-SUS APS - Versão 5.5.6"
 />
 
-### 3.2.1 Ícone "Adicionar Observação"
+### 2.2.2.1 Ícone "Adicionar Observação"
 
 Ao acionar o ícone <ImagemInline src="/img/prenatal/subjetivo/balao_editar.png" alt="Adicionar observação" />, é exibido um formulário para o registro de uma observação complementar vinculada ao motivo da consulta (CIAP 2) selecionado.
 
 <Figura
   src="/img/prenatal/subjetivo/adicionar_observacao.png"
   alt="Subjetivo - Adicionar Observação"
-  numero={4}
+  numero="2.2.4"
   descricao="Tela de Subjetivo - Formulário de Adição de Observação no Prontuário Eletrônico e-SUS APS"
   fonte="Prontuário Eletrônico e-SUS APS - Versão 5.5.6"
 />
 
 <TabelaMapeamento
-  numero={2}
+  numero="2.2.2"
   titulo="Adicionar Observação"
   linhas={adicionarObservacaoData}
   fonte="DIAna SAPS"
