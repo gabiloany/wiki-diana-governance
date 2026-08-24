@@ -72,6 +72,18 @@
 
 
 /* ==========================================================================
+   CÉLULA-MÃE (rowSpan) — centralizada verticalmente
+   Aplica-se a Campo / Obrigatório PEC / Formato PEC quando o campo se
+   desdobra em várias linhas do banco. Sobrescreve o vertical-align: top
+   herdado de .tabela td só nessas 3 colunas.
+   ========================================================================== */
+
+.tabela td.celulaMae {
+  vertical-align: middle;
+}
+
+
+/* ==========================================================================
    ZEBRA / HOVER
    ========================================================================== */
 

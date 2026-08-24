@@ -57,58 +57,7 @@ export default function TabelaMapeamento({ numero, titulo, linhas, fonte }) {
         </thead>
 
         <tbody>
-
-          {linhas.map((linha, index) => {
-
-            if (linha.tipo === 'secao') {
-              return (
-                <tr key={index} className={styles.secao}>
-                  <td colSpan="7">{linha.texto}</td>
-                </tr>
-              );
-            }
-
-            if (linha.tipo === 'subsecao') {
-              return (
-                <tr key={index} className={styles.subsecao}>
-                  <td colSpan="7">{linha.texto}</td>
-                </tr>
-              );
-            }
-
-            return (
-              <tr key={index}>
-                <td>{linha.campo}</td>
-
-                <td>{linha.obrigatorioPec}</td>
-
-                <td>{linha.formatoPec}</td>
-
-                <td>
-                  <MultiLinha
-                    valor={linha.tabela}
-                    destaque
-                  />
-                </td>
-
-                <td>
-                  <MultiLinha
-                    valor={linha.coluna}
-                  />
-                </td>
-
-                <td>
-                  <MultiLinha
-                    valor={linha.formatoBd}
-                  />
-                </td>
-
-                <td>{linha.obrigatorioBd}</td>
-              </tr>
-            );
-
-          })}
-
+          {linhas.map((linha, index) => renderLinha(linha, index))}
         </tbody>
 
       </table>
@@ -121,15 +70,53 @@ export default function TabelaMapeamento({ numero, titulo, linhas, fonte }) {
   );
 }
 
-function MultiLinha({ valor, destaque = false }) {
-  const itens = Array.isArray(valor) ? valor : [valor];
+function renderLinha(linha, index) {
+  if (linha.tipo === 'secao') {
+    return (
+      <tr key={index} className={styles.secao}>
+        <td colSpan="7">{linha.texto}</td>
+      </tr>
+    );
+  }
 
-  const conteudo = itens.map((item, i) => (
-    <React.Fragment key={i}>
-      {i > 0 && <br />}
-      {item}
-    </React.Fragment>
+  if (linha.tipo === 'subsecao') {
+    return (
+      <tr key={index} className={styles.subsecao}>
+        <td colSpan="7">{linha.texto}</td>
+      </tr>
+    );
+  }
+
+  // Normaliza o lado "Banco de Dados" para arrays de mesmo tamanho.
+  // Quando o campo do PEC se desdobra em várias colunas do banco
+  // (tabela/coluna/formatoBd como array), cada posição vira uma <tr>
+  // própria; campo/obrigatorioPec/formatoPec ganham rowSpan real e
+  // aparecem só na primeira <tr> do grupo.
+  const tabelas = Array.isArray(linha.tabela) ? linha.tabela : [linha.tabela];
+  const colunas = Array.isArray(linha.coluna) ? linha.coluna : [linha.coluna];
+  const formatosBd = Array.isArray(linha.formatoBd) ? linha.formatoBd : [linha.formatoBd];
+
+  const nLinhas = Math.max(tabelas.length, colunas.length, formatosBd.length);
+
+  // obrigatorioBd pode ser string única (mesmo valor pra todas as sub-linhas)
+  // ou array (um valor por sub-linha, como no Anexo de Arquivo).
+  const obrigatoriosBd = Array.isArray(linha.obrigatorioBd)
+    ? linha.obrigatorioBd
+    : Array(nLinhas).fill(linha.obrigatorioBd);
+
+  return Array.from({ length: nLinhas }).map((_, i) => (
+    <tr key={`${index}-${i}`}>
+      {i === 0 && (
+        <>
+          <td rowSpan={nLinhas}>{linha.campo}</td>
+          <td rowSpan={nLinhas}>{linha.obrigatorioPec}</td>
+          <td rowSpan={nLinhas}>{linha.formatoPec}</td>
+        </>
+      )}
+      <td>{tabelas[i]}</td>
+      <td>{colunas[i]}</td>
+      <td>{formatosBd[i]}</td>
+      <td>{obrigatoriosBd[i]}</td>
+    </tr>
   ));
-
-  return destaque ? <strong>{conteudo}</strong> : conteudo;
 }
