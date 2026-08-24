@@ -5,9 +5,9 @@ export const referencias = [
       "ABRAHAM, Rene; SCHNEIDER, Johannes; VOM BROCKE, Jan. Data Governance: A Conceptual Framework, Structured Review, and Research Agenda. International Journal of Information Management, v. 49, p. 424–438, 2019.",
   },
   {
-    id: "abraham-2017-todo",
+    id: "_pendente-abraham-2017",
     texto:
-      "[TODO: confirmar com o Negri — citação \"ABRAHAM et al., 2017\" usada na Introdução (parágrafo sobre a LGPD). A única referência de Abraham catalogada é de 2019 (abraham-2019), e mais adiante no mesmo texto a obra é citada corretamente como 2019. Provável erro de digitação no original (queriam dizer 2019) — mas pode também existir uma publicação distinta de 2017. Confirmar antes de apontar este id para abraham-2019 e remover esta entrada.]",
+      "[TODO: confirmar com o Negri — citação \"ABRAHAM et al., 2017\" usada na Introdução (parágrafo sobre a LGPD). Já resolvido temporariamente apontando o <Ref> do texto para abraham-2019, pois é a única referência catalogada de Abraham e o mesmo texto cita a obra corretamente como 2019 mais adiante. Confirmar se existe publicação distinta de 2017; caso não exista, remover esta entrada de todo.]",
   },
   {
     id: "anpd-guia-2022",
@@ -22,7 +22,7 @@ export const referencias = [
   {
     id: "brasil-2022",
     texto:
-      "BRASIL. [TODO: fonte a confirmar — citação genérica (BRASIL, 2022) usada no Capítulo III, ainda não associada a uma referência específica]. 2022.",
+      "BRASIL. [TODO: fonte a confirmar — citação genérica (BRASIL, 2022) usada no Capítulo II (1.4 Agentes de Tratamento) e no Capítulo III (1.5 Responsabilidades e Papéis). Confirmar se é a mesma fonte genérica em ambos os capítulos ou se são citações distintas equivocadamente marcadas com o mesmo ano/formato. Localizar publicação oficial correspondente antes de finalizar.]. 2022.",
   },
   {
     id: "brasil-lgpd-2018",
@@ -119,9 +119,9 @@ export const referencias = [
       "BRASIL. Gabinete de Segurança Institucional da Presidência da República. Instrução Normativa nº 1, de 27 de maio de 2020. Disponível em: https://www.in.gov.br/en/web/dou/-/instrucao-normativa-n-1-de-27-de-maio-de-2020-258915215.",
   },
   {
-    id: "gsi-in01-2008-todo",
+    id: "_pendente-gsi-in01-2008",
     texto:
-      "[TODO: confirmar com a Negri — citação \"instrução normativa GSI/PR 01/2008\" usada na seção Finalidade. A referência catalogada (gsi-in01-2020) é a Instrução Normativa nº 1, de 27 de maio de 2020 — ano diferente. Confirmar se é erro de digitação no original (queriam dizer 2020) ou se existe norma distinta de 2008. Depois de confirmar, apontar este Ref para gsi-in01-2020 (ou para a referência correta) e remover esta entrada.]",
+      "[TODO: confirmar com o Negri — citação \"instrução normativa GSI/PR 01/2008\" usada na seção Finalidade. Já resolvido temporariamente apontando o <Ref> do texto para gsi-in01-2020 (única IN nº 1 catalogada). Confirmar se existe norma distinta de 2008; caso não exista, remover esta entrada de todo.]",
   },
   {
     id: "gsi-portaria93-2021",
@@ -152,5 +152,10 @@ export const referencias = [
     id: "mgi-ppsi-framework-todo",
     texto:
       "[TODO: confirmar com o Negri — Framework de Privacidade e Segurança da Informação (PPSI), Ministério da Gestão e da Inovação em Serviços Públicos. Disponível em: https://www.gov.br/governodigital/pt-br/privacidade-e-seguranca/ppsi/guia_framework_psi.pdf]",
+  },
+  {
+  id: "ms-portaria953-2023-todo",
+  texto:
+    "[TODO: confirmar com o Negri — Portaria GM/MS nº 953, de 11 de maio de 2023, citada em 1.4 (Agentes de Tratamento) como ato de designação da encarregada Adriana Macedo Marques. Referência ainda não catalogada; localizar publicação oficial (Diário Oficial da União) e preencher ementa completa antes de finalizar.]",
   },
 ];

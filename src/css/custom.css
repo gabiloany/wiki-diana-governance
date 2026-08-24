@@ -323,3 +323,34 @@ li.ref-destaque {
   animation: destaque-referencia 2s ease-in-out;
   scroll-margin-top: 80px;
 }
+
+.tabela-boas-praticas {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+}
+
+.tabela-boas-praticas td {
+  padding: 0.75rem 1rem;
+  vertical-align: middle;
+}
+
+/* Primeira coluna: rótulo mesclado, centralizado */
+.tabela-boas-praticas td:first-child {
+  width: 30%;
+  text-align: center;
+  font-weight: bold;
+  background-color: var(--ifm-color-emphasis-100);
+}
+
+/* Segunda coluna: vira lista com marcadores */
+.tabela-boas-praticas td:last-child {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.tabela-boas-praticas td:last-child::before {
+  content: "•";
+  position: absolute;
+  left: 1rem;
+}
