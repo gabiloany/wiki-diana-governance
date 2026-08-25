@@ -124,22 +124,6 @@ static/
 - `sidebars.js` — estrutura de navegação da documentação (define hierarquia e ordem das páginas no menu lateral)
 - `.github/workflows/deploy.yml` — pipeline de build e deploy automático no GitHub Pages (checkout com `fetch-depth: 0` para preservar o histórico do Git, necessário para `showLastUpdateTime`)
 
-### Padrão de frontmatter
-
-Todo arquivo `.md`/`.mdx` deve começar com um bloco de metadados no topo:
-
-```md
----
-title: Nome da Página
-description: Uma frase curta resumindo o conteúdo (opcional, recomendado em páginas de índice)
----
-```
-
-- `title` — sempre obrigatório; define o título da página e da aba do navegador.
-- `description` — opcional; usado em SEO e pré-visualização de links.
-- A **ordem e hierarquia** das páginas no menu lateral são definidas em `sidebars.js`, não pelo frontmatter.
-- A **data/autor de última atualização** é obtida automaticamente do histórico do Git (via `showLastUpdateTime`/`showLastUpdateAuthor`), sem necessidade de campo manual no frontmatter.
-
 ### Suporte
 
 Dúvidas técnicas ou problemas com o repositório podem ser reportados para:
