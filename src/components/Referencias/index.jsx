@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from '@docusaurus/Link';
-import { referencias } from '@site/docs/boas-praticas/arcabouco-digital/data/referencias.data';
+import { referencias } from '@site/docs/BP_00_boas-praticas/BP_09_arcabouco-digital/data/referencias.data';
 
 export default function Ref({ id }) {
   const numero = referencias.findIndex((r) => r.id === id) + 1;
