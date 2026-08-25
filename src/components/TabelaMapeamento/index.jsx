@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './styles.module.css';
 
 /**
@@ -10,6 +10,8 @@ import styles from './styles.module.css';
  * @param {string} fonte  - Fonte dos dados, exibida abaixo da tabela (ex: "DIAna SAPS")
  */
 export default function TabelaMapeamento({ numero, titulo, linhas, fonte }) {
+  const [grupoAtivo, setGrupoAtivo] = useState(null);
+
   return (
     <div className={styles.tabelaContainer}>
       {(numero || titulo) && (
@@ -57,7 +59,9 @@ export default function TabelaMapeamento({ numero, titulo, linhas, fonte }) {
         </thead>
 
         <tbody>
-          {linhas.map((linha, index) => renderLinha(linha, index))}
+          {linhas.map((linha, index) =>
+            renderLinha(linha, index, grupoAtivo, setGrupoAtivo)
+          )}
         </tbody>
 
       </table>
@@ -70,7 +74,7 @@ export default function TabelaMapeamento({ numero, titulo, linhas, fonte }) {
   );
 }
 
-function renderLinha(linha, index) {
+function renderLinha(linha, index, grupoAtivo, setGrupoAtivo) {
   if (linha.tipo === 'secao') {
     return (
       <tr key={index} className={styles.secao}>
@@ -104,13 +108,40 @@ function renderLinha(linha, index) {
     ? linha.obrigatorioBd
     : Array(nLinhas).fill(linha.obrigatorioBd);
 
+  // Grupo "ativo" = mouse em qualquer sub-linha deste grupo.
+  // Aplicado tanto nas <tr> quanto na célula mesclada (rowSpan),
+  // já que ela só existe fisicamente na primeira <tr> do grupo.
+  const ativo = grupoAtivo === index;
+  const entrar = () => setGrupoAtivo(index);
+  const sair = () => setGrupoAtivo(null);
+
   return Array.from({ length: nLinhas }).map((_, i) => (
-    <tr key={`${index}-${i}`}>
+    <tr
+      key={`${index}-${i}`}
+      className={ativo ? styles.linhaAtiva : undefined}
+      onMouseEnter={entrar}
+      onMouseLeave={sair}
+    >
       {i === 0 && (
         <>
-          <td rowSpan={nLinhas}>{linha.campo}</td>
-          <td rowSpan={nLinhas}>{linha.obrigatorioPec}</td>
-          <td rowSpan={nLinhas}>{linha.formatoPec}</td>
+          <td
+            rowSpan={nLinhas}
+            className={`${styles.celulaMae} ${ativo ? styles.linhaAtiva : ''}`}
+          >
+            {linha.campo}
+          </td>
+          <td
+            rowSpan={nLinhas}
+            className={`${styles.celulaMae} ${ativo ? styles.linhaAtiva : ''}`}
+          >
+            {linha.obrigatorioPec}
+          </td>
+          <td
+            rowSpan={nLinhas}
+            className={`${styles.celulaMae} ${ativo ? styles.linhaAtiva : ''}`}
+          >
+            {linha.formatoPec}
+          </td>
         </>
       )}
       <td>{tabelas[i]}</td>
