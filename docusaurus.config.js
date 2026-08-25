@@ -48,8 +48,6 @@ const config = {
         docs: {
           routeBasePath: '/', 
           sidebarPath: './sidebars.js',
-          showLastUpdateTime: true,
-          showLastUpdateAuthor: true,
         },
         blog: false, //nesta linha eu desativei a página blog
         theme: {
