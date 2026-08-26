@@ -12,7 +12,7 @@ export default function Ref({ id }) {
 
   return (
     <sup>
-      <Link to={`/boas-praticas/arcabouco-digital/referencias#ref-${id}`}>[{numero}]</Link>
+      <Link to={`/BP_00_boas-praticas/BP_09_arcabouco-digital/referencias#ref-${id}`}>[{numero}]</Link>
     </sup>
   );
 }

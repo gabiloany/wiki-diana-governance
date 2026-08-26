@@ -9,7 +9,7 @@ const sidebars = {
 
     {
       type: 'category',
-      label: 'Boas Práticas de Governança de Dados',
+      label: 'Boas Práticas para Adoção de Políticas e Diretrizes em Governança de Dados',
 
       // Página introdutória de Boas Práticas
       link: {
@@ -63,7 +63,7 @@ const sidebars = {
 
         {
           type: 'category',
-          label: 'Câncer de Colo do Útero',
+          label: 'Rastreamento do Câncer do Colo do Útero',
 
           // Página introdutória do Câncer de Colo do Útero
           link: {

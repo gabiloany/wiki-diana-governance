@@ -10,11 +10,11 @@ O objetivo deste catálogo é apoiar atividades de governança de dados, integra
 
 A documentação está organizada conforme o fluxo do atendimento realizado no sistema, abrangendo os seguintes módulos:
 
-- [Antecedentes](/catalogo-dados/prenatal/antecedentes/)
-- [Subjetivo](/catalogo-dados/prenatal/subjetivo/)
-- [Objetivo](/catalogo-dados/prenatal/objetivo/)
-- [Avaliação](/catalogo-dados/prenatal/avaliacao/)
-- [Plano](/catalogo-dados/prenatal/plano/)
-- [Finalização do Atendimento](/catalogo-dados/prenatal/finalizacao/)
+- [Antecedentes](/CD_00_catalogo-dados/CD_01_prenatal/CD_PN_01_antecedentes/)
+- [Subjetivo](/CD_00_catalogo-dados/CD_01_prenatal/CD_PN_02_subjetivo/)
+- [Objetivo](/CD_00_catalogo-dados/CD_01_prenatal/CD_PN_03_objetivo/)
+- [Avaliação](/CD_00_catalogo-dados/CD_01_prenatal/CD_PN_04_avaliacao/)
+- [Plano](/CD_00_catalogo-dados/CD_01_prenatal/CD_PN_05_plano/)
+- [Finalização do Atendimento](/CD_00_catalogo-dados/CD_01_prenatal/CD_PN_06_finalizacao/)
 
 Cada seção apresenta imagens da interface do sistema acompanhadas pelo respectivo mapeamento técnico dos campos e suas correspondências no banco de dados.
