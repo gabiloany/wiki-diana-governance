@@ -1,0 +1,16 @@
+image: node:22
+
+variables:
+  GIT_DEPTH: "0"   # preserva o histórico completo do Git, necessário para showLastUpdateTime/showLastUpdateAuthor
+
+pages:
+  stage: deploy
+  script:
+    - yarn install --frozen-lockfile
+    - yarn build
+    - mv build public
+  artifacts:
+    paths:
+      - public
+  only:
+    - main
