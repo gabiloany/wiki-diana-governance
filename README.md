@@ -10,7 +10,7 @@ Este site é construído com [Docusaurus](https://docusaurus.io/), gerador de si
 ### Instalação
 
 ```bash
-yarn
+yarn install
 ```
 
 ### Ambiente de desenvolvimento local
