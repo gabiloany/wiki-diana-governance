@@ -10,8 +10,8 @@ A documentação está organizada por linhas de cuidado e módulos do sistema, p
 
 ### Linhas de cuidado e módulos disponíveis
 
-- [Pré-Natal](/catalogo-dados/prenatal/)
-- [Rastreamento do Câncer do Colo do Útero](/catalogo-dados/cancer-colo-utero/)
-- [Vacinação](/catalogo-dados/vacinacao/)
+- [Pré-Natal](/CD_00_catalogo-dados/CD_01_prenatal/intro_prenatal)
+- [Rastreamento do Câncer do Colo do Útero](/CD_00_catalogo-dados/CD_02_cancer-colo-utero/intro_cancer_colo_utero)
+- [Vacinação](/CD_00_catalogo-dados/CD_03_vacinacao/intro_vacinacao)
 
 Selecione uma das linhas de cuidado acima (ou no menu lateral) para acessar a documentação específica de cada uma.

@@ -4,34 +4,59 @@ slug: /BP_00_boas-praticas/BP_09_arcabouco-digital/referencias
 ---
 
 import React from 'react';
-import { useLocation } from '@docusaurus/router';
+import { useLocation, useHistory } from '@docusaurus/router';
 import { referencias } from '@site/docs/BP_00_boas-praticas/BP_09_arcabouco-digital/data/referencias.data';
 
 # 1.9 Referências
 
 export function ListaReferencias() {
   const location = useLocation();
+  const history = useHistory();
   const hashId = location.hash ? location.hash.replace('#ref-', '') : null;
+  const [origem, setOrigem] = React.useState(null);
+
+  React.useEffect(() => {
+    try {
+      const salvo = sessionStorage.getItem('refOrigem');
+      setOrigem(salvo ? JSON.parse(salvo) : null);
+    } catch (e) {
+      setOrigem(null);
+    }
+  }, [location.hash]);
 
   React.useEffect(() => {
     if (!hashId) return;
     const el = document.getElementById(`ref-${hashId}`);
-    if (el) {
-      el.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    }
+    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' });
   }, [hashId]);
+
+  const voltar = () => {
+    if (!origem) return;
+    const { path, scrollY } = origem;
+    sessionStorage.removeItem('refOrigem');
+    history.push(path);
+    setTimeout(() => window.scrollTo({ top: scrollY, behavior: 'auto' }), 100);
+  };
 
   return (
     <ol>
-      {referencias.map((r) => (
-        <li
-          id={`ref-${r.id}`}
-          key={r.id}
-          className={r.id === hashId ? 'ref-destaque' : undefined}
-        >
-          {r.texto}
-        </li>
-      ))}
+      {referencias.map((r) => {
+        const destacada = r.id === hashId;
+        return (
+          <li
+            id={`ref-${r.id}`}
+            key={r.id}
+            className={destacada ? 'ref-destaque' : undefined}
+          >
+            {r.texto}
+            {destacada && origem && (
+              <button type="button" className="ref-voltar" onClick={voltar}>
+                ↩ Voltar ao texto
+              </button>
+            )}
+          </li>
+        );
+      })}
     </ol>
   );
 }

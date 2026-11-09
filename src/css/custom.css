@@ -177,3 +177,26 @@ li.ref-destaque {
   animation: destaque-referencia 2s ease-in-out;
   scroll-margin-top: 80px;
 }
+
+/* ==========================================================================
+   REFERÊNCIAS — botão "Voltar ao texto" (dentro da referência destacada)
+   ========================================================================== */
+.ref-voltar {
+  display: inline;
+  margin-left: 0.6rem;
+  padding: 0;
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--ifm-color-primary-darkest);
+  background: none;
+  border: none;
+  border-bottom: 1px dashed currentColor;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.ref-voltar:hover {
+  color: var(--ifm-color-primary);
+  border-bottom-style: solid;
+}
