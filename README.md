@@ -4,10 +4,21 @@ Este site é construído com [Docusaurus](https://docusaurus.io/), gerador de si
 
 ### Pré-requisitos
 
-- [Node.js](https://nodejs.org/) versão 18 ou superior
+- [Node.js](https://nodejs.org/) versão 18 ou superior (o `npm` já vem junto com ele)
 - [Yarn](https://yarnpkg.com/) (gerenciador de pacotes usado no projeto)
 
+Para conferir se já estão instalados, rode no terminal:
+
+```bash
+node -v
+yarn -v
+```
+
+Cada comando deve retornar um número de versão. Se o `yarn -v` der erro, veja [Solução de problemas](#-solução-de-problemas).
+
 ### Instalação
+
+Dentro da pasta do projeto (a que contém o arquivo `package.json`), rode:
 
 ```bash
 yarn install
@@ -19,7 +30,27 @@ yarn install
 yarn start
 ```
 
-Inicia um servidor local e abre uma janela do navegador. A maioria das alterações é refletida automaticamente, sem necessidade de reiniciar o servidor.
+Inicia um servidor local (por padrão em `http://localhost:3000`) e abre uma janela do navegador. A maioria das alterações é refletida automaticamente, sem necessidade de reiniciar o servidor.
+
+### 🩺 Solução de problemas
+
+#### `yarn` não é reconhecido como comando
+
+Se ao rodar `yarn install` aparecer uma mensagem como `'yarn' não é reconhecido como um comando interno ou externo` (Windows) ou `command not found: yarn` (macOS/Linux), o Yarn não está instalado na sua máquina. Instale-o globalmente com o npm e repita os comandos:
+
+```bash
+npm install -g yarn
+yarn install
+yarn start
+```
+
+Depois da instalação, **feche e abra o terminal novamente** para que o comando `yarn` seja reconhecido.
+
+#### `Couldn't find a package.json file`
+
+Você está rodando o comando na pasta errada. Entre na pasta raiz do projeto (a que contém o `package.json`) com `cd` e tente novamente.
+
+> Encontrou outro problema na instalação? Registre-o aqui para ajudar os próximos usuários.
 
 ### Build de produção
 
