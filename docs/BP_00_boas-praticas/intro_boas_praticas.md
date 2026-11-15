@@ -64,7 +64,7 @@ Apresenta as diretrizes relacionadas à governança da informação em saúde di
 
 Reúne as principais referências normativas, legais, técnicas e institucionais utilizadas como base para as diretrizes apresentadas nesta documentação.
 
-[Consulte as Referências e o Arcabouço Legal →](/BP_00_boas-praticas/BP_09_arcabouco-digital/)
+[Consulte as Referências e o Arcabouço Legal →](/BP_00_boas-praticas/BP_09_arcabouco-digital/index.mdx)
 
 ---
 
