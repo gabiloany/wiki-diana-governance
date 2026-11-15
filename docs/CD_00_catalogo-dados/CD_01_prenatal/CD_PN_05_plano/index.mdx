@@ -179,7 +179,7 @@ Ao clicar em <ImagemInline src="/img/prenatal/plano/oci_inline.png" alt="+ Adici
 
 ### 2.5.6 Atestados
 
-A seção **Atestados** permite a emissão de atestados médicos para o cidadão atendido, com base no motivo, no período e nas observações informadas pelo profissional de saúde.
+A seção **Atestados** permite a emissão de atestados para o cidadão atendido, a partir da seleção do modelo e do preenchimento da data e hora de início do afastamento, da quantidade de dias e, opcionalmente, do CID 10.
 
 <Figura
   src="/img/prenatal/plano/atestado.png"
@@ -188,6 +188,10 @@ A seção **Atestados** permite a emissão de atestados médicos para o cidadão
   descricao="Tela de Atestados no Prontuário Eletrônico e-SUS APS"
   fonte="Prontuário Eletrônico e-SUS APS - Versão 5.5.6"
 />
+
+:::note NOTA
+Os campos **Data** e **Hora** são armazenados na mesma coluna do banco de dados (`dt_afastamento`), que registra data e hora do afastamento em um único valor. Por isso, os dois campos aparecem com a mesma coluna no Quadro 2.5.8.
+:::
 
 <TabelaMapeamento
   numero="2.5.8"

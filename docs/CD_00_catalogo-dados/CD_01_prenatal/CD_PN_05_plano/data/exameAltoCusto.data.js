@@ -1,7 +1,7 @@
 export default [
   {
     tipo: "dado",
-    campo: "+ Adicionar exame de alto custo",
+    campo: "Adicionar exame de alto custo",
     obrigatorioPec: "não",
     formatoPec: "button",
     tabela: "tb_requisicao_exame",

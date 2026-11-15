@@ -41,7 +41,7 @@ export default [
   },
   {
     tipo: "dado",
-    campo: "CID10",
+    campo: "CID 10",
     obrigatorioPec: "não",
     formatoPec: "combo box",
     tabela: "tb_atestado",

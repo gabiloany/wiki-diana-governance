@@ -1,0 +1,32 @@
+export default [
+  {
+    tipo: "dado",
+    campo: "Transcrição de caderneta",
+    obrigatorioPec: "não",
+    formatoPec: "button",
+    tabela: "-",
+    coluna: "-",
+    formatoBd: "-",
+    obrigatorioBd: "-",
+  },
+  {
+    tipo: "dado",
+    campo: "Aprazar",
+    obrigatorioPec: "não",
+    formatoPec: "button",
+    tabela: "tb_registro_vacinacao",
+    coluna: "co_tipo_registro_vacinacao",
+    formatoBd: "bigint",
+    obrigatorioBd: "não",
+  },
+  {
+    tipo: "dado",
+    campo: "Aplicar",
+    obrigatorioPec: "não",
+    formatoPec: "button",
+    tabela: "tb_registro_vacinacao",
+    coluna: "co_tipo_registro_vacinacao",
+    formatoBd: "bigint",
+    obrigatorioBd: "não",
+  },
+];

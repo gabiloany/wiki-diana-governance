@@ -82,16 +82,43 @@ const sidebars = {
           type: 'category',
           label: 'Vacinação',
 
-          // Página introdutória da Vacinação
           link: {
             type: 'doc',
             id: 'CD_00_catalogo-dados/CD_03_vacinacao/intro_vacinacao',
           },
 
           items: [
-            'CD_00_catalogo-dados/CD_03_vacinacao/CD_VAC_01_caderneta/index',
-            'CD_00_catalogo-dados/CD_03_vacinacao/CD_VAC_02_covid/index',
-            'CD_00_catalogo-dados/CD_03_vacinacao/CD_VAC_03_imunobiologico/index',
+            {
+              type: 'category',
+              label: 'Atendimento Individualizado',
+
+              link: {
+                type: 'doc',
+                id: 'CD_00_catalogo-dados/CD_03_vacinacao/CD_VAC_01_atendimento-individualizado/intro_atend_individual',
+              },
+
+              items: [
+                'CD_00_catalogo-dados/CD_03_vacinacao/CD_VAC_01_atendimento-individualizado/CD_VAC_01_caderneta/index',
+                'CD_00_catalogo-dados/CD_03_vacinacao/CD_VAC_01_atendimento-individualizado/CD_VAC_02_covid/index',
+                'CD_00_catalogo-dados/CD_03_vacinacao/CD_VAC_01_atendimento-individualizado/CD_VAC_03_imunobiologico/index',
+              ],
+            },
+
+            {
+              type: 'category',
+              label: 'Atendimento de Vacinação',
+
+              link: {
+                type: 'doc',
+                id: 'CD_00_catalogo-dados/CD_03_vacinacao/CD_VAC_02_atendimento-vacinacao/intro_atend_vacinacao',
+              },
+
+              items: [
+                'CD_00_catalogo-dados/CD_03_vacinacao/CD_VAC_02_atendimento-vacinacao/CD_VAC_01_vacinacao/index',
+                'CD_00_catalogo-dados/CD_03_vacinacao/CD_VAC_02_atendimento-vacinacao/CD_VAC_02_calendario/index',
+                'CD_00_catalogo-dados/CD_03_vacinacao/CD_VAC_02_atendimento-vacinacao/CD_VAC_03_imunobiologico/index',
+              ],
+            },
           ],
         },
       ],

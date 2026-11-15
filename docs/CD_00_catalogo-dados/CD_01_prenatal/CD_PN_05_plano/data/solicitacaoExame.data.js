@@ -1,7 +1,7 @@
 export default [
   {
     tipo: "dado",
-    campo: "+ Adicionar exame comum",
+    campo: "Adicionar exame comum",
     obrigatorioPec: "não",
     formatoPec: "button",
     tabela: "tb_requisicao_exame",

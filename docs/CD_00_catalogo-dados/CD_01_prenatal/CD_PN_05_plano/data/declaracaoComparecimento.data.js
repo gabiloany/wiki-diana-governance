@@ -3,7 +3,7 @@ export default [
     tipo: "dado",
     campo: "Período",
     obrigatorioPec: "sim",
-    formatoPec: "radio box",
+    formatoPec: "radio button",
     tabela: "-",
     coluna: "-",
     formatoBd: "-",

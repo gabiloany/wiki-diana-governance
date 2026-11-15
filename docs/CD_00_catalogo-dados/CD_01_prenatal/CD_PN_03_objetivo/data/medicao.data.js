@@ -125,7 +125,7 @@ export default [
     tipo: 'dado',
     campo: 'Momento da coleta',
     obrigatorioPec: 'sim',
-    formatoPec: 'radio buttom',
+    formatoPec: 'radio button',
     tabela: 'tb_medicao',
     coluna: 'tp_glicemia',
     formatoBd: 'bigint',

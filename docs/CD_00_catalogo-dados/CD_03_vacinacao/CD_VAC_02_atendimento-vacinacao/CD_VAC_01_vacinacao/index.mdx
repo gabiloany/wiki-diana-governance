@@ -1,0 +1,67 @@
+---
+title: Condições
+---
+
+import Figura from '@site/src/components/Figura';
+import TabelaMapeamento from '@site/src/components/TabelaMapeamento';
+import ImagemInline from '@site/src/components/ImagemInline';
+import condicoesData from './data/condicoes.data';
+
+# 2.13 Condições
+
+A seção **Condições** faz parte do **Atendimento de vacinação**, que é iniciado a partir da Lista de atendimentos do Prontuário Eletrônico e-SUS APS. Antes de acessá-la, o cidadão precisa ser incluído na lista com o serviço de vacinação selecionado.
+
+### 2.13.1 Acesso ao atendimento de vacinação
+
+Ao selecionar a opção <ImagemInline src="/img/vacinacao/atend_inline.png" alt="Lista de atendimentos" /> no menu lateral do Prontuário Eletrônico e-SUS APS, o sistema exibe a tela **Lista de atendimentos**.
+
+<Figura
+  src="/img/vacinacao/telaAtend_geral.png"
+  alt="Tela de Lista de atendimentos"
+  numero="2.13.1"
+  descricao="Tela de Atendimentos - Lista de Atendimentos no Prontuário Eletrônico e-SUS APS"
+  fonte="Prontuário Eletrônico e-SUS APS - Versão 5.5.6"
+/>
+
+Para incluir um cidadão na lista, utiliza-se a opção <ImagemInline src="/img/vacinacao/adcPaciente_inline.png" alt="Adicionar cidadão" />, que abre o formulário de inclusão para atendimento.
+
+<Figura
+  src="/img/vacinacao/escolher_paciente.png"
+  alt="Formulário de Adicionar cidadão"
+  numero="2.13.2"
+  descricao="Tela de Atendimentos - Formulário de adição de cidadão para atendimento"
+  fonte="Prontuário Eletrônico e-SUS APS - Versão 5.5.6"
+/>
+
+No formulário, a opção <ImagemInline src="/img/vacinacao/vacina-vazio.png" alt="Checkbox Vacina" /> do campo **Tipo de serviço** identifica os atendimentos específicos de vacinação. Após o preenchimento dos dados de cidadão, profissional e equipe, é necessário marcar a opção <ImagemInline src="/img/vacinacao/vacina-preenchido_inline.png" alt="Vacina selecionada" /> e, em seguida, confirmar em <ImagemInline src="/img/vacinacao/adicionar_inline.png" alt="Adicionar" />.
+
+<Figura
+  src="/img/vacinacao/atend-paciente.png"
+  alt="Cidadão adicionado à Lista de atendimentos"
+  numero="2.13.3"
+  descricao="Tela de Atendimentos - Cidadão adicionado à Lista de atendimentos"
+  fonte="Prontuário Eletrônico e-SUS APS - Versão 5.5.6"
+/>
+
+:::note NOTA
+Na Lista de atendimentos, o cidadão adicionado é identificado pelo serviço **Vacina**. Para iniciar o atendimento de vacinação, utiliza-se a opção <ImagemInline src="/img/vacinacao/vacina.png" alt="Ícone de Vacina" />.
+:::
+
+### 2.13.2 Condições
+
+Ao iniciar o atendimento, o sistema redireciona para a tela **Atendimento de vacinação**, onde é exibida a seção **Condições**. Nela são registradas a condição maternal do cidadão (**Gestante**, **Puérpera** ou **Nenhuma**), de preenchimento obrigatório, e a condição **Viajante**, disponível no grupo **Outras**.
+
+<Figura
+  src="/img/vacinacao/condicoes.png"
+  alt="Seção Condições no Atendimento de vacinação"
+  numero="2.13.4"
+  descricao="Tela de Atendimento de Vacinação - Condições"
+  fonte="Prontuário Eletrônico e-SUS APS - Versão 5.5.6"
+/>
+
+<TabelaMapeamento
+  numero="2.13.1"
+  titulo="Condições"
+  linhas={condicoesData}
+  fonte="DIAna SAPS"
+/>

@@ -1,0 +1,99 @@
+---
+title: Outras Doses e Imunobiológicos
+---
+
+import Figura from '@site/src/components/Figura';
+import TabelaMapeamento from '@site/src/components/TabelaMapeamento';
+import ImagemInline from '@site/src/components/ImagemInline';
+import imunoGeralData from './data/imunobiologico-geral.data';
+import transcreverData from './data/transcrever.data';
+import aprazarData from './data/aprazar.data';
+import aplicarData from './data/aplicar.data';
+
+# 2.16 Outras Doses e Imunobiológicos
+
+A aba **Outras doses e imunobiológicos** fica ao lado da aba **Calendário vacinal do adulto**, na seção **Vacinação** do atendimento de vacinação. Ela permite registrar a transcrição, o aprazamento e a aplicação de doses de imunobiológicos que não constam no calendário vacinal do adulto.
+
+<Figura
+  src="/img/vacinacao/vacinacao-imunobiologico-geral.png"
+  alt="Seção Vacinação com as abas Calendário vacinal do adulto e Outras doses e imunobiológicos"
+  numero="2.16.1"
+  descricao="Tela de Atendimento de Vacinação com as abas do calendário vacinal do adulto e de outras doses e imunobiológicos no Prontuário Eletrônico e-SUS APS"
+  fonte="Prontuário Eletrônico e-SUS APS - Versão 5.5.6"
+/>
+
+### 2.16.1 Outras doses e imunobiológicos
+
+Ao selecionar a aba <ImagemInline src="/img/vacinacao/outras-doses_inline.png" alt="Outras doses e imunobiológicos" />, o sistema exibe a tela com as ações disponíveis para esse grupo de imunobiológicos: **Transcrição de caderneta**, **Aprazar** e **Aplicar**.
+
+<Figura
+  src="/img/vacinacao/outras-doses.png"
+  alt="Aba Outras doses e imunobiológicos"
+  numero="2.16.2"
+  descricao="Tela de Atendimento de Vacinação com a aba Outras doses e imunobiológicos selecionada no Prontuário Eletrônico e-SUS APS"
+  fonte="Prontuário Eletrônico e-SUS APS - Versão 5.5.6"
+/>
+
+<TabelaMapeamento
+  numero="2.16.1"
+  titulo="Outras doses e imunobiológicos"
+  linhas={imunoGeralData}
+  fonte="DIAna SAPS"
+/>
+
+### 2.16.2 Transcrição de caderneta
+
+Doses aplicadas anteriormente e ainda não lançadas no sistema podem ser registradas por meio da opção <ImagemInline src="/img/vacinacao/transcricao-inline.png" alt="Transcrição de caderneta" />, que abre um formulário para transcrição dos dados constantes na caderneta de vacinação do cidadão, como imunobiológico, dose, data de aplicação, lote, fabricante e observações.
+
+<Figura
+  src="/img/vacinacao/imunobiologico-open.png"
+  alt="Formulário de Transcrição de caderneta de imunobiológico"
+  numero="2.16.3"
+  descricao="Formulário de Transcrição de caderneta de imunobiológico no Prontuário Eletrônico e-SUS APS"
+  fonte="Prontuário Eletrônico e-SUS APS - Versão 5.5.6"
+/>
+
+<TabelaMapeamento
+  numero="2.16.2"
+  titulo="Transcrição de caderneta de imunobiológico"
+  linhas={transcreverData}
+  fonte="DIAna SAPS"
+/>
+
+### 2.16.3 Aprazar
+
+Para agendar uma dose futura, utiliza-se a opção <ImagemInline src="/img/vacinacao/aprazar-inline.png" alt="Aprazar" />, que abre o formulário de **Aprazamento de imunobiológico**, no qual são informados o imunobiológico, a estratégia, a dose e a data prevista para a aplicação.
+
+<Figura
+  src="/img/vacinacao/imunobiologico-aprazamento.png"
+  alt="Formulário de Aprazamento de imunobiológico"
+  numero="2.16.4"
+  descricao="Formulário de Aprazamento de imunobiológico no Prontuário Eletrônico e-SUS APS"
+  fonte="Prontuário Eletrônico e-SUS APS - Versão 5.5.6"
+/>
+
+<TabelaMapeamento
+  numero="2.16.3"
+  titulo="Aprazamento de imunobiológico"
+  linhas={aprazarData}
+  fonte="DIAna SAPS"
+/>
+
+### 2.16.4 Aplicar
+
+Para registrar a aplicação da dose durante o atendimento, utiliza-se a opção <ImagemInline src="/img/vacinacao/aplicar-inline.png" alt="Aplicar" />, que abre o formulário de **Aplicação de imunobiológico**, com os dados de imunobiológico, estratégia, grupo de atendimento, dose, lote, fabricante, via de administração, local de aplicação, motivo de indicação, profissional prescritor e observações.
+
+<Figura
+  src="/img/vacinacao/imunobiologico-aplicar.png"
+  alt="Formulário de Aplicação de imunobiológico"
+  numero="2.16.5"
+  descricao="Formulário de Aplicação de imunobiológico no Prontuário Eletrônico e-SUS APS"
+  fonte="Prontuário Eletrônico e-SUS APS - Versão 5.5.6"
+/>
+
+<TabelaMapeamento
+  numero="2.16.4"
+  titulo="Aplicação de imunobiológico"
+  linhas={aplicarData}
+  fonte="DIAna SAPS"
+/>

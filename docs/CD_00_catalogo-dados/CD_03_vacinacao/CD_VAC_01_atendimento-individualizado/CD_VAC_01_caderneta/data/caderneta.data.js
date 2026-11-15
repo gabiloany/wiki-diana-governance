@@ -3,7 +3,7 @@ export default [
     tipo: "dado",
     campo: "Adicionar transcrições de caderneta",
     obrigatorioPec: "não",
-    formatoPec: "buttom",
+    formatoPec: "button",
     tabela: "-",
     coluna: "-",
     formatoBd: "-",

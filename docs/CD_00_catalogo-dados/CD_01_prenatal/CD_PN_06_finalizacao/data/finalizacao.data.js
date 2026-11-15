@@ -18,5 +18,5 @@ export default [
     coluna: "-",
     formatoBd: "-",
     obrigatorioBd: "-"
-  },
+  }
 ];

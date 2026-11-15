@@ -1,0 +1,17 @@
+---
+title: Atendimento Individualizado
+---
+
+# Atendimento Individualizado
+
+O **Atendimento Individualizado** contempla o conjunto de informações de vacinação registradas a partir do atendimento individual ao cidadão no Prontuário Eletrônico e-SUS APS, por meio da aba **Vacinação**. Esta documentação apresenta o mapeamento técnico dos principais formulários utilizados durante o registro de doses, relacionando os campos exibidos na interface do sistema às respectivas tabelas e colunas do banco de dados.
+
+O objetivo deste catálogo é apoiar atividades de governança de dados, integração de sistemas, desenvolvimento de soluções analíticas e compreensão da estrutura de armazenamento das informações do Prontuário Eletrônico e-SUS APS.
+
+A documentação está organizada conforme as subseções da aba de vacinação, abrangendo os seguintes módulos:
+
+- [Calendário Vacinal do Adulto](/CD_00_catalogo-dados/CD_03_vacinacao/CD_VAC_01_atendimento-individualizado/CD_VAC_01_caderneta/)
+- [Vacinas para COVID-19](/CD_00_catalogo-dados/CD_03_vacinacao/CD_VAC_01_atendimento-individualizado/CD_VAC_02_covid/)
+- [Outras Doses e Imunobiológicos](/CD_00_catalogo-dados/CD_03_vacinacao/CD_VAC_01_atendimento-individualizado/CD_VAC_03_imunobiologico/)
+
+Cada seção apresenta imagens da interface do sistema acompanhadas pelo respectivo mapeamento técnico dos campos e suas correspondências no banco de dados.

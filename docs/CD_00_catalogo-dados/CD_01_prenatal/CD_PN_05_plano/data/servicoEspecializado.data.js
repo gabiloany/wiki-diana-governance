@@ -33,7 +33,7 @@ export default [
     tipo: "dado",
     campo: "Classificação de risco",
     obrigatorioPec: "sim",
-    formatoPec: "radio box",
+    formatoPec: "radio button",
     tabela: "tb_encaminhamento",
     coluna: "co_classificacao_risco_encam",
     formatoBd: "bigint",

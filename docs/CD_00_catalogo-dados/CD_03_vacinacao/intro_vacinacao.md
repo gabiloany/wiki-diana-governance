@@ -8,10 +8,9 @@ O módulo **Vacinação** contempla o conjunto de informações registradas dura
 
 O objetivo deste catálogo é apoiar atividades de governança de dados, integração de sistemas, desenvolvimento de soluções analíticas e compreensão da estrutura de armazenamento das informações do Prontuário Eletrônico e-SUS APS.
 
-A documentação está organizada conforme os seguintes módulos:
+A documentação está organizada conforme os seguintes tipos de atendimento:
 
-- [Calendário Vacinal do Adulto](/CD_00_catalogo-dados/CD_03_vacinacao/CD_VAC_01_caderneta)
-- [Vacinas para COVID-19](/CD_00_catalogo-dados/CD_03_vacinacao/CD_VAC_02_covid)
-- [Outras Doses e Imunobiológicos](/CD_00_catalogo-dados/CD_03_vacinacao/CD_VAC_03_imunobiologico)
+- [Atendimento Individualizado](/CD_00_catalogo-dados/CD_03_vacinacao/CD_VAC_01_atendimento-individualizado/intro_atend_individual)
+- [Atendimento de Vacinação](/CD_00_catalogo-dados/CD_03_vacinacao/CD_VAC_02_atendimento-vacinacao/intro_atend_vacinacao)
 
 Cada seção apresenta imagens da interface do sistema acompanhadas pelo respectivo mapeamento técnico dos campos e suas correspondências no banco de dados.

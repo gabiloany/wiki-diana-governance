@@ -1,0 +1,141 @@
+---
+title: Calendário Vacinal do Adulto
+---
+
+import Figura from '@site/src/components/Figura';
+import TabelaMapeamento from '@site/src/components/TabelaMapeamento';
+import ImagemInline from '@site/src/components/ImagemInline';
+import completoData from './data/completo.data';
+import buttonData from './data/button.data';
+import transcricaoData from './data/transcricao.data';
+import aprazarData from './data/aprazar.data';
+import aplicarData from './data/aplicar.data';
+
+# 2.14 Calendário Vacinal do Adulto
+
+A seção **Calendário Vacinal do Adulto** apresenta as vacinas recomendadas para a faixa etária adulta e a situação de cada dose do cidadão, como aplicada, atrasada, disponível ou futura. A partir dela, o profissional pode aplicar uma dose, aprazar a próxima ou transcrever doses registradas na caderneta de vacinação.
+
+<Figura
+  src="/img/vacinacao/calendario-adulto.png"
+  alt="Tela Calendário Vacinal do Adulto"
+  numero="2.14.1"
+  descricao="Tela Calendário Vacinal do Adulto no atendimento de vacinação do Prontuário Eletrônico e-SUS APS"
+  fonte="Prontuário Eletrônico e-SUS APS - Versão 5.5.6"
+/>
+
+### 2.14.1 Calendário nacional completo
+
+Por padrão, o calendário exibe apenas os imunobiológicos recomendados para o cidadão. Ao selecionar a opção <ImagemInline src="/img/vacinacao/mostrar-vazio.png" alt="Mostrar calendário nacional completo" />, o sistema expande a exibição e apresenta todos os imunobiológicos previstos no calendário nacional, incluindo aqueles ainda não iniciados.
+
+<Figura
+  src="/img/vacinacao/calendario-adulto-completo.png"
+  alt="Calendário Vacinal do Adulto com o calendário nacional completo"
+  numero="2.14.2"
+  descricao="Tela Calendário Vacinal do Adulto com o calendário nacional completo no Prontuário Eletrônico e-SUS APS"
+  fonte="Prontuário Eletrônico e-SUS APS - Versão 5.5.6"
+/>
+
+<TabelaMapeamento
+  numero="2.14.1"
+  titulo="Mostrar calendário nacional completo"
+  linhas={completoData}
+  fonte="DIAna SAPS"
+/>
+
+### 2.14.2 Vacinas para COVID-19
+
+No topo do calendário, o menu expansível **Doses/imunobiológicos/vacinas para COVID-19 | COV19** reúne as vacinas de COVID-19 do cidadão. Por padrão, o menu é exibido recolhido.
+
+<Figura
+  src="/img/vacinacao/menu-covid.png"
+  alt="Menu expansível de vacinas para COVID-19 recolhido"
+  numero="2.14.3"
+  descricao="Tela Calendário Vacinal do Adulto com o menu de vacinas para COVID-19 recolhido no Prontuário Eletrônico e-SUS APS"
+  fonte="Prontuário Eletrônico e-SUS APS - Versão 5.5.6"
+/>
+
+Ao selecionar o menu, o sistema exibe a lista de vacinas de COVID-19 disponíveis, com as respectivas doses.
+
+<Figura
+  src="/img/vacinacao/menu-covid-expand.png"
+  alt="Menu expansível de vacinas para COVID-19 expandido"
+  numero="2.14.4"
+  descricao="Tela Calendário Vacinal do Adulto com o menu de vacinas para COVID-19 expandido no Prontuário Eletrônico e-SUS APS"
+  fonte="Prontuário Eletrônico e-SUS APS - Versão 5.5.6"
+/>
+
+### 2.14.3 Aplicar, visualizar ou realizar registro
+
+Ao selecionar a caixa de uma dose no calendário (neste exemplo, a 2ª dose de Hepatite B), o sistema exibe as ações disponíveis para aquela dose: **Adicionar transcrições de caderneta**, **Aprazar** e **Aplicar**.
+
+<Figura
+  src="/img/vacinacao/tela-vacina-aplicacao.png"
+  alt="Ações disponíveis ao selecionar uma dose"
+  numero="2.14.5"
+  descricao="Tela Calendário Vacinal do Adulto com as ações disponíveis para a dose selecionada no Prontuário Eletrônico e-SUS APS"
+  fonte="Prontuário Eletrônico e-SUS APS - Versão 5.5.6"
+/>
+
+<TabelaMapeamento
+  numero="2.14.2"
+  titulo="Seleção de dose e ações"
+  linhas={buttonData}
+  fonte="DIAna SAPS"
+/>
+
+### 2.14.4 Adicionar transcrições de caderneta
+
+Doses aplicadas anteriormente e ainda não lançadas no sistema podem ser registradas por meio da opção <ImagemInline src="/img/vacinacao/transcricao-inline.png" alt="Adicionar transcrições de caderneta" />, que abre um formulário para transcrição dos dados constantes na caderneta de vacinação do cidadão, como imunobiológico, dose, data de aplicação, lote, fabricante e observações.
+
+<Figura
+  src="/img/vacinacao/transcricao-open.png"
+  alt="Formulário de Adicionar transcrições de caderneta"
+  numero="2.14.6"
+  descricao="Formulário de Adicionar transcrições de caderneta no Prontuário Eletrônico e-SUS APS"
+  fonte="Prontuário Eletrônico e-SUS APS - Versão 5.5.6"
+/>
+
+<TabelaMapeamento
+  numero="2.14.3"
+  titulo="Adicionar transcrições de caderneta"
+  linhas={transcricaoData}
+  fonte="DIAna SAPS"
+/>
+
+### 2.14.5 Aprazar
+
+Para agendar uma dose futura, utiliza-se a opção <ImagemInline src="/img/vacinacao/aprazar-inline.png" alt="Aprazar" />, que abre o formulário de **Aprazamento de imunobiológico**, no qual são informados a estratégia e a data prevista para a aplicação.
+
+<Figura
+  src="/img/vacinacao/aprazar-open.png"
+  alt="Formulário de Aprazamento de imunobiológico"
+  numero="2.14.7"
+  descricao="Formulário de Aprazamento de imunobiológico no Prontuário Eletrônico e-SUS APS"
+  fonte="Prontuário Eletrônico e-SUS APS - Versão 5.5.6"
+/>
+
+<TabelaMapeamento
+  numero="2.14.4"
+  titulo="Aprazamento de imunobiológico"
+  linhas={aprazarData}
+  fonte="DIAna SAPS"
+/>
+
+### 2.14.6 Aplicar
+
+Para registrar a aplicação da dose durante o atendimento, utiliza-se a opção <ImagemInline src="/img/vacinacao/aplicar-inline.png" alt="Aplicar" />, que abre o formulário de **Aplicação de imunobiológico**, com os dados de estratégia, grupo de atendimento, lote, fabricante, via de administração, local de aplicação, motivo de indicação, profissional prescritor e observações.
+
+<Figura
+  src="/img/vacinacao/aplicar-open.png"
+  alt="Formulário de Aplicação de imunobiológico"
+  numero="2.14.8"
+  descricao="Formulário de Aplicação de imunobiológico no Prontuário Eletrônico e-SUS APS"
+  fonte="Prontuário Eletrônico e-SUS APS - Versão 5.5.6"
+/>
+
+<TabelaMapeamento
+  numero="2.14.5"
+  titulo="Aplicação de imunobiológico"
+  linhas={aplicarData}
+  fonte="DIAna SAPS"
+/>
